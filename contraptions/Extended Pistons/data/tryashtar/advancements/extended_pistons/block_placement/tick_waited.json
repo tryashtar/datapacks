@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "wait": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "function": "tryashtar:extended_pistons/block_placement/on_tick_waited"
+  }
+}

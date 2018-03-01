@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "place": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:dispenser",
+        "item": {
+          "nbt": "{extended_piston:1b}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "tryashtar:extended_pistons/block_placement/on_block_placed"
+  }
+}
