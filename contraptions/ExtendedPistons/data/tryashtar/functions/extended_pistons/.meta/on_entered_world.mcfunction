@@ -1,4 +1,5 @@
-### runs on datapack load, adding necessary objectives
+### runs when a new player joins, adding necessary objectives
+### doesn't use #minecraft:load because it runs before the singleplayer player joins
 
 # represents the number of pistons inside a base
 scoreboard objectives add try_ext_pist dummy Piston Max Length
