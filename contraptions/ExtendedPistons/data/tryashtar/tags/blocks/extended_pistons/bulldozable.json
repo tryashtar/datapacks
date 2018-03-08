@@ -4,9 +4,7 @@
     "cave_air",
     "void_air",
     "water",
-    "flowing_water",
     "lava",
-    "flowing_lava",
     "fire"
   ]
 }
