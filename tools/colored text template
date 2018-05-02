@@ -1,1 +1,0 @@
-setblock ~ ~1 ~ standing_sign default replace {Text1:"{\"text\":\"a\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/setblock ~ ~ ~ command_block default replace {Command:\\\"   \\u00a7   \\\"}\"}}"}
