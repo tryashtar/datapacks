@@ -1,3 +1,8 @@
+### TEMP HACK
+scoreboard objectives add temphack1 minecraft.crafted:minecraft.command_block
+scoreboard objectives add temphack2 minecraft.crafted:minecraft.chain_command_block
+
+
 ### runs when a new player joins, adding necessary objectives
 ### doesn't use #minecraft:load because it runs before the singleplayer player joins
 
