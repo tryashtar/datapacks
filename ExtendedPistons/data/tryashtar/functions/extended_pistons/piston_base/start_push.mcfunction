@@ -1,4 +1,4 @@
-### ran by the base AEC when it receives a new power source
+### power is obtained, begin pushing forward
 
 execute if score @s try_ext_pist matches 1.. run playsound block.piston.extend block @a ~ ~ ~ .6 .7
 execute if score @s try_ext_pist matches 0 run playsound block.shulker_box.open block @a ~ ~ ~ .6 2

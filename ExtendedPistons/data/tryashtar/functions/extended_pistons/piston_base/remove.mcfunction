@@ -1,4 +1,4 @@
-### ran by the base AEC when its block is removed
+### cleanup when the base block is removed
 
 # use fill as a workaround for MC-121823
 execute if block ~ ~ ~ dispenser run fill ~ ~ ~ ~ ~ ~ air destroy

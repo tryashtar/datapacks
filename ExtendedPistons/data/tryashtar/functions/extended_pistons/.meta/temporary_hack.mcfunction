@@ -1,4 +1,4 @@
-# worst function ever - waiting for NBT recipes
+# DELETE THIS WHEN NBT RECIPES ARE ADDED
 
 execute store result score @s try_ext_len run clear @s command_block
 execute if score @s try_ext_len matches 1.. run title @s actionbar {"text":"When NBT recipes are added, re-download to avoid this."}

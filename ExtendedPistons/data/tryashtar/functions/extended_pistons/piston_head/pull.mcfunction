@@ -6,5 +6,5 @@ execute if entity @s[tag=try_ext_stick] if block ~ ~ ~ air positioned ^ ^ ^1 unl
 execute positioned ^ ^ ^-1 if entity @s[distance=0.0001..] run fill ~ ~ ~ ~ ~ ~ petrified_oak_slab[type=double] replace #tryashtar:extended_pistons/arm_blocks
 scoreboard players remove @s try_ext_len 1
 
-# check if the head has been pulled all the way back to the base AEC
+# check if the head has been pulled all the way back to the base block
 execute positioned ^ ^ ^-1 run tag @s[tag=!try_ext_pwr,distance=..0.0001] remove try_ext_ext

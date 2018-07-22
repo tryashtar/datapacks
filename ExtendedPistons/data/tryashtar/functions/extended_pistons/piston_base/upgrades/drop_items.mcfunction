@@ -17,7 +17,7 @@ scoreboard players remove @s try_ext_pist 64
 scoreboard players remove @s try_ext_pup 64
 scoreboard players remove @s try_ext_pdn 64
 
-# if this is removed, the negative scores could result in overflow when storing to the item
+# don't go below zero
 scoreboard players set @s[scores={try_ext_pist=..-1}] try_ext_pist 0
 scoreboard players set @s[scores={try_ext_pup=..-1}] try_ext_pup 0
 scoreboard players set @s[scores={try_ext_pdn=..-1}] try_ext_pdn 0

@@ -1,5 +1,3 @@
-### ran by the base AEC at its own position every tick
-
 # destroy self if the player mines the dispenser or puts an item where it doesn't belong
 execute unless block ~ ~ ~ dispenser run function tryashtar:extended_pistons/piston_base/remove
 execute if score @s try_ext_pist matches 1.. if block ~ ~ ~ dispenser{Items:[{Slot:0b}]} unless block ~ ~ ~ dispenser{Items:[{Slot:0b,id:"minecraft:piston"}]} run function tryashtar:extended_pistons/piston_base/remove
