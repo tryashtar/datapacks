@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "place": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:hopper",
+        "item": {
+          "nbt": "{ender_chest:1b}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "tryashtar.ender_chests:block_placement/on_block_placed"
+  }
+}

@@ -1,0 +1,1 @@
+execute unless entity @s[scores={try_end_col=0}] run tp @s 0-0-6019-0-845fed

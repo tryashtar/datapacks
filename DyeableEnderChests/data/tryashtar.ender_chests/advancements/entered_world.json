@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "wait": {
+      "trigger": "minecraft:location"
+    }
+  },
+  "rewards": {
+    "function": "tryashtar.ender_chests:.meta/on_entered_world"
+  }
+}

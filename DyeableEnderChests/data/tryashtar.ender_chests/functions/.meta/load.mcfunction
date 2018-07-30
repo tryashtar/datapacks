@@ -1,0 +1,7 @@
+### UUID 0-0-6019-0-845fed
+
+summon area_effect_cloud ~ 50000 ~ {UUIDLeast:8675309L,UUIDMost:24601L,CustomName:"\"Dyeable Ender Chest Spawn Marker\"",Duration:-1,Age:-2147483648,WaitTime:-2147483648}
+
+scoreboard objectives add try_end_col dummy "Chest Color"
+scoreboard players set #scale try_end_col 256
+scoreboard players set #scale2 try_end_col 65536
