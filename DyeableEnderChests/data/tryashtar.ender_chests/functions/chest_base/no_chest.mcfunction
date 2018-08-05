@@ -1,2 +1,0 @@
-execute at 0-0-6019-0-845fed unless entity @e[type=area_effect_cloud,tag=try_end_mark,scores={try_end_col=0},distance=..0.0001,limit=1] at @s run function tryashtar.ender_chests:chest_base/create_chest
-execute if entity @s[tag=!try_end_chest] at 0-0-6019-0-845fed if entity @e[type=area_effect_cloud,tag=try_end_mark,tag=try_end_free,scores={try_end_col=0},distance=..0.0001,limit=1] at @s run function tryashtar.ender_chests:chest_base/take_chest
