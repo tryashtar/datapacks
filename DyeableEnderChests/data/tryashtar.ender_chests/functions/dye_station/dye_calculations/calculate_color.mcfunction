@@ -128,4 +128,4 @@ scoreboard players operation count try_end_col = red try_end_col
 scoreboard players operation count try_end_col += green try_end_col
 scoreboard players operation count try_end_col += blue try_end_col
 scoreboard players operation @s try_end_col = count try_end_col
-execute positioned ~ ~-1.2 ~ as @e[type=armor_stand,tag=try_end_ind,distance=..0.7,limit=2] store result entity @s ArmorItems[2].tag.display.color int 1 run scoreboard players get count try_end_col
+execute positioned ~ ~-1.2 ~ as @e[type=armor_stand,tag=try_end_ind,distance=..0.36,limit=2] store result entity @s ArmorItems[2].tag.display.color int 1 run scoreboard players get count try_end_col
