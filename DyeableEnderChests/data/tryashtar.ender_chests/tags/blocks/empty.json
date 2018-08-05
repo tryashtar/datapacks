@@ -5,6 +5,8 @@
     "void_air",
     "water",
     "lava",
-    "fire"
+    "fire",
+    "piston_head",
+    "moving_piston"
   ]
 }

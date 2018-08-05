@@ -18,8 +18,4 @@ scoreboard players operation @e[tag=try_end_id] try_end_col += @s try_end_col
 
 # to do:
 # lockable to a particular player
-# keep the chest still
-# something to nudge the chest to one side
-# perhaps lower the chest somewhat?
-# ^ these two require adjusting all ~0.5 and ~-1.7 in return_chest
 # possibly something that shows hex color when you look at the thing while holding an item?
