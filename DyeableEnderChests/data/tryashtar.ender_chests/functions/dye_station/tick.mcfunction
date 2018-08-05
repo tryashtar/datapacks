@@ -1,5 +1,6 @@
 execute unless block ~ ~ ~ hopper run function tryashtar.ender_chests:dye_station/remove
 function tryashtar.ender_chests:dye_station/dye_calculations/calculate_color
+
 scoreboard players remove @s try_end_time 1
 execute if score @s try_end_time matches ..0 run function tryashtar.ender_chests:dye_station/indicators/refresh
 
@@ -19,3 +20,5 @@ scoreboard players operation @e[tag=try_end_id] try_end_col += @s try_end_col
 # to do:
 # lockable to a particular player
 # possibly something that shows hex color when you look at the thing while holding an item?
+# fix check_pushable being weird
+# noclip team again
