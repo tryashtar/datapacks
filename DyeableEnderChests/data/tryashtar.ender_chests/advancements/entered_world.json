@@ -1,6 +1,6 @@
 {
   "criteria": {
-    "wait": {
+    "enter": {
       "trigger": "minecraft:location"
     }
   },
