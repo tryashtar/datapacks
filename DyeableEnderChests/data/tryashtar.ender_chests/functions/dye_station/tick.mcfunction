@@ -21,4 +21,3 @@ scoreboard players operation @e[tag=try_end_id] try_end_col += @s try_end_col
 # lockable to a particular player
 # possibly something that shows hex color when you look at the thing while holding an item?
 # fix check_pushable being weird
-# noclip team again

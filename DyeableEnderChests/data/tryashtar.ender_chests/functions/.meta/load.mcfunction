@@ -6,3 +6,6 @@ scoreboard objectives add try_end_col dummy "Chest Color"
 scoreboard objectives add try_end_time dummy "Chest Timer"
 scoreboard players set #scale try_end_col 256
 scoreboard players set #scale2 try_end_col 65536
+
+team add try_end_nclp "Ender Chest Collision"
+team modify try_end_nclp collisionRule never
