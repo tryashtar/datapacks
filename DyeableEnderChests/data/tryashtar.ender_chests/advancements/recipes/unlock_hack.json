@@ -3,11 +3,11 @@
     "unlock": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "tryashtar.extended_pistons:extended_piston"
+        "recipe": "tryashtar.ender_chests:chest_station"
       }
     }
   },
   "rewards": {
-    "function": "tryashtar.extended_pistons:.meta/temporary_hack1"
+    "function": "tryashtar.ender_chests:.meta/temporary_hack"
   }
 }

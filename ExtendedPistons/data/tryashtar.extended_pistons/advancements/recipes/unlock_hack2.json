@@ -3,11 +3,11 @@
     "unlock": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "tryashtar.extended_pistons:extended_piston"
+        "recipe": "tryashtar.extended_pistons:sticky_piston"
       }
     }
   },
   "rewards": {
-    "function": "tryashtar.extended_pistons:.meta/temporary_hack"
+    "function": "tryashtar.extended_pistons:.meta/temporary_hack2"
   }
 }

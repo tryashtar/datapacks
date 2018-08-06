@@ -22,7 +22,3 @@ scoreboard players operation @e[tag=try_end_id] try_end_col -= @s try_end_col
 execute if entity @s[tag=try_end_chest] run function tryashtar.ender_chests:dye_station/chest_tick
 execute if entity @s[tag=!try_end_chest,tag=try_end_req] run function tryashtar.ender_chests:dye_station/request_chest
 scoreboard players operation @e[tag=try_end_id] try_end_col += @s try_end_col
-
-
-# to do:
-# possibly something that shows hex color when you look at the thing while holding an item?

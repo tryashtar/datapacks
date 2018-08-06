@@ -1,5 +1,9 @@
 ### UUID 0-0-6019-0-845fed
 
+# DELETE THIS WHEN NBT RECIPES ARE ADDED  
+advancement revoke @s only tryashtar.ender_chests:recipes/unlock_hack
+recipe take @a tryashtar.ender_chests:chest_station
+
 summon area_effect_cloud ~ 50000 ~ {UUIDLeast:8675309L,UUIDMost:24601L,CustomName:"\"Dyeable Ender Chest Spawn Marker\"",Duration:-1,Age:-2147483648,WaitTime:-2147483648}
 
 scoreboard objectives add try_end_col dummy "Chest Color"

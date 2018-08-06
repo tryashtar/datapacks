@@ -5,7 +5,7 @@
       "conditions": {
         "block": "minecraft:hopper",
         "item": {
-          "nbt": "{ender_chest:1b}"
+          "nbt": "{ender_station:1b}"
         }
       }
     }
