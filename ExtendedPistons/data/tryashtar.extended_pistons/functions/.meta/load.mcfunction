@@ -1,7 +1,8 @@
 # DELETE THIS WHEN NBT RECIPES ARE ADDED
-scoreboard objectives add temphack1 minecraft.crafted:minecraft.command_block
-scoreboard objectives add temphack2 minecraft.crafted:minecraft.chain_command_block
-
+advancement revoke @s only tryashtar.extended_pistons:recipes/unlock_hack1
+advancement revoke @s only tryashtar.extended_pistons:recipes/unlock_hack2
+recipe take @a tryashtar.extended_pistons:extended_piston
+recipe take @a tryashtar.extended_pistons:sticky_piston
 
 ### adds necessary objectives
 scoreboard objectives add try_ext_pist dummy "Piston Max Length"

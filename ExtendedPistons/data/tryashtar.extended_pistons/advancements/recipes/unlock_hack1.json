@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "unlocked": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "tryashtar.extended_pistons:sticky_piston"
+      }
+    }
+  },
+
+  "requirements": [
+    [
+      "unlocked"
+    ]
+  ],
+
+  "rewards": {
+    "function": "tryashtar.extended_pistons:.meta/temporary_hack"
+  }
+}
