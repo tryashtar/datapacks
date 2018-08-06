@@ -4,6 +4,7 @@ summon area_effect_cloud ~ 50000 ~ {UUIDLeast:8675309L,UUIDMost:24601L,CustomNam
 
 scoreboard objectives add try_end_col dummy "Chest Color"
 scoreboard objectives add try_end_time dummy "Chest Timer"
+scoreboard objectives add try_end_lock dummy "Chest Lock"
 scoreboard players set #scale try_end_col 256
 scoreboard players set #scale2 try_end_col 65536
 

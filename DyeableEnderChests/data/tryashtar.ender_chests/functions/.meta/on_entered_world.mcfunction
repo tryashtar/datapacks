@@ -3,3 +3,6 @@
 
 execute unless score #ender_chests try_end_col matches 1 run tell raw @a [{"text":"tryashtar's Dyeable Ender Chests:\n","color":"aqua"},{"text":"Successfully installed!","color":"green"}]
 scoreboard players set #ender_chests try_end_col 1
+
+scoreboard players add #max try_end_lock 1
+scoreboard players operation @s try_end_lock = #max try_end_lock
