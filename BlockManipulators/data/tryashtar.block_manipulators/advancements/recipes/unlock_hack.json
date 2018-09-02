@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "unlock": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "tryashtar.block_manipulators:block_manipulator"
+      }
+    }
+  },
+  "rewards": {
+    "function": "tryashtar.block_manipulators:.meta/temporary_hack"
+  }
+}
