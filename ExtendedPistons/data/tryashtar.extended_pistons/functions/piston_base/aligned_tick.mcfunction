@@ -28,7 +28,6 @@ execute if score @s try_ext_pdn matches 1.. unless block ~ ~ ~ dispenser{Items:[
 # remove UI items for a tick so they don't fire
 scoreboard players remove @s[scores={try_ext_count=1..}] try_ext_count 1
 execute if score @s try_ext_count matches 1 run function tryashtar.extended_pistons:piston_base/upgrades/remove_ui
-execute if score @s try_ext_count matches 0 as @a[distance=..13] run function tryashtar.extended_pistons:piston_base/stop_sounds
 
 # calculate push strength (12 plus upgrades minus downgrades)
 scoreboard players set @s try_ext_temp3 12
