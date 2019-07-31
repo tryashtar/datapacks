@@ -1,0 +1,17 @@
+execute if entity @s[nbt={Item:{id:"minecraft:podzol"}}] run setblock ~ ~ ~ podzol
+execute if entity @s[nbt={Item:{id:"minecraft:gravel"}}] run setblock ~ ~ ~ gravel
+execute if entity @s[nbt={Item:{id:"minecraft:sponge"}}] run setblock ~ ~ ~ sponge
+execute if entity @s[nbt={Item:{id:"minecraft:cobweb"}}] run setblock ~ ~ ~ cobweb
+execute if entity @s[nbt={Item:{id:"minecraft:piston"}}] run setblock ~ ~ ~ piston
+execute if entity @s[nbt={Item:{id:"minecraft:allium"}}] run setblock ~ ~ ~ allium
+execute if entity @s[nbt={Item:{id:"minecraft:bricks"}}] run setblock ~ ~ ~ bricks
+execute if entity @s[nbt={Item:{id:"minecraft:ladder"}}] run setblock ~ ~ ~ ladder
+execute if entity @s[nbt={Item:{id:"minecraft:cactus"}}] run setblock ~ ~ ~ cactus
+execute if entity @s[nbt={Item:{id:"minecraft:beacon"}}] run setblock ~ ~ ~ beacon
+execute if entity @s[nbt={Item:{id:"minecraft:hopper"}}] run setblock ~ ~ ~ hopper
+execute if entity @s[nbt={Item:{id:"minecraft:string"}}] run setblock ~ ~ ~ string
+execute if entity @s[nbt={Item:{id:"minecraft:bamboo"}}] run setblock ~ ~ ~ bamboo
+execute if entity @s[nbt={Item:{id:"minecraft:carrot"}}] run setblock ~ ~ ~ carrot
+execute if entity @s[nbt={Item:{id:"minecraft:potato"}}] run setblock ~ ~ ~ potato
+execute if entity @s[nbt={Item:{id:"minecraft:barrel"}}] run setblock ~ ~ ~ barrel
+execute if entity @s[nbt={Item:{id:"minecraft:smoker"}}] run setblock ~ ~ ~ smoker
