@@ -133,4 +133,4 @@ execute if score @s try_bkm_bid matches 38 run function tryashtar.dispense_every
 execute if score @s try_bkm_bid matches 39 run function tryashtar.dispense_everything:item_conversion/normal/39
 execute if score @s try_bkm_bid matches 40 run function tryashtar.dispense_everything:item_conversion/normal/40
 
-data modify block ~ ~ ~ {} set from entity @s Item.tag.BlockEntityTag
+data modify block ~ ~ ~ {} merge from entity @s Item.tag.BlockEntityTag
