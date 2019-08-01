@@ -17,5 +17,6 @@ execute if entity @s[nbt={Item:{id:"minecraft:orange_concrete_powder"}}] run set
 execute if entity @s[nbt={Item:{id:"minecraft:pink_glazed_terracotta"}}] run setblock ~ ~ ~ pink_glazed_terracotta
 execute if entity @s[nbt={Item:{id:"minecraft:polished_andesite_slab"}}] run setblock ~ ~ ~ polished_andesite_slab
 execute if entity @s[nbt={Item:{id:"minecraft:purple_concrete_powder"}}] run setblock ~ ~ ~ purple_concrete_powder
+execute if entity @s[nbt={Item:{id:"minecraft:red_stained_glass_pane"}}] run setblock ~ ~ ~ red_stained_glass_pane
 execute if entity @s[nbt={Item:{id:"minecraft:stripped_dark_oak_wood"}}] run setblock ~ ~ ~ stripped_dark_oak_wood
 execute if entity @s[nbt={Item:{id:"minecraft:yellow_concrete_powder"}}] run setblock ~ ~ ~ yellow_concrete_powder

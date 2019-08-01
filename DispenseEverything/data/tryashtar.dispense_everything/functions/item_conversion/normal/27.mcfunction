@@ -6,6 +6,7 @@ execute if entity @s[nbt={Item:{id:"minecraft:cartography_table"}}] run setblock
 execute if entity @s[nbt={Item:{id:"minecraft:cut_red_sandstone"}}] run setblock ~ ~ ~ cut_red_sandstone
 execute if entity @s[nbt={Item:{id:"minecraft:dark_oak_trapdoor"}}] run setblock ~ ~ ~ dark_oak_trapdoor
 execute if entity @s[nbt={Item:{id:"minecraft:daylight_detector"}}] run setblock ~ ~ ~ daylight_detector
+execute if entity @s[nbt={Item:{id:"minecraft:dead_bubble_coral"}}] run setblock ~ ~ ~ dead_bubble_coral
 execute if entity @s[nbt={Item:{id:"minecraft:green_shulker_box"}}] run setblock ~ ~ ~ green_shulker_box
 execute if entity @s[nbt={Item:{id:"minecraft:jungle_fence_gate"}}] run setblock ~ ~ ~ jungle_fence_gate
 execute if entity @s[nbt={Item:{id:"minecraft:light_blue_banner"}}] run setblock ~ ~ ~ light_blue_banner

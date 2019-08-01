@@ -5,6 +5,7 @@ execute if entity @s[nbt={Item:{id:"minecraft:cobblestone_stairs"}}] run setbloc
 execute if entity @s[nbt={Item:{id:"minecraft:cut_sandstone_slab"}}] run setblock ~ ~ ~ cut_sandstone_slab
 execute if entity @s[nbt={Item:{id:"minecraft:cyan_stained_glass"}}] run setblock ~ ~ ~ cyan_stained_glass
 execute if entity @s[nbt={Item:{id:"minecraft:gray_stained_glass"}}] run setblock ~ ~ ~ gray_stained_glass
+execute if entity @s[nbt={Item:{id:"minecraft:lily_of_the_valley"}}] run setblock ~ ~ ~ lily_of_the_valley
 execute if entity @s[nbt={Item:{id:"minecraft:lime_stained_glass"}}] run setblock ~ ~ ~ lime_stained_glass
 execute if entity @s[nbt={Item:{id:"minecraft:magenta_terracotta"}}] run setblock ~ ~ ~ magenta_terracotta
 execute if entity @s[nbt={Item:{id:"minecraft:mossy_stone_bricks"}}] run setblock ~ ~ ~ mossy_stone_bricks

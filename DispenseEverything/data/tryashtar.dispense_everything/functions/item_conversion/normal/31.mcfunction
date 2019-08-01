@@ -3,6 +3,7 @@ execute if entity @s[nbt={Item:{id:"minecraft:black_concrete_powder"}}] run setb
 execute if entity @s[nbt={Item:{id:"minecraft:brown_concrete_powder"}}] run setblock ~ ~ ~ brown_concrete_powder
 execute if entity @s[nbt={Item:{id:"minecraft:chiseled_quartz_block"}}] run setblock ~ ~ ~ chiseled_quartz_block
 execute if entity @s[nbt={Item:{id:"minecraft:chiseled_stone_bricks"}}] run setblock ~ ~ ~ chiseled_stone_bricks
+execute if entity @s[nbt={Item:{id:"minecraft:dead_bubble_coral_fan"}}] run setblock ~ ~ ~ dead_bubble_coral_fan
 execute if entity @s[nbt={Item:{id:"minecraft:dead_fire_coral_block"}}] run setblock ~ ~ ~ dead_fire_coral_block
 execute if entity @s[nbt={Item:{id:"minecraft:dead_horn_coral_block"}}] run setblock ~ ~ ~ dead_horn_coral_block
 execute if entity @s[nbt={Item:{id:"minecraft:dead_tube_coral_block"}}] run setblock ~ ~ ~ dead_tube_coral_block

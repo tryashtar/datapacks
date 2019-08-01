@@ -1,12 +1,16 @@
 execute if entity @s[nbt={Item:{id:"minecraft:acacia_trapdoor"}}] run setblock ~ ~ ~ acacia_trapdoor
 execute if entity @s[nbt={Item:{id:"minecraft:andesite_stairs"}}] run setblock ~ ~ ~ andesite_stairs
 execute if entity @s[nbt={Item:{id:"minecraft:blue_terracotta"}}] run setblock ~ ~ ~ blue_terracotta
+execute if entity @s[nbt={Item:{id:"minecraft:brain_coral_fan"}}] run setblock ~ ~ ~ brain_coral_fan
 execute if entity @s[nbt={Item:{id:"minecraft:cyan_terracotta"}}] run setblock ~ ~ ~ cyan_terracotta
 execute if entity @s[nbt={Item:{id:"minecraft:dark_oak_button"}}] run setblock ~ ~ ~ dark_oak_button
 execute if entity @s[nbt={Item:{id:"minecraft:dark_oak_leaves"}}] run setblock ~ ~ ~ dark_oak_leaves
 execute if entity @s[nbt={Item:{id:"minecraft:dark_oak_planks"}}] run setblock ~ ~ ~ dark_oak_planks
 execute if entity @s[nbt={Item:{id:"minecraft:dark_oak_stairs"}}] run setblock ~ ~ ~ dark_oak_stairs
 execute if entity @s[nbt={Item:{id:"minecraft:dark_prismarine"}}] run setblock ~ ~ ~ dark_prismarine
+execute if entity @s[nbt={Item:{id:"minecraft:dead_fire_coral"}}] run setblock ~ ~ ~ dead_fire_coral
+execute if entity @s[nbt={Item:{id:"minecraft:dead_horn_coral"}}] run setblock ~ ~ ~ dead_horn_coral
+execute if entity @s[nbt={Item:{id:"minecraft:dead_tube_coral"}}] run setblock ~ ~ ~ dead_tube_coral
 execute if entity @s[nbt={Item:{id:"minecraft:fletching_table"}}] run setblock ~ ~ ~ fletching_table
 execute if entity @s[nbt={Item:{id:"minecraft:gray_terracotta"}}] run setblock ~ ~ ~ gray_terracotta
 execute if entity @s[nbt={Item:{id:"minecraft:jungle_trapdoor"}}] run setblock ~ ~ ~ jungle_trapdoor

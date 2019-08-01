@@ -4,6 +4,7 @@ execute if entity @s[nbt={Item:{id:"minecraft:brown_mushroom_block"}}] run setbl
 execute if entity @s[nbt={Item:{id:"minecraft:cracked_stone_bricks"}}] run setblock ~ ~ ~ cracked_stone_bricks
 execute if entity @s[nbt={Item:{id:"minecraft:cyan_concrete_powder"}}] run setblock ~ ~ ~ cyan_concrete_powder
 execute if entity @s[nbt={Item:{id:"minecraft:dark_prismarine_slab"}}] run setblock ~ ~ ~ dark_prismarine_slab
+execute if entity @s[nbt={Item:{id:"minecraft:dead_brain_coral_fan"}}] run setblock ~ ~ ~ dead_brain_coral_fan
 execute if entity @s[nbt={Item:{id:"minecraft:end_stone_brick_slab"}}] run setblock ~ ~ ~ end_stone_brick_slab
 execute if entity @s[nbt={Item:{id:"minecraft:end_stone_brick_wall"}}] run setblock ~ ~ ~ end_stone_brick_wall
 execute if entity @s[nbt={Item:{id:"minecraft:gray_concrete_powder"}}] run setblock ~ ~ ~ gray_concrete_powder
