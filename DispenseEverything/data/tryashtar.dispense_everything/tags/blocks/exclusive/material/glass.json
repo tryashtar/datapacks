@@ -1,7 +1,7 @@
 {
    "values": [
-      "#tryashtar.dispense_everything:states/glass",
-      "#tryashtar.dispense_everything:states/glass_pane",
+      "#tryashtar.dispense_everything:groups/glass",
+      "#tryashtar.dispense_everything:groups/glass_pane",
       "beacon",
       "conduit",
       "glowstone",

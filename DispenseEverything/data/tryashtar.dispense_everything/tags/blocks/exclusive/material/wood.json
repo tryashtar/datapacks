@@ -1,6 +1,6 @@
 {
    "values": [
-      "#tryashtar.dispense_everything:states/fence_gate",
+      "#tryashtar.dispense_everything:groups/fence_gate",
       "#minecraft:banners",
       "#minecraft:logs",
       "#minecraft:planks",

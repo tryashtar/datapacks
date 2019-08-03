@@ -1,6 +1,6 @@
 execute if block ~ ~-1 ~ #tryashtar.dispense_everything:exclusive/support/bs run tag @s add try_dis_ok
 
-execute if block ~ ~-1 ~ #tryashtar.dispense_everything:states/piston[extended=true,facing=up] run tag @s add try_dis_ok
+execute if block ~ ~-1 ~ #tryashtar.dispense_everything:groups/piston[extended=true,facing=up] run tag @s add try_dis_ok
 execute if block ~ ~-1 ~ #minecraft:stairs[half=bottom] run tag @s add try_dis_ok
 execute if block ~ ~-1 ~ #minecraft:slabs[type=bottom] run tag @s add try_dis_ok
 execute if block ~ ~-1 ~ #minecraft:trapdoors[half=bottom,open=false] run tag @s add try_dis_ok

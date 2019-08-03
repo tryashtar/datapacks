@@ -1,11 +1,11 @@
 {
    "values": [
-      "#tryashtar.dispense_everything:states/concrete",
-      "#tryashtar.dispense_everything:states/glazed_terracotta",
-      "#tryashtar.dispense_everything:states/terracotta",
-      "#tryashtar.dispense_everything:states/dead_coral",
-      "#tryashtar.dispense_everything:states/stone_stairs",
-      "#tryashtar.dispense_everything:states/stone_slab",
+      "#tryashtar.dispense_everything:groups/concrete",
+      "#tryashtar.dispense_everything:groups/glazed_terracotta",
+      "#tryashtar.dispense_everything:groups/terracotta",
+      "#tryashtar.dispense_everything:groups/dead_coral",
+      "#tryashtar.dispense_everything:groups/stone_stairs",
+      "#tryashtar.dispense_everything:groups/stone_slab",
       "#minecraft:stone_bricks",
       "#minecraft:walls",
       "andesite",

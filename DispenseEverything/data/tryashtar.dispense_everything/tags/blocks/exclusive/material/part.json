@@ -1,7 +1,7 @@
 {
    "values": [
-      "#tryashtar.dispense_everything:states/head",
-      "#tryashtar.dispense_everything:states/wall_head",
+      "#tryashtar.dispense_everything:groups/head",
+      "#tryashtar.dispense_everything:groups/wall_head",
       "#minecraft:flower_pots",
       "#minecraft:buttons",
       "#minecraft:rails",

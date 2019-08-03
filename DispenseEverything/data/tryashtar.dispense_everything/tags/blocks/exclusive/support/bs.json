@@ -1,6 +1,6 @@
 {
    "values": [
-      "#tryashtar.dispense_everything:states/head",
+      "#tryashtar.dispense_everything:groups/head",
       "#minecraft:flower_pots",
       "#minecraft:carpets",
       "chest",

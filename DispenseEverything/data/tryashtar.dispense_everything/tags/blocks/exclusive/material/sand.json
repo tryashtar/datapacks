@@ -1,6 +1,6 @@
 {
    "values": [
-      "#tryashtar.dispense_everything:states/concrete_powder",
+      "#tryashtar.dispense_everything:groups/concrete_powder",
       "gravel",
       "red_sand",
       "sand",
