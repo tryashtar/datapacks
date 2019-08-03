@@ -1,5 +1,6 @@
-execute if entity @s[nbt={Item:{id:"minecraft:allium"}}] run setblock ~ ~ ~ allium
-execute if entity @s[nbt={Item:{id:"minecraft:bamboo"}}] run setblock ~ ~ ~ bamboo
+execute if entity @s[nbt={Item:{id:"minecraft:allium"}}] if block ~ ~-1 ~ #tryashtar.dispense_everything:plantable run setblock ~ ~ ~ allium
+execute if entity @s[nbt={Item:{id:"minecraft:bamboo"}}] if block ~ ~-1 ~ #minecraft:bamboo_plantable_on if block ~ ~-1 ~ #tryashtar.dispense_everything:states/bamboo run setblock ~ ~ ~ bamboo
+execute if entity @s[nbt={Item:{id:"minecraft:bamboo"}}] if block ~ ~-1 ~ #minecraft:bamboo_plantable_on unless block ~ ~-1 ~ #tryashtar.dispense_everything:states/bamboo run setblock ~ ~ ~ bamboo_sapling
 execute if entity @s[nbt={Item:{id:"minecraft:barrel"}}] run setblock ~ ~ ~ barrel
 execute if entity @s[nbt={Item:{id:"minecraft:beacon"}}] run setblock ~ ~ ~ beacon
 execute if entity @s[nbt={Item:{id:"minecraft:bricks"}}] run setblock ~ ~ ~ bricks

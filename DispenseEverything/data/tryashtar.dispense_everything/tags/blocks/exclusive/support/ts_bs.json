@@ -1,0 +1,10 @@
+{
+   "values": [
+      "#tryashtar.dispense_everything:states/glass_pane",
+      "#minecraft:fences",
+      "#minecraft:walls",
+      "#minecraft:anvil",
+      "iron_bars",
+      "dragon_egg"
+   ]
+}

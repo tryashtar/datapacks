@@ -1,0 +1,7 @@
+{
+   "values": [
+      "#tryashtar.dispense_everything:states/piston",
+      "moving_piston",
+      "piston_head"
+   ]
+}

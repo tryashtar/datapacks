@@ -21,5 +21,5 @@ execute if entity @s[nbt={Item:{id:"minecraft:obsidian"}}] run setblock ~ ~ ~ ob
 execute if entity @s[nbt={Item:{id:"minecraft:pink_bed"}}] run setblock ~ ~ ~ pink_bed
 execute if entity @s[nbt={Item:{id:"minecraft:red_sand"}}] run setblock ~ ~ ~ red_sand
 execute if entity @s[nbt={Item:{id:"minecraft:red_wool"}}] run setblock ~ ~ ~ red_wool
-execute if entity @s[nbt={Item:{id:"minecraft:repeater"}}] run setblock ~ ~ ~ repeater
+execute if entity @s[nbt={Item:{id:"minecraft:repeater"}}] run function tryashtar.dispense_everything:block_check/any/support/tm
 execute if entity @s[nbt={Item:{id:"minecraft:seagrass"}}] run setblock ~ ~ ~ seagrass

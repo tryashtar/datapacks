@@ -1,0 +1,25 @@
+{
+   "values": [
+      "bell",
+      "brewing_stand",
+      "cauldron",
+      "chain_command_block",
+      "command_block",
+      "diamond_block",
+      "emerald_block",
+      "gold_block",
+      "heavy_weighted_pressure_plate",
+      "hopper",
+      "iron_bars",
+      "iron_block",
+      "iron_door",
+      "iron_trapdoor",
+      "jigsaw",
+      "lantern",
+      "lapis_block",
+      "light_weighted_pressure_plate",
+      "redstone_block",
+      "repeating_command_block",
+      "structure_block"
+   ]
+}

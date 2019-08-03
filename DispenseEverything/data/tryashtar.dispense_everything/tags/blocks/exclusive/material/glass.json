@@ -1,0 +1,10 @@
+{
+   "values": [
+      "#tryashtar.dispense_everything:states/glass",
+      "#tryashtar.dispense_everything:states/glass_pane",
+      "beacon",
+      "conduit",
+      "glowstone",
+      "sea_lantern"
+   ]
+}

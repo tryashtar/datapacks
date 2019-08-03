@@ -1,0 +1,31 @@
+{
+   "values": [
+      "#tryashtar.dispense_everything:exclusive/material/cobweb",
+      "#tryashtar.dispense_everything:exclusive/material/redstone_lamp",
+      "#tryashtar.dispense_everything:exclusive/material/clay",
+      "#tryashtar.dispense_everything:exclusive/material/earth",
+      "#tryashtar.dispense_everything:exclusive/material/organic",
+      "#tryashtar.dispense_everything:exclusive/material/packed_ice",
+      "#tryashtar.dispense_everything:exclusive/material/sand",
+      "#tryashtar.dispense_everything:exclusive/material/sponge",
+      "#tryashtar.dispense_everything:exclusive/material/shulker_box",
+      "#tryashtar.dispense_everything:exclusive/material/wood",
+      "#tryashtar.dispense_everything:exclusive/material/bamboo_sapling",
+      "#tryashtar.dispense_everything:exclusive/material/bamboo",
+      "#tryashtar.dispense_everything:exclusive/material/wool",
+      "#tryashtar.dispense_everything:exclusive/material/tnt",
+      "#tryashtar.dispense_everything:exclusive/material/leaves",
+      "#tryashtar.dispense_everything:exclusive/material/glass",
+      "#tryashtar.dispense_everything:exclusive/material/ice",
+      "#tryashtar.dispense_everything:exclusive/material/cactus",
+      "#tryashtar.dispense_everything:exclusive/material/stone",
+      "#tryashtar.dispense_everything:exclusive/material/metal",
+      "#tryashtar.dispense_everything:exclusive/material/snow_block",
+      "#tryashtar.dispense_everything:exclusive/material/anvil",
+      "#tryashtar.dispense_everything:exclusive/material/barrier",
+      "#tryashtar.dispense_everything:exclusive/material/piston",
+      "#tryashtar.dispense_everything:exclusive/material/pumpkin",
+      "#tryashtar.dispense_everything:exclusive/material/dragon_egg",
+      "#tryashtar.dispense_everything:exclusive/material/cake"
+   ]
+}

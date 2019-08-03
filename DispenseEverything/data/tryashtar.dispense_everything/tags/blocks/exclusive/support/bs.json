@@ -1,0 +1,25 @@
+{
+   "values": [
+      "#tryashtar.dispense_everything:states/head",
+      "#minecraft:flower_pots",
+      "#minecraft:carpets",
+      "chest",
+      "farmland",
+      "cactus",
+      "soul_sand",
+      "repeater",
+      "lily_pad",
+      "enchanting_table",
+      "brewing_stand",
+      "ender_chest",
+      "trapped_chest",
+      "comparator",
+      "daylight_detector",
+      "grass_path",
+      "turtle_egg",
+      "sea_pickle",
+      "lectern",
+      "stonecutter",
+      "campfire"
+   ]
+}

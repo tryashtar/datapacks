@@ -1,4 +1,4 @@
-execute if entity @s[nbt={Item:{id:"minecraft:birch_pressure_plate"}}] run setblock ~ ~ ~ birch_pressure_plate
+execute if entity @s[nbt={Item:{id:"minecraft:birch_pressure_plate"}}] run function tryashtar.dispense_everything:block_check/any/support/tm_ts
 execute if entity @s[nbt={Item:{id:"minecraft:blue_concrete_powder"}}] run setblock ~ ~ ~ blue_concrete_powder
 execute if entity @s[nbt={Item:{id:"minecraft:brown_mushroom_block"}}] run setblock ~ ~ ~ brown_mushroom_block
 execute if entity @s[nbt={Item:{id:"minecraft:cracked_stone_bricks"}}] run setblock ~ ~ ~ cracked_stone_bricks
@@ -16,7 +16,7 @@ execute if entity @s[nbt={Item:{id:"minecraft:purple_stained_glass"}}] run setbl
 execute if entity @s[nbt={Item:{id:"minecraft:red_sandstone_stairs"}}] run setblock ~ ~ ~ red_sandstone_stairs
 execute if entity @s[nbt={Item:{id:"minecraft:smooth_quartz_stairs"}}] run setblock ~ ~ ~ smooth_quartz_stairs
 execute if entity @s[nbt={Item:{id:"minecraft:smooth_red_sandstone"}}] run setblock ~ ~ ~ smooth_red_sandstone
-execute if entity @s[nbt={Item:{id:"minecraft:stone_pressure_plate"}}] run setblock ~ ~ ~ stone_pressure_plate
+execute if entity @s[nbt={Item:{id:"minecraft:stone_pressure_plate"}}] run function tryashtar.dispense_everything:block_check/any/support/tm_ts
 execute if entity @s[nbt={Item:{id:"minecraft:stripped_acacia_wood"}}] run setblock ~ ~ ~ stripped_acacia_wood
 execute if entity @s[nbt={Item:{id:"minecraft:stripped_jungle_wood"}}] run setblock ~ ~ ~ stripped_jungle_wood
 execute if entity @s[nbt={Item:{id:"minecraft:stripped_spruce_wood"}}] run setblock ~ ~ ~ stripped_spruce_wood

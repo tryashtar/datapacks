@@ -1,0 +1,22 @@
+{
+   "values": [
+      "#tryashtar.dispense_everything:states/head",
+      "#tryashtar.dispense_everything:states/wall_head",
+      "#minecraft:flower_pots",
+      "#minecraft:buttons",
+      "#minecraft:rails",
+      "comparator",
+      "end_rod",
+      "ladder",
+      "lever",
+      "redstone_torch",
+      "redstone_wall_torch",
+      "redstone_wire",
+      "repeater",
+      "scaffolding",
+      "torch",
+      "tripwire",
+      "tripwire_hook",
+      "wall_torch"
+   ]
+}

@@ -1,5 +1,5 @@
 execute if entity @s[nbt={Item:{id:"minecraft:acacia_sapling"}}] run setblock ~ ~ ~ acacia_sapling
-execute if entity @s[nbt={Item:{id:"minecraft:activator_rail"}}] run setblock ~ ~ ~ activator_rail
+execute if entity @s[nbt={Item:{id:"minecraft:activator_rail"}}] run function tryashtar.dispense_everything:block_check/any/support/tm
 execute if entity @s[nbt={Item:{id:"minecraft:birch_trapdoor"}}] run setblock ~ ~ ~ birch_trapdoor
 execute if entity @s[nbt={Item:{id:"minecraft:black_concrete"}}] run setblock ~ ~ ~ black_concrete
 execute if entity @s[nbt={Item:{id:"minecraft:brown_concrete"}}] run setblock ~ ~ ~ brown_concrete
@@ -17,7 +17,7 @@ execute if entity @s[nbt={Item:{id:"minecraft:jack_o_lantern"}}] run setblock ~ 
 execute if entity @s[nbt={Item:{id:"minecraft:jungle_sapling"}}] run setblock ~ ~ ~ jungle_sapling
 execute if entity @s[nbt={Item:{id:"minecraft:light_blue_bed"}}] run setblock ~ ~ ~ light_blue_bed
 execute if entity @s[nbt={Item:{id:"minecraft:light_gray_bed"}}] run setblock ~ ~ ~ light_gray_bed
-execute if entity @s[nbt={Item:{id:"minecraft:magenta_banner"}}] run setblock ~ ~ ~ magenta_banner
+execute if entity @s[nbt={Item:{id:"minecraft:magenta_banner"}}] run function tryashtar.dispense_everything:block_check/any/material/solid
 execute if entity @s[nbt={Item:{id:"minecraft:magenta_carpet"}}] run setblock ~ ~ ~ magenta_carpet
 execute if entity @s[nbt={Item:{id:"minecraft:oak_fence_gate"}}] run setblock ~ ~ ~ oak_fence_gate
 execute if entity @s[nbt={Item:{id:"minecraft:red_terracotta"}}] run setblock ~ ~ ~ red_terracotta
