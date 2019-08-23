@@ -25,7 +25,7 @@
       "#tryashtar.dispense_everything:exclusive/material/barrier",
       "#tryashtar.dispense_everything:exclusive/material/piston",
       "#tryashtar.dispense_everything:exclusive/material/pumpkin",
-      "#tryashtar.dispense_everything:exclusive/material/dragon_egg",
+      "#tryashtar.dispense_everything:exclusive/material/egg",
       "#tryashtar.dispense_everything:exclusive/material/cake"
    ]
 }

@@ -1,0 +1,19 @@
+{
+   "values": [
+      "#tryashtar.dispense_everything:groups/pressure_plate",
+      "#minecraft:buttons",
+      "detector_rail",
+      "redstone_wire",
+      "lever",
+      "redstone_torch",
+      "redstone_wall_torch",
+      "repeater",
+      "tripwire_hook",
+      "trapped_chest",
+      "comparator",
+      "daylight_detector",
+      "redstone_block",
+      "observer",
+      "lectern"
+   ]
+}

@@ -8,13 +8,12 @@
       "#tryashtar.dispense_everything:groups/stone_slab",
       "#minecraft:stone_bricks",
       "#minecraft:walls",
+      "#minecraft:coral_blocks",
       "andesite",
       "bedrock",
       "blast_furnace",
       "bone_block",
-      "brain_coral_block",
       "bricks",
-      "bubble_coral_block",
       "chiseled_quartz_block",
       "chiseled_red_sandstone",
       "chiseled_sandstone",
@@ -34,11 +33,9 @@
       "end_stone",
       "end_stone_bricks",
       "ender_chest",
-      "fire_coral_block",
       "furnace",
       "gold_ore",
       "granite",
-      "horn_coral_block",
       "iron_ore",
       "lapis_ore",
       "magma_block",
@@ -70,7 +67,6 @@
       "spawner",
       "stone",
       "stone_pressure_plate",
-      "stonecutter",
-      "tube_coral_block"
+      "stonecutter"
    ]
 }

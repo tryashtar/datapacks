@@ -23,4 +23,3 @@ execute if entity @s[nbt={Item:{id:"minecraft:smooth_sandstone_slab"}}] run setb
 execute if entity @s[nbt={Item:{id:"minecraft:spruce_pressure_plate"}}] run function tryashtar.dispense_everything:block_check/any/support/tm_ts
 execute if entity @s[nbt={Item:{id:"minecraft:stripped_dark_oak_log"}}] run setblock ~ ~ ~ stripped_dark_oak_log
 execute if entity @s[nbt={Item:{id:"minecraft:white_concrete_powder"}}] run setblock ~ ~ ~ white_concrete_powder
-execute if entity @s[nbt={Item:{id:"minecraft:wither_skeleton_skull"}}] run setblock ~ ~ ~ wither_skeleton_skull

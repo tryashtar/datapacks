@@ -10,7 +10,6 @@ execute if entity @s[nbt={Item:{id:"minecraft:brown_banner"}}] run function trya
 execute if entity @s[nbt={Item:{id:"minecraft:brown_carpet"}}] unless block ~ ~-1 ~ #tryashtar.dispense_everything:groups/air run setblock ~ ~ ~ brown_carpet
 execute if entity @s[nbt={Item:{id:"minecraft:bubble_coral"}}] run setblock ~ ~ ~ bubble_coral
 execute if entity @s[nbt={Item:{id:"minecraft:chorus_plant"}}] run function tryashtar.dispense_everything:item_conversion/special/chorus_plant
-execute if entity @s[nbt={Item:{id:"minecraft:creeper_head"}}] run setblock ~ ~ ~ creeper_head
 execute if entity @s[nbt={Item:{id:"minecraft:dark_oak_log"}}] run setblock ~ ~ ~ dark_oak_log
 execute if entity @s[nbt={Item:{id:"minecraft:diorite_slab"}}] run setblock ~ ~ ~ diorite_slab
 execute if entity @s[nbt={Item:{id:"minecraft:diorite_wall"}}] run setblock ~ ~ ~ diorite_wall

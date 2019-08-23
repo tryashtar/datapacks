@@ -1,0 +1,13 @@
+{
+   "values": [
+      "#tryashtar.dispense_everything:exclusive/material/air",
+      "#tryashtar.dispense_everything:exclusive/material/structure_void",
+      "#tryashtar.dispense_everything:exclusive/material/replaceable_plant",
+      "#tryashtar.dispense_everything:exclusive/material/seagrass",
+      "#tryashtar.dispense_everything:exclusive/material/water",
+      "#tryashtar.dispense_everything:exclusive/material/bubble_column",
+      "#tryashtar.dispense_everything:exclusive/material/lava",
+      "#tryashtar.dispense_everything:exclusive/material/snow",
+      "#tryashtar.dispense_everything:exclusive/material/fire"
+   ]
+}
