@@ -14,14 +14,16 @@ execute if entity @s[nbt={Item:{id:"minecraft:gray_wool"}}] run setblock ~ ~ ~ g
 execute if entity @s[nbt={Item:{id:"minecraft:green_bed"}}] run setblock ~ ~ ~ green_bed
 execute if entity @s[nbt={Item:{id:"minecraft:hay_block"}}] run setblock ~ ~ ~ hay_block
 execute if entity @s[nbt={Item:{id:"minecraft:iron_bars"}}] run setblock ~ ~ ~ iron_bars
-execute if entity @s[nbt={Item:{id:"minecraft:iron_door"}}] run setblock ~ ~ ~ iron_door
+execute if entity @s[nbt={Item:{id:"minecraft:iron_door"}}] run scoreboard players set #special try_dis_bid 51
 execute if entity @s[nbt={Item:{id:"minecraft:lapis_ore"}}] run setblock ~ ~ ~ lapis_ore
 execute if entity @s[nbt={Item:{id:"minecraft:lime_wool"}}] run setblock ~ ~ ~ lime_wool
 execute if entity @s[nbt={Item:{id:"minecraft:oak_fence"}}] run setblock ~ ~ ~ oak_fence
 execute if entity @s[nbt={Item:{id:"minecraft:pink_wool"}}] run setblock ~ ~ ~ pink_wool
 execute if entity @s[nbt={Item:{id:"minecraft:red_tulip"}}] if block ~ ~-1 ~ #tryashtar.dispense_everything:groups/place_plant run setblock ~ ~ ~ red_tulip
-execute if entity @s[nbt={Item:{id:"minecraft:rose_bush"}}] run setblock ~ ~ ~ rose_bush
+execute if entity @s[nbt={Item:{id:"minecraft:rose_bush"}}] run scoreboard players set #special try_dis_bid 60
 execute if entity @s[nbt={Item:{id:"minecraft:sandstone"}}] run setblock ~ ~ ~ sandstone
 execute if entity @s[nbt={Item:{id:"minecraft:soul_sand"}}] run setblock ~ ~ ~ soul_sand
-execute if entity @s[nbt={Item:{id:"minecraft:sunflower"}}] run setblock ~ ~ ~ sunflower
+execute if entity @s[nbt={Item:{id:"minecraft:sunflower"}}] run scoreboard players set #special try_dis_bid 58
 execute if entity @s[nbt={Item:{id:"minecraft:white_bed"}}] run setblock ~ ~ ~ white_bed
+execute if score #special try_dis_bid matches 51..57 run function tryashtar.dispense_everything:item_conversion/special/shared/door
+execute if score #special try_dis_bid matches 58..61 run function tryashtar.dispense_everything:item_conversion/special/shared/double_irreplaceable

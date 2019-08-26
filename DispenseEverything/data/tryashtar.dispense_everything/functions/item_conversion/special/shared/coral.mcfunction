@@ -1,0 +1,10 @@
+execute if score #special try_dis_bid matches 31 run setblock ~ ~ ~ dead_tube_coral
+execute if score #special try_dis_bid matches 32 run setblock ~ ~ ~ dead_brain_coral
+execute if score #special try_dis_bid matches 33 run setblock ~ ~ ~ dead_bubble_coral
+execute if score #special try_dis_bid matches 34 run setblock ~ ~ ~ dead_fire_coral
+execute if score #special try_dis_bid matches 35 run setblock ~ ~ ~ dead_horn_coral
+execute if score #special try_dis_bid matches 36 run setblock ~ ~ ~ tube_coral
+execute if score #special try_dis_bid matches 37 run setblock ~ ~ ~ brain_coral
+execute if score #special try_dis_bid matches 38 run setblock ~ ~ ~ bubble_coral
+execute if score #special try_dis_bid matches 39 run setblock ~ ~ ~ fire_coral
+execute if score #special try_dis_bid matches 40 run setblock ~ ~ ~ horn_coral

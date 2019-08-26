@@ -1,0 +1,6 @@
+execute if block ~ ~ ~ sea_pickle[waterlogged=false,pickles=3] run setblock ~ ~ ~ sea_pickle[waterlogged=false,pickles=4]
+execute if block ~ ~ ~ sea_pickle[waterlogged=false,pickles=2] run setblock ~ ~ ~ sea_pickle[waterlogged=false,pickles=3]
+execute if block ~ ~ ~ sea_pickle[waterlogged=false,pickles=1] run setblock ~ ~ ~ sea_pickle[waterlogged=false,pickles=2]
+execute if block ~ ~ ~ sea_pickle[waterlogged=true,pickles=3] run setblock ~ ~ ~ sea_pickle[waterlogged=true,pickles=4]
+execute if block ~ ~ ~ sea_pickle[waterlogged=true,pickles=2] run setblock ~ ~ ~ sea_pickle[waterlogged=true,pickles=3]
+execute if block ~ ~ ~ sea_pickle[waterlogged=true,pickles=1] run setblock ~ ~ ~ sea_pickle[waterlogged=true,pickles=2]
