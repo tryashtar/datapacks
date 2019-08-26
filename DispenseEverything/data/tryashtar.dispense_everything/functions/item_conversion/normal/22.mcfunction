@@ -1,6 +1,6 @@
 execute if entity @s[nbt={Item:{id:"minecraft:acacia_fence"}}] run setblock ~ ~ ~ acacia_fence
 execute if entity @s[nbt={Item:{id:"minecraft:birch_button"}}] run scoreboard players set #special try_dis_bid 27
-execute if entity @s[nbt={Item:{id:"minecraft:birch_leaves"}}] run setblock ~ ~ ~ birch_leaves
+execute if entity @s[nbt={Item:{id:"minecraft:birch_leaves"}}] run setblock ~ ~ ~ birch_leaves[persistent=true]
 execute if entity @s[nbt={Item:{id:"minecraft:birch_planks"}}] run setblock ~ ~ ~ birch_planks
 execute if entity @s[nbt={Item:{id:"minecraft:birch_stairs"}}] run setblock ~ ~ ~ birch_stairs
 execute if entity @s[nbt={Item:{id:"minecraft:black_banner"}}] run scoreboard players set #special try_dis_bid 16

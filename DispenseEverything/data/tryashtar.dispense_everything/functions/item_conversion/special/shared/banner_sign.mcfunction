@@ -1,22 +1,6 @@
-execute if score #special try_dis_bid matches 1 run setblock ~ ~ ~ white_banner
-execute if score #special try_dis_bid matches 2 run setblock ~ ~ ~ orange_banner
-execute if score #special try_dis_bid matches 3 run setblock ~ ~ ~ magenta_banner
-execute if score #special try_dis_bid matches 4 run setblock ~ ~ ~ light_blue_banner
-execute if score #special try_dis_bid matches 5 run setblock ~ ~ ~ yellow_banner
-execute if score #special try_dis_bid matches 6 run setblock ~ ~ ~ lime_banner
-execute if score #special try_dis_bid matches 7 run setblock ~ ~ ~ pink_banner
-execute if score #special try_dis_bid matches 8 run setblock ~ ~ ~ gray_banner
-execute if score #special try_dis_bid matches 9 run setblock ~ ~ ~ light_gray_banner
-execute if score #special try_dis_bid matches 10 run setblock ~ ~ ~ cyan_banner
-execute if score #special try_dis_bid matches 11 run setblock ~ ~ ~ purple_banner
-execute if score #special try_dis_bid matches 12 run setblock ~ ~ ~ blue_banner
-execute if score #special try_dis_bid matches 13 run setblock ~ ~ ~ brown_banner
-execute if score #special try_dis_bid matches 14 run setblock ~ ~ ~ green_banner
-execute if score #special try_dis_bid matches 15 run setblock ~ ~ ~ red_banner
-execute if score #special try_dis_bid matches 16 run setblock ~ ~ ~ black_banner
-execute if score #special try_dis_bid matches 17 run setblock ~ ~ ~ oak_sign
-execute if score #special try_dis_bid matches 18 run setblock ~ ~ ~ spruce_sign
-execute if score #special try_dis_bid matches 19 run setblock ~ ~ ~ birch_sign
-execute if score #special try_dis_bid matches 20 run setblock ~ ~ ~ jungle_sign
-execute if score #special try_dis_bid matches 21 run setblock ~ ~ ~ acacia_sign
-execute if score #special try_dis_bid matches 22 run setblock ~ ~ ~ dark_oak_sign
+execute if score #dir try_dis_bid matches 1 run function tryashtar.dispense_everything:item_conversion/special/shared/banner_sign/from/west
+execute if score #dir try_dis_bid matches 2 run function tryashtar.dispense_everything:item_conversion/special/shared/banner_sign/from/east
+execute if score #dir try_dis_bid matches 3 run function tryashtar.dispense_everything:item_conversion/special/shared/banner_sign/from/down
+execute if score #dir try_dis_bid matches 4 run function tryashtar.dispense_everything:item_conversion/special/shared/banner_sign/from/up
+execute if score #dir try_dis_bid matches 5 run function tryashtar.dispense_everything:item_conversion/special/shared/banner_sign/from/north
+execute if score #dir try_dis_bid matches 6 run function tryashtar.dispense_everything:item_conversion/special/shared/banner_sign/from/south

@@ -27,7 +27,7 @@ execute if entity @s[nbt={Item:{id:"minecraft:large_fern"}}] run scoreboard play
 execute if entity @s[nbt={Item:{id:"minecraft:netherrack"}}] run setblock ~ ~ ~ netherrack
 execute if entity @s[nbt={Item:{id:"minecraft:note_block"}}] run setblock ~ ~ ~ note_block
 execute if entity @s[nbt={Item:{id:"minecraft:oak_button"}}] run scoreboard players set #special try_dis_bid 25
-execute if entity @s[nbt={Item:{id:"minecraft:oak_leaves"}}] run setblock ~ ~ ~ oak_leaves
+execute if entity @s[nbt={Item:{id:"minecraft:oak_leaves"}}] run setblock ~ ~ ~ oak_leaves[persistent=true]
 execute if entity @s[nbt={Item:{id:"minecraft:oak_planks"}}] run setblock ~ ~ ~ oak_planks
 execute if entity @s[nbt={Item:{id:"minecraft:oak_stairs"}}] run setblock ~ ~ ~ oak_stairs
 execute if entity @s[nbt={Item:{id:"minecraft:orange_bed"}}] run setblock ~ ~ ~ orange_bed

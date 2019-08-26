@@ -1,6 +1,5 @@
 execute if entity @s[nbt={Item:{id:"minecraft:black_stained_glass"}}] run setblock ~ ~ ~ black_stained_glass
 execute if entity @s[nbt={Item:{id:"minecraft:brown_stained_glass"}}] run setblock ~ ~ ~ brown_stained_glass
-execute if entity @s[nbt={Item:{id:"minecraft:chain_command_block"}}] run setblock ~ ~ ~ chain_command_block
 execute if entity @s[nbt={Item:{id:"minecraft:dark_oak_fence_gate"}}] run setblock ~ ~ ~ dark_oak_fence_gate
 execute if entity @s[nbt={Item:{id:"minecraft:dead_fire_coral_fan"}}] run scoreboard players set #special try_dis_bid 44
 execute if entity @s[nbt={Item:{id:"minecraft:dead_horn_coral_fan"}}] run scoreboard players set #special try_dis_bid 45

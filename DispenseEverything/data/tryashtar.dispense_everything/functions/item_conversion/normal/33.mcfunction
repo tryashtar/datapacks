@@ -13,7 +13,6 @@ execute if entity @s[nbt={Item:{id:"minecraft:polished_diorite_stairs"}}] run se
 execute if entity @s[nbt={Item:{id:"minecraft:polished_granite_stairs"}}] run setblock ~ ~ ~ polished_granite_stairs
 execute if entity @s[nbt={Item:{id:"minecraft:prismarine_brick_stairs"}}] run setblock ~ ~ ~ prismarine_brick_stairs
 execute if entity @s[nbt={Item:{id:"minecraft:red_nether_brick_stairs"}}] run setblock ~ ~ ~ red_nether_brick_stairs
-execute if entity @s[nbt={Item:{id:"minecraft:repeating_command_block"}}] run setblock ~ ~ ~ repeating_command_block
 execute if entity @s[nbt={Item:{id:"minecraft:smooth_sandstone_stairs"}}] run setblock ~ ~ ~ smooth_sandstone_stairs
 execute if entity @s[nbt={Item:{id:"minecraft:white_glazed_terracotta"}}] run setblock ~ ~ ~ white_glazed_terracotta
 execute if score #special try_dis_bid matches 68..76 run function tryashtar.dispense_everything:item_conversion/special/shared/pressure_plate

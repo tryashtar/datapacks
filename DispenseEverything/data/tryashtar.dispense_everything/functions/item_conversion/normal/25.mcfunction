@@ -4,7 +4,7 @@ execute if entity @s[nbt={Item:{id:"minecraft:blue_terracotta"}}] run setblock ~
 execute if entity @s[nbt={Item:{id:"minecraft:brain_coral_fan"}}] run scoreboard players set #special try_dis_bid 47
 execute if entity @s[nbt={Item:{id:"minecraft:cyan_terracotta"}}] run setblock ~ ~ ~ cyan_terracotta
 execute if entity @s[nbt={Item:{id:"minecraft:dark_oak_button"}}] run scoreboard players set #special try_dis_bid 30
-execute if entity @s[nbt={Item:{id:"minecraft:dark_oak_leaves"}}] run setblock ~ ~ ~ dark_oak_leaves
+execute if entity @s[nbt={Item:{id:"minecraft:dark_oak_leaves"}}] run setblock ~ ~ ~ dark_oak_leaves[persistent=true]
 execute if entity @s[nbt={Item:{id:"minecraft:dark_oak_planks"}}] run setblock ~ ~ ~ dark_oak_planks
 execute if entity @s[nbt={Item:{id:"minecraft:dark_oak_stairs"}}] run setblock ~ ~ ~ dark_oak_stairs
 execute if entity @s[nbt={Item:{id:"minecraft:dark_prismarine"}}] run setblock ~ ~ ~ dark_prismarine
@@ -23,7 +23,6 @@ execute if entity @s[nbt={Item:{id:"minecraft:prismarine_slab"}}] run setblock ~
 execute if entity @s[nbt={Item:{id:"minecraft:prismarine_wall"}}] run setblock ~ ~ ~ prismarine_wall
 execute if entity @s[nbt={Item:{id:"minecraft:purple_concrete"}}] run setblock ~ ~ ~ purple_concrete
 execute if entity @s[nbt={Item:{id:"minecraft:spruce_trapdoor"}}] run setblock ~ ~ ~ spruce_trapdoor
-execute if entity @s[nbt={Item:{id:"minecraft:structure_block"}}] run setblock ~ ~ ~ structure_block
 execute if entity @s[nbt={Item:{id:"minecraft:yellow_concrete"}}] run setblock ~ ~ ~ yellow_concrete
 execute if score #special try_dis_bid matches 23..30 run function tryashtar.dispense_everything:item_conversion/special/shared/button
 execute if score #special try_dis_bid matches 31..40 run function tryashtar.dispense_everything:item_conversion/special/shared/coral
