@@ -1,11 +1,11 @@
 execute if entity @s[nbt={Item:{id:"minecraft:birch_fence_gate"}}] run setblock ~ ~ ~ birch_fence_gate
 execute if entity @s[nbt={Item:{id:"minecraft:black_terracotta"}}] run setblock ~ ~ ~ black_terracotta
 execute if entity @s[nbt={Item:{id:"minecraft:brown_terracotta"}}] run setblock ~ ~ ~ brown_terracotta
-execute if entity @s[nbt={Item:{id:"minecraft:bubble_coral_fan"}}] run scoreboard players set #special try_dis_bid 48
+execute if entity @s[nbt={Item:{id:"minecraft:bubble_coral_fan"}}] run scoreboard players set #special try_dis_bid 64
 execute if entity @s[nbt={Item:{id:"minecraft:cobblestone_slab"}}] run setblock ~ ~ ~ cobblestone_slab
 execute if entity @s[nbt={Item:{id:"minecraft:cobblestone_wall"}}] run setblock ~ ~ ~ cobblestone_wall
 execute if entity @s[nbt={Item:{id:"minecraft:dark_oak_sapling"}}] if block ~ ~-1 ~ #tryashtar.dispense_everything:groups/place_plant run setblock ~ ~ ~ dark_oak_sapling
-execute if entity @s[nbt={Item:{id:"minecraft:dead_brain_coral"}}] run scoreboard players set #special try_dis_bid 32
+execute if entity @s[nbt={Item:{id:"minecraft:dead_brain_coral"}}] run scoreboard players set #special try_dis_bid 48
 execute if entity @s[nbt={Item:{id:"minecraft:dried_kelp_block"}}] run setblock ~ ~ ~ dried_kelp_block
 execute if entity @s[nbt={Item:{id:"minecraft:enchanting_table"}}] run setblock ~ ~ ~ enchanting_table
 execute if entity @s[nbt={Item:{id:"minecraft:end_portal_frame"}}] run setblock ~ ~ ~ end_portal_frame
@@ -23,5 +23,5 @@ execute if entity @s[nbt={Item:{id:"minecraft:stone_brick_wall"}}] run setblock 
 execute if entity @s[nbt={Item:{id:"minecraft:stripped_oak_log"}}] run setblock ~ ~ ~ stripped_oak_log
 execute if entity @s[nbt={Item:{id:"minecraft:tube_coral_block"}}] run setblock ~ ~ ~ tube_coral_block
 execute if entity @s[nbt={Item:{id:"minecraft:white_terracotta"}}] run setblock ~ ~ ~ white_terracotta
-execute if score #special try_dis_bid matches 31..40 run function tryashtar.dispense_everything:item_conversion/special/shared/coral
-execute if score #special try_dis_bid matches 41..50 run function tryashtar.dispense_everything:item_conversion/special/shared/coral_fan
+execute if score #special try_dis_bid matches 47..56 run function tryashtar.dispense_everything:item_conversion/special/shared/coral
+execute if score #special try_dis_bid matches 57..66 run function tryashtar.dispense_everything:item_conversion/special/shared/coral_fan

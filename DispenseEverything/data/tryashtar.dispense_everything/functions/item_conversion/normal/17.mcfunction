@@ -11,5 +11,7 @@ execute if entity @s[nbt={Item:{id:"minecraft:lantern"}}] run function tryashtar
 execute if entity @s[nbt={Item:{id:"minecraft:lectern"}}] run function tryashtar.dispense_everything:item_conversion/special/orient/lectern
 execute if entity @s[nbt={Item:{id:"minecraft:oak_log"}}] run setblock ~ ~ ~ oak_log
 execute if entity @s[nbt={Item:{id:"minecraft:pumpkin"}}] run setblock ~ ~ ~ pumpkin
-execute if entity @s[nbt={Item:{id:"minecraft:red_bed"}}] run setblock ~ ~ ~ red_bed
+execute if entity @s[nbt={Item:{id:"minecraft:red_bed"}}] run scoreboard players set #special try_dis_bid 23
 execute if entity @s[nbt={Item:{id:"minecraft:spawner"}}] run setblock ~ ~ ~ spawner
+execute if entity @s[nbt={Item:{id:"minecraft:trident"}},nbt=!{Item:{tag:{Enchantments:[{id:"minecraft:riptide"}]}}}] run function tryashtar.dispense_everything:item_conversion/special/trident
+execute if score #special try_dis_bid matches 23..38 run function tryashtar.dispense_everything:item_conversion/special/shared/bed

@@ -4,7 +4,7 @@ execute if entity @s[nbt={Item:{id:"minecraft:cartography_table"}}] run setblock
 execute if entity @s[nbt={Item:{id:"minecraft:cut_red_sandstone"}}] run setblock ~ ~ ~ cut_red_sandstone
 execute if entity @s[nbt={Item:{id:"minecraft:dark_oak_trapdoor"}}] run setblock ~ ~ ~ dark_oak_trapdoor
 execute if entity @s[nbt={Item:{id:"minecraft:daylight_detector"}}] run setblock ~ ~ ~ daylight_detector
-execute if entity @s[nbt={Item:{id:"minecraft:dead_bubble_coral"}}] run scoreboard players set #special try_dis_bid 33
+execute if entity @s[nbt={Item:{id:"minecraft:dead_bubble_coral"}}] run scoreboard players set #special try_dis_bid 49
 execute if entity @s[nbt={Item:{id:"minecraft:jungle_fence_gate"}}] run setblock ~ ~ ~ jungle_fence_gate
 execute if entity @s[nbt={Item:{id:"minecraft:light_blue_banner"}}] run scoreboard players set #special try_dis_bid 4
 execute if entity @s[nbt={Item:{id:"minecraft:light_blue_carpet"}}] unless block ~ ~-1 ~ #tryashtar.dispense_everything:groups/air run setblock ~ ~ ~ light_blue_carpet
@@ -27,4 +27,4 @@ execute if entity @s[nbt={Item:{id:"minecraft:spruce_fence_gate"}}] run setblock
 execute if entity @s[nbt={Item:{id:"minecraft:stripped_oak_wood"}}] run setblock ~ ~ ~ stripped_oak_wood
 execute if entity @s[nbt={Item:{id:"minecraft:yellow_terracotta"}}] run setblock ~ ~ ~ yellow_terracotta
 execute if score #special try_dis_bid matches 1..22 run function tryashtar.dispense_everything:item_conversion/special/shared/banner_sign
-execute if score #special try_dis_bid matches 31..40 run function tryashtar.dispense_everything:item_conversion/special/shared/coral
+execute if score #special try_dis_bid matches 47..56 run function tryashtar.dispense_everything:item_conversion/special/shared/coral

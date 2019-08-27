@@ -8,11 +8,11 @@ execute if entity @s[nbt={Item:{id:"minecraft:carrot"}}] if block ~ ~-1 ~ farmla
 execute if entity @s[nbt={Item:{id:"minecraft:cobweb"}}] run setblock ~ ~ ~ cobweb
 execute if entity @s[nbt={Item:{id:"minecraft:gravel"}}] run setblock ~ ~ ~ gravel
 execute if entity @s[nbt={Item:{id:"minecraft:hopper"}}] run setblock ~ ~ ~ hopper
-execute if entity @s[nbt={Item:{id:"minecraft:ladder"}}] run scoreboard players set #special try_dis_bid 64
+execute if entity @s[nbt={Item:{id:"minecraft:ladder"}}] run scoreboard players set #special try_dis_bid 80
 execute if entity @s[nbt={Item:{id:"minecraft:piston"}}] run function tryashtar.dispense_everything:item_conversion/special/orient/piston
 execute if entity @s[nbt={Item:{id:"minecraft:podzol"}}] run setblock ~ ~ ~ podzol
 execute if entity @s[nbt={Item:{id:"minecraft:potato"}}] if block ~ ~-1 ~ farmland run setblock ~ ~ ~ potatoes
 execute if entity @s[nbt={Item:{id:"minecraft:smoker"}}] run function tryashtar.dispense_everything:item_conversion/special/orient/smoker
 execute if entity @s[nbt={Item:{id:"minecraft:sponge"}}] run setblock ~ ~ ~ sponge
 execute if entity @s[nbt={Item:{id:"minecraft:string"}}] run setblock ~ ~ ~ tripwire
-execute if score #special try_dis_bid matches 64..65 run function tryashtar.dispense_everything:item_conversion/special/shared/ladder_hook
+execute if score #special try_dis_bid matches 80..81 run function tryashtar.dispense_everything:item_conversion/special/shared/ladder_hook
