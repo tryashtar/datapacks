@@ -1,5 +1,5 @@
 execute if entity @s[nbt={Item:{id:"minecraft:acacia_log"}}] run setblock ~ ~ ~ acacia_log
-execute if entity @s[nbt={Item:{id:"minecraft:birch_door"}}] run scoreboard players set #special try_dis_bid 70
+execute if entity @s[nbt={Item:{id:"minecraft:birch_door"}}] run scoreboard players set #special try_dis_bid 77
 execute if entity @s[nbt={Item:{id:"minecraft:birch_sign"}}] run scoreboard players set #special try_dis_bid 19
 execute if entity @s[nbt={Item:{id:"minecraft:birch_slab"}}] run setblock ~ ~ ~ birch_slab
 execute if entity @s[nbt={Item:{id:"minecraft:birch_wood"}}] run setblock ~ ~ ~ birch_wood
@@ -9,7 +9,7 @@ execute if entity @s[nbt={Item:{id:"minecraft:brick_slab"}}] run setblock ~ ~ ~ 
 execute if entity @s[nbt={Item:{id:"minecraft:brick_wall"}}] run setblock ~ ~ ~ brick_wall
 execute if entity @s[nbt={Item:{id:"minecraft:brown_wool"}}] run setblock ~ ~ ~ brown_wool
 execute if entity @s[nbt={Item:{id:"minecraft:coal_block"}}] run setblock ~ ~ ~ coal_block
-execute if entity @s[nbt={Item:{id:"minecraft:comparator"}}] run scoreboard players set #special try_dis_bid 98
+execute if entity @s[nbt={Item:{id:"minecraft:comparator"}}] run scoreboard players set #special try_dis_bid 116
 execute if entity @s[nbt={Item:{id:"minecraft:cornflower"}}] if block ~ ~-1 ~ #tryashtar.dispense_everything:groups/place_plant run setblock ~ ~ ~ cornflower
 execute if entity @s[nbt={Item:{id:"minecraft:dragon_egg"}}] run setblock ~ ~ ~ dragon_egg
 execute if entity @s[nbt={Item:{id:"minecraft:fire_coral"}}] run scoreboard players set #special try_dis_bid 55
@@ -23,7 +23,7 @@ execute if entity @s[nbt={Item:{id:"minecraft:horn_coral"}}] run scoreboard play
 execute if entity @s[nbt={Item:{id:"minecraft:iron_block"}}] run setblock ~ ~ ~ iron_block
 execute if entity @s[nbt={Item:{id:"minecraft:item_frame"}}] run function tryashtar.dispense_everything:item_conversion/special/item_frame
 execute if entity @s[nbt={Item:{id:"minecraft:jungle_log"}}] run setblock ~ ~ ~ jungle_log
-execute if entity @s[nbt={Item:{id:"minecraft:large_fern"}}] run scoreboard players set #special try_dis_bid 79
+execute if entity @s[nbt={Item:{id:"minecraft:large_fern"}}] run scoreboard players set #special try_dis_bid 86
 execute if entity @s[nbt={Item:{id:"minecraft:netherrack"}}] run setblock ~ ~ ~ netherrack
 execute if entity @s[nbt={Item:{id:"minecraft:note_block"}}] run setblock ~ ~ ~ note_block
 execute if entity @s[nbt={Item:{id:"minecraft:oak_button"}}] run scoreboard players set #special try_dis_bid 41
@@ -42,7 +42,7 @@ execute if entity @s[nbt={Item:{id:"minecraft:snow_block"}}] run setblock ~ ~ ~ 
 execute if entity @s[nbt={Item:{id:"minecraft:spruce_log"}}] run setblock ~ ~ ~ spruce_log
 execute if entity @s[nbt={Item:{id:"minecraft:stone_slab"}}] run setblock ~ ~ ~ stone_slab
 execute if entity @s[nbt={Item:{id:"minecraft:sugar_cane"}}] run function tryashtar.dispense_everything:item_conversion/special/sugar_cane
-execute if entity @s[nbt={Item:{id:"minecraft:tall_grass"}}] run scoreboard players set #special try_dis_bid 78
+execute if entity @s[nbt={Item:{id:"minecraft:tall_grass"}}] run scoreboard players set #special try_dis_bid 85
 execute if entity @s[nbt={Item:{id:"minecraft:terracotta"}}] run setblock ~ ~ ~ terracotta
 execute if entity @s[nbt={Item:{id:"minecraft:tube_coral"}}] run scoreboard players set #special try_dis_bid 52
 execute if entity @s[nbt={Item:{id:"minecraft:turtle_egg"}}] run setblock ~ ~ ~ turtle_egg
@@ -53,6 +53,6 @@ execute if score #special try_dis_bid matches 1..22 run function tryashtar.dispe
 execute if score #special try_dis_bid matches 23..38 run function tryashtar.dispense_everything:item_conversion/special/shared/bed
 execute if score #special try_dis_bid matches 39..46 run function tryashtar.dispense_everything:item_conversion/special/shared/button
 execute if score #special try_dis_bid matches 47..56 run function tryashtar.dispense_everything:item_conversion/special/shared/coral
-execute if score #special try_dis_bid matches 67..73 run function tryashtar.dispense_everything:item_conversion/special/shared/door
-execute if score #special try_dis_bid matches 78..79 run function tryashtar.dispense_everything:item_conversion/special/shared/double_replaceable
-execute if score #special try_dis_bid matches 97..98 run function tryashtar.dispense_everything:item_conversion/special/shared/redstone_gate
+execute if score #special try_dis_bid matches 74..80 run function tryashtar.dispense_everything:item_conversion/special/shared/door
+execute if score #special try_dis_bid matches 85..86 run function tryashtar.dispense_everything:item_conversion/special/shared/double_replaceable
+execute if score #special try_dis_bid matches 115..116 run function tryashtar.dispense_everything:item_conversion/special/shared/redstone_gate

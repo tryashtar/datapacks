@@ -1,4 +1,4 @@
-execute if entity @s[nbt={Item:{id:"minecraft:acacia_door"}}] run scoreboard players set #special try_dis_bid 72
+execute if entity @s[nbt={Item:{id:"minecraft:acacia_door"}}] run scoreboard players set #special try_dis_bid 79
 execute if entity @s[nbt={Item:{id:"minecraft:acacia_sign"}}] run scoreboard players set #special try_dis_bid 21
 execute if entity @s[nbt={Item:{id:"minecraft:acacia_slab"}}] run setblock ~ ~ ~ acacia_slab
 execute if entity @s[nbt={Item:{id:"minecraft:acacia_wood"}}] run setblock ~ ~ ~ acacia_wood
@@ -18,11 +18,10 @@ execute if entity @s[nbt={Item:{id:"minecraft:diamond_ore"}}] run setblock ~ ~ ~
 execute if entity @s[nbt={Item:{id:"minecraft:emerald_ore"}}] run setblock ~ ~ ~ emerald_ore
 execute if entity @s[nbt={Item:{id:"minecraft:end_crystal"}}] if block ~ ~-1 ~ #tryashtar.dispense_everything:groups/place_end_crystal if block ~ ~ ~ #tryashtar.dispense_everything:groups/air align xyz unless entity @e[tag=!try_dis_cur,dx=0,dy=1,dz=0] run summon end_crystal ~0.5 ~ ~0.5 {ShowBottom:0b}
 execute if entity @s[nbt={Item:{id:"minecraft:ender_chest"}}] run setblock ~ ~ ~ ender_chest
-execute if entity @s[nbt={Item:{id:"minecraft:ender_pearl"}}] run function tryashtar.dispense_everything:item_conversion/special/ender_pearl
 execute if entity @s[nbt={Item:{id:"minecraft:grass_block"}}] run setblock ~ ~ ~ grass_block
 execute if entity @s[nbt={Item:{id:"minecraft:gray_banner"}}] run scoreboard players set #special try_dis_bid 8
 execute if entity @s[nbt={Item:{id:"minecraft:gray_carpet"}}] unless block ~ ~-1 ~ #tryashtar.dispense_everything:groups/air run setblock ~ ~ ~ gray_carpet
-execute if entity @s[nbt={Item:{id:"minecraft:jungle_door"}}] run scoreboard players set #special try_dis_bid 71
+execute if entity @s[nbt={Item:{id:"minecraft:jungle_door"}}] run scoreboard players set #special try_dis_bid 78
 execute if entity @s[nbt={Item:{id:"minecraft:jungle_sign"}}] run scoreboard players set #special try_dis_bid 20
 execute if entity @s[nbt={Item:{id:"minecraft:jungle_slab"}}] run setblock ~ ~ ~ jungle_slab
 execute if entity @s[nbt={Item:{id:"minecraft:jungle_wood"}}] run setblock ~ ~ ~ jungle_wood
@@ -44,7 +43,7 @@ execute if entity @s[nbt={Item:{id:"minecraft:quartz_slab"}}] run setblock ~ ~ ~
 execute if entity @s[nbt={Item:{id:"minecraft:scaffolding"}}] run function tryashtar.dispense_everything:item_conversion/special/scaffolding
 execute if entity @s[nbt={Item:{id:"minecraft:sea_lantern"}}] run setblock ~ ~ ~ sea_lantern
 execute if entity @s[nbt={Item:{id:"minecraft:slime_block"}}] run setblock ~ ~ ~ slime_block
-execute if entity @s[nbt={Item:{id:"minecraft:spruce_door"}}] run scoreboard players set #special try_dis_bid 69
+execute if entity @s[nbt={Item:{id:"minecraft:spruce_door"}}] run scoreboard players set #special try_dis_bid 76
 execute if entity @s[nbt={Item:{id:"minecraft:spruce_sign"}}] run scoreboard players set #special try_dis_bid 18
 execute if entity @s[nbt={Item:{id:"minecraft:spruce_slab"}}] run setblock ~ ~ ~ spruce_slab
 execute if entity @s[nbt={Item:{id:"minecraft:spruce_wood"}}] run setblock ~ ~ ~ spruce_wood
@@ -56,4 +55,4 @@ execute if entity @s[nbt={Item:{id:"minecraft:yellow_wool"}}] run setblock ~ ~ ~
 execute if score #special try_dis_bid matches 1..22 run function tryashtar.dispense_everything:item_conversion/special/shared/banner_sign
 execute if score #special try_dis_bid matches 23..38 run function tryashtar.dispense_everything:item_conversion/special/shared/bed
 execute if score #special try_dis_bid matches 47..56 run function tryashtar.dispense_everything:item_conversion/special/shared/coral
-execute if score #special try_dis_bid matches 67..73 run function tryashtar.dispense_everything:item_conversion/special/shared/door
+execute if score #special try_dis_bid matches 74..80 run function tryashtar.dispense_everything:item_conversion/special/shared/door

@@ -10,7 +10,7 @@ execute if entity @s[nbt={Item:{id:"minecraft:lime_stained_glass"}}] run setbloc
 execute if entity @s[nbt={Item:{id:"minecraft:magenta_terracotta"}}] run setblock ~ ~ ~ magenta_terracotta
 execute if entity @s[nbt={Item:{id:"minecraft:mossy_stone_bricks"}}] run setblock ~ ~ ~ mossy_stone_bricks
 execute if entity @s[nbt={Item:{id:"minecraft:nether_brick_fence"}}] run setblock ~ ~ ~ nether_brick_fence
-execute if entity @s[nbt={Item:{id:"minecraft:oak_pressure_plate"}}] run scoreboard players set #special try_dis_bid 85
+execute if entity @s[nbt={Item:{id:"minecraft:oak_pressure_plate"}}] run scoreboard players set #special try_dis_bid 103
 execute if entity @s[nbt={Item:{id:"minecraft:petrified_oak_slab"}}] run setblock ~ ~ ~ petrified_oak_slab
 execute if entity @s[nbt={Item:{id:"minecraft:pink_stained_glass"}}] run setblock ~ ~ ~ pink_stained_glass
 execute if entity @s[nbt={Item:{id:"minecraft:red_mushroom_block"}}] run setblock ~ ~ ~ red_mushroom_block
@@ -19,4 +19,4 @@ execute if entity @s[nbt={Item:{id:"minecraft:red_sandstone_wall"}}] run setbloc
 execute if entity @s[nbt={Item:{id:"minecraft:smooth_quartz_slab"}}] run setblock ~ ~ ~ smooth_quartz_slab
 execute if entity @s[nbt={Item:{id:"minecraft:stone_brick_stairs"}}] run setblock ~ ~ ~ stone_brick_stairs
 execute if entity @s[nbt={Item:{id:"minecraft:stripped_birch_log"}}] run setblock ~ ~ ~ stripped_birch_log
-execute if score #special try_dis_bid matches 84..92 run function tryashtar.dispense_everything:item_conversion/special/shared/pressure_plate
+execute if score #special try_dis_bid matches 102..110 run function tryashtar.dispense_everything:item_conversion/special/shared/pressure_plate

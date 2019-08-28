@@ -1,9 +1,0 @@
-execute if score #special try_dis_bid matches 68 run setblock ~ ~ ~ stone_pressure_plate
-execute if score #special try_dis_bid matches 69 run setblock ~ ~ ~ oak_pressure_plate
-execute if score #special try_dis_bid matches 70 run setblock ~ ~ ~ spruce_pressure_plate
-execute if score #special try_dis_bid matches 71 run setblock ~ ~ ~ birch_pressure_plate
-execute if score #special try_dis_bid matches 72 run setblock ~ ~ ~ jungle_pressure_plate
-execute if score #special try_dis_bid matches 73 run setblock ~ ~ ~ acacia_pressure_plate
-execute if score #special try_dis_bid matches 74 run setblock ~ ~ ~ dark_oak_pressure_plate
-execute if score #special try_dis_bid matches 75 run setblock ~ ~ ~ light_weighted_pressure_plate
-execute if score #special try_dis_bid matches 76 run setblock ~ ~ ~ heavy_weighted_pressure_plate

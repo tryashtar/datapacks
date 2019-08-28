@@ -1,4 +1,4 @@
-execute if entity @s[nbt={Item:{id:"minecraft:birch_fence_gate"}}] run setblock ~ ~ ~ birch_fence_gate
+execute if entity @s[nbt={Item:{id:"minecraft:birch_fence_gate"}}] run scoreboard players set #special try_dis_bid 93
 execute if entity @s[nbt={Item:{id:"minecraft:black_terracotta"}}] run setblock ~ ~ ~ black_terracotta
 execute if entity @s[nbt={Item:{id:"minecraft:brown_terracotta"}}] run setblock ~ ~ ~ brown_terracotta
 execute if entity @s[nbt={Item:{id:"minecraft:bubble_coral_fan"}}] run scoreboard players set #special try_dis_bid 64
@@ -8,7 +8,7 @@ execute if entity @s[nbt={Item:{id:"minecraft:dark_oak_sapling"}}] if block ~ ~-
 execute if entity @s[nbt={Item:{id:"minecraft:dead_brain_coral"}}] run scoreboard players set #special try_dis_bid 48
 execute if entity @s[nbt={Item:{id:"minecraft:dried_kelp_block"}}] run setblock ~ ~ ~ dried_kelp_block
 execute if entity @s[nbt={Item:{id:"minecraft:enchanting_table"}}] run setblock ~ ~ ~ enchanting_table
-execute if entity @s[nbt={Item:{id:"minecraft:end_portal_frame"}}] run setblock ~ ~ ~ end_portal_frame
+execute if entity @s[nbt={Item:{id:"minecraft:end_portal_frame"}}] run scoreboard players set #special try_dis_bid 97
 execute if entity @s[nbt={Item:{id:"minecraft:end_stone_bricks"}}] run setblock ~ ~ ~ end_stone_bricks
 execute if entity @s[nbt={Item:{id:"minecraft:fire_coral_block"}}] run setblock ~ ~ ~ fire_coral_block
 execute if entity @s[nbt={Item:{id:"minecraft:green_terracotta"}}] run setblock ~ ~ ~ green_terracotta
@@ -25,3 +25,4 @@ execute if entity @s[nbt={Item:{id:"minecraft:tube_coral_block"}}] run setblock 
 execute if entity @s[nbt={Item:{id:"minecraft:white_terracotta"}}] run setblock ~ ~ ~ white_terracotta
 execute if score #special try_dis_bid matches 47..56 run function tryashtar.dispense_everything:item_conversion/special/shared/coral
 execute if score #special try_dis_bid matches 57..66 run function tryashtar.dispense_everything:item_conversion/special/shared/coral_fan
+execute if score #special try_dis_bid matches 87..97 run function tryashtar.dispense_everything:item_conversion/special/shared/horizontal

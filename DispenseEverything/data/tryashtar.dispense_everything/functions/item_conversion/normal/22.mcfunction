@@ -21,11 +21,11 @@ execute if entity @s[nbt={Item:{id:"minecraft:jungle_fence"}}] run setblock ~ ~ 
 execute if entity @s[nbt={Item:{id:"minecraft:magenta_wool"}}] run setblock ~ ~ ~ magenta_wool
 execute if entity @s[nbt={Item:{id:"minecraft:oak_trapdoor"}}] run setblock ~ ~ ~ oak_trapdoor
 execute if entity @s[nbt={Item:{id:"minecraft:orange_tulip"}}] if block ~ ~-1 ~ #tryashtar.dispense_everything:groups/place_plant run setblock ~ ~ ~ orange_tulip
-execute if entity @s[nbt={Item:{id:"minecraft:powered_rail"}}] run scoreboard players set #special try_dis_bid 94
+execute if entity @s[nbt={Item:{id:"minecraft:powered_rail"}}] run scoreboard players set #special try_dis_bid 112
 execute if entity @s[nbt={Item:{id:"minecraft:purpur_block"}}] run setblock ~ ~ ~ purpur_block
 execute if entity @s[nbt={Item:{id:"minecraft:quartz_block"}}] run setblock ~ ~ ~ quartz_block
 execute if entity @s[nbt={Item:{id:"minecraft:red_concrete"}}] run setblock ~ ~ ~ red_concrete
-execute if entity @s[nbt={Item:{id:"minecraft:red_mushroom"}}] run scoreboard players set #special try_dis_bid 82
+execute if entity @s[nbt={Item:{id:"minecraft:red_mushroom"}}] run scoreboard players set #special try_dis_bid 100
 execute if entity @s[nbt={Item:{id:"minecraft:redstone_ore"}}] run setblock ~ ~ ~ redstone_ore
 execute if entity @s[nbt={Item:{id:"minecraft:smooth_stone"}}] run setblock ~ ~ ~ smooth_stone
 execute if entity @s[nbt={Item:{id:"minecraft:spruce_fence"}}] run setblock ~ ~ ~ spruce_fence
@@ -37,5 +37,5 @@ execute if entity @s[nbt={Item:{id:"minecraft:white_carpet"}}] unless block ~ ~-
 execute if score #special try_dis_bid matches 1..22 run function tryashtar.dispense_everything:item_conversion/special/shared/banner_sign
 execute if score #special try_dis_bid matches 39..46 run function tryashtar.dispense_everything:item_conversion/special/shared/button
 execute if score #special try_dis_bid matches 47..56 run function tryashtar.dispense_everything:item_conversion/special/shared/coral
-execute if score #special try_dis_bid matches 82..83 run function tryashtar.dispense_everything:item_conversion/special/shared/mushroom
-execute if score #special try_dis_bid matches 93..96 run function tryashtar.dispense_everything:item_conversion/special/shared/rail
+execute if score #special try_dis_bid matches 100..101 run function tryashtar.dispense_everything:item_conversion/special/shared/mushroom
+execute if score #special try_dis_bid matches 111..114 run function tryashtar.dispense_everything:item_conversion/special/shared/rail

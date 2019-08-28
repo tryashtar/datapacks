@@ -1,0 +1,7 @@
+execute if score #special try_dis_bid matches 67 run setblock ~ ~ ~ barrel[facing=east]
+execute if score #special try_dis_bid matches 68 run setblock ~ ~ ~ dispenser[facing=east]
+execute if score #special try_dis_bid matches 69 run setblock ~ ~ ~ dropper[facing=east]
+execute if score #special try_dis_bid matches 70 run setblock ~ ~ ~ end_rod[facing=east]
+execute if score #special try_dis_bid matches 71 run setblock ~ ~ ~ observer[facing=east]
+execute if score #special try_dis_bid matches 72 run setblock ~ ~ ~ piston[facing=east]
+execute if score #special try_dis_bid matches 73 run setblock ~ ~ ~ sticky_piston[facing=east]

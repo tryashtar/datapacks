@@ -1,6 +1,6 @@
 execute if entity @s[nbt={Item:{id:"minecraft:black_stained_glass"}}] run setblock ~ ~ ~ black_stained_glass
 execute if entity @s[nbt={Item:{id:"minecraft:brown_stained_glass"}}] run setblock ~ ~ ~ brown_stained_glass
-execute if entity @s[nbt={Item:{id:"minecraft:dark_oak_fence_gate"}}] run setblock ~ ~ ~ dark_oak_fence_gate
+execute if entity @s[nbt={Item:{id:"minecraft:dark_oak_fence_gate"}}] run scoreboard players set #special try_dis_bid 96
 execute if entity @s[nbt={Item:{id:"minecraft:dead_fire_coral_fan"}}] run scoreboard players set #special try_dis_bid 60
 execute if entity @s[nbt={Item:{id:"minecraft:dead_horn_coral_fan"}}] run scoreboard players set #special try_dis_bid 61
 execute if entity @s[nbt={Item:{id:"minecraft:dead_tube_coral_fan"}}] run scoreboard players set #special try_dis_bid 57
@@ -15,3 +15,4 @@ execute if entity @s[nbt={Item:{id:"minecraft:stripped_jungle_log"}}] run setblo
 execute if entity @s[nbt={Item:{id:"minecraft:stripped_spruce_log"}}] run setblock ~ ~ ~ stripped_spruce_log
 execute if entity @s[nbt={Item:{id:"minecraft:white_stained_glass"}}] run setblock ~ ~ ~ white_stained_glass
 execute if score #special try_dis_bid matches 57..66 run function tryashtar.dispense_everything:item_conversion/special/shared/coral_fan
+execute if score #special try_dis_bid matches 87..97 run function tryashtar.dispense_everything:item_conversion/special/shared/horizontal

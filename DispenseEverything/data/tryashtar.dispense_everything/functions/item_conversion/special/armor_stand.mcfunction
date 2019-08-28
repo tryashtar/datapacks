@@ -10,5 +10,10 @@ execute if block ~ ~1 ~ tall_seagrass run setblock ~ ~1 ~ water
 execute if block ~ ~1 ~ bubble_column run setblock ~ ~1 ~ water
 execute unless block ~ ~1 ~ water unless block ~ ~1 ~ lava run setblock ~ ~1 ~ air
 
-summon armor_stand ~0.5 ~ ~0.5 {Tags:["try_dis_nas"]}
+execute if score #dir try_dis_bid matches 1 run summon armor_stand ~0.5 ~ ~0.5 {Rotation:[90f,0f],Tags:["try_dis_nas"]}
+execute if score #dir try_dis_bid matches 2 run summon armor_stand ~0.5 ~ ~0.5 {Rotation:[270f,0f],Tags:["try_dis_nas"]}
+execute if score #dir try_dis_bid matches 3..4 run summon armor_stand ~0.5 ~ ~0.5 {Rotation:[0f,0f],Tags:["try_dis_nas"]}
+execute if score #dir try_dis_bid matches 5 run summon armor_stand ~0.5 ~ ~0.5 {Rotation:[180f,0f],Tags:["try_dis_nas"]}
+execute if score #dir try_dis_bid matches 6 run summon armor_stand ~0.5 ~ ~0.5 {Rotation:[0f,0f],Tags:["try_dis_nas"]}
+
 data modify entity @e[type=armor_stand,tag=try_dis_nas,distance=..0.71,limit=1] {} merge from entity @s Item.tag.EntityTag

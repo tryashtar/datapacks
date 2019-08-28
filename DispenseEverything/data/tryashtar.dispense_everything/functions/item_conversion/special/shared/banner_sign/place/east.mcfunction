@@ -1,4 +1,3 @@
-tag @s add try_dis_don
 execute if score #special try_dis_bid matches 1 run setblock ~ ~ ~ white_wall_banner[facing=west]
 execute if score #special try_dis_bid matches 2 run setblock ~ ~ ~ orange_wall_banner[facing=west]
 execute if score #special try_dis_bid matches 3 run setblock ~ ~ ~ magenta_wall_banner[facing=west]
