@@ -15,4 +15,4 @@ execute if score #dir try_dis_bid matches 3 run tp @s ~ ~ ~ 0 90
 execute if score #dir try_dis_bid matches 4 run tp @s ~ ~ ~ 0 -90
 execute if score #dir try_dis_bid matches 5 run tp @s ~ ~ ~ 180 0
 execute if score #dir try_dis_bid matches 6 run tp @s ~ ~ ~ 0 0
-execute if score #dir try_dis_bid matches 1.. run function tryashtar.dispense_everything:dispensed_item
+execute if score #dir try_dis_bid matches 1.. at @s run function tryashtar.dispense_everything:dispensed_item
