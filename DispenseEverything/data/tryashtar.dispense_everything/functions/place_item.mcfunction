@@ -1,5 +1,7 @@
 scoreboard players set #special try_dis_bid 0
 execute store result score #length try_dis_bid run data get entity @s Item.id
+execute if block ~ ~ ~ water[level=0] run tag @s add try_dis_wtr
+execute if block ~ ~ ~ #tryashtar.dispense_everything:groups/replaceable_water run tag @s add try_dis_wtr
 
 execute if score #length try_dis_bid matches 13 run function tryashtar.dispense_everything:item_conversion/normal/13
 execute if score #length try_dis_bid matches 14 run function tryashtar.dispense_everything:item_conversion/normal/14
