@@ -20,10 +20,13 @@ execute if entity @s[nbt={Item:{id:"minecraft:lime_terracotta"}}] store success 
 execute if entity @s[nbt={Item:{id:"minecraft:orange_concrete"}}] store success score #success try_dis_bid run setblock ~ ~ ~ orange_concrete
 execute if entity @s[nbt={Item:{id:"minecraft:pink_terracotta"}}] store success score #success try_dis_bid run setblock ~ ~ ~ pink_terracotta
 execute if entity @s[nbt={Item:{id:"minecraft:prismarine_slab"}}] store success score #success try_dis_bid run setblock ~ ~ ~ prismarine_slab
-execute if entity @s[nbt={Item:{id:"minecraft:prismarine_wall"}}] store success score #success try_dis_bid run setblock ~ ~ ~ prismarine_wall
+execute if entity @s[nbt={Item:{id:"minecraft:prismarine_wall"}}] run scoreboard players set #special try_dis_bid 181
 execute if entity @s[nbt={Item:{id:"minecraft:purple_concrete"}}] store success score #success try_dis_bid run setblock ~ ~ ~ purple_concrete
 execute if entity @s[nbt={Item:{id:"minecraft:spruce_trapdoor"}}] store success score #success try_dis_bid run setblock ~ ~ ~ spruce_trapdoor
 execute if entity @s[nbt={Item:{id:"minecraft:yellow_concrete"}}] store success score #success try_dis_bid run setblock ~ ~ ~ yellow_concrete
+
 execute if score #special try_dis_bid matches 67..74 run function tryashtar.dispense_everything:item_conversion/special/shared/button
 execute if score #special try_dis_bid matches 75..84 run function tryashtar.dispense_everything:item_conversion/special/shared/coral
 execute if score #special try_dis_bid matches 85..94 run function tryashtar.dispense_everything:item_conversion/special/shared/coral_fan
+execute if entity @s[tag=!try_dis_wtr] if score #special try_dis_bid matches 152..191 run function tryashtar.dispense_everything:item_conversion/special/shared/only_waterlog/air
+execute if entity @s[tag=try_dis_wtr] if score #special try_dis_bid matches 152..191 run function tryashtar.dispense_everything:item_conversion/special/shared/only_waterlog/water
