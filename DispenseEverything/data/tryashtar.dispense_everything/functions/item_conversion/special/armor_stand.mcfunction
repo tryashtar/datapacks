@@ -1,3 +1,4 @@
+scoreboard players set #success try_dis_bid 1
 playsound entity.armor_stand.place block @a ~0.5 ~ ~0.5 0.75 0.8
 
 # remove block, keep fluid

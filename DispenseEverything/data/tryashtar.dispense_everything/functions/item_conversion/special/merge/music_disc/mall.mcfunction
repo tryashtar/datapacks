@@ -1,3 +1,4 @@
+scoreboard players set #success try_dis_bid 1
 setblock ~ ~ ~ jukebox[has_record=true]
 data modify block ~ ~ ~ RecordItem set from entity @s Item
 stopsound @a record music_disc.mall

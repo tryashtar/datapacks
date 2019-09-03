@@ -1,5 +1,3 @@
-tag @s add try_dis_don
-
 execute if score #dir try_dis_bid matches 1 run function tryashtar.dispense_everything:item_conversion/special/shared/banner_sign/place/down/west
 execute if score #dir try_dis_bid matches 2 run function tryashtar.dispense_everything:item_conversion/special/shared/banner_sign/place/down/east
 execute if score #dir try_dis_bid matches 3 run function tryashtar.dispense_everything:item_conversion/special/shared/banner_sign/place/down/south

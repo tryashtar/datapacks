@@ -1,3 +1,4 @@
+scoreboard players set #success try_dis_bid 1
 execute if score #special try_dis_bid matches 151 run setblock ~ ~ ~ acacia_pressure_plate
 execute if score #special try_dis_bid matches 152 run setblock ~ ~ ~ birch_pressure_plate
 execute if score #special try_dis_bid matches 153 run setblock ~ ~ ~ dark_oak_pressure_plate

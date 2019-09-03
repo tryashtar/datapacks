@@ -1,3 +1,4 @@
+scoreboard players set #finished try_dis_bid 1
 execute if entity @s[nbt={Item:{id:"minecraft:music_disc_13"}}] run function tryashtar.dispense_everything:item_conversion/special/merge/music_disc/13
 execute if entity @s[nbt={Item:{id:"minecraft:music_disc_cat"}}] run function tryashtar.dispense_everything:item_conversion/special/merge/music_disc/cat
 execute if entity @s[nbt={Item:{id:"minecraft:music_disc_blocks"}}] run function tryashtar.dispense_everything:item_conversion/special/merge/music_disc/blocks

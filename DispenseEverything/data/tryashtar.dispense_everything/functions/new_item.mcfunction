@@ -1,9 +1,8 @@
 tag @s add try_dis_itm
 
 # precise check to determine if this is fired from a dispenser
+scoreboard players set #firstdir try_dis_bid 0
 scoreboard players set #dir try_dis_bid 0
-scoreboard players set #horizdir try_dis_bid 0
-scoreboard players set #vertdir try_dis_bid 0
 execute if block ~0.201 ~ ~ dispenser[facing=west] align xyz positioned ~0.8 ~0.34375 ~0.5 if entity @s[distance=..0.001] run function tryashtar.dispense_everything:orient/west
 execute if block ~-0.201 ~ ~ dispenser[facing=east] align xyz positioned ~0.2 ~0.34375 ~0.5 if entity @s[distance=..0.001] run function tryashtar.dispense_everything:orient/east
 execute if block ~ ~0.326 ~ dispenser[facing=down] align xyz positioned ~0.5 ~0.675 ~0.5 if entity @s[distance=..0.001] run function tryashtar.dispense_everything:orient/down
