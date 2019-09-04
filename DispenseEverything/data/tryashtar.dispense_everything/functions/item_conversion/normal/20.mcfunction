@@ -25,7 +25,7 @@ execute if entity @s[nbt={Item:{id:"minecraft:item_frame"}}] run function tryash
 execute if entity @s[nbt={Item:{id:"minecraft:jungle_log"}}] run scoreboard players set #special try_dis_bid 9
 execute if entity @s[nbt={Item:{id:"minecraft:large_fern"}}] run scoreboard players set #special try_dis_bid 109
 execute if entity @s[nbt={Item:{id:"minecraft:netherrack"}}] store success score #success try_dis_bid run setblock ~ ~ ~ netherrack
-execute if entity @s[nbt={Item:{id:"minecraft:note_block"}}] store success score #success try_dis_bid run setblock ~ ~ ~ note_block
+execute if entity @s[nbt={Item:{id:"minecraft:note_block"}}] run function tryashtar.dispense_everything:item_conversion/special/note_block
 execute if entity @s[nbt={Item:{id:"minecraft:oak_button"}}] run scoreboard players set #special try_dis_bid 72
 execute if entity @s[nbt={Item:{id:"minecraft:oak_leaves"}}] store success score #success try_dis_bid run setblock ~ ~ ~ oak_leaves[persistent=true]
 execute if entity @s[nbt={Item:{id:"minecraft:oak_planks"}}] store success score #success try_dis_bid run setblock ~ ~ ~ oak_planks
