@@ -34,5 +34,5 @@ execute if score #special try_dis_bid matches 51..66 rotated ~ 0 if block ^ ^ ^1
 execute if score #special try_dis_bid matches 95..101 run function tryashtar.dispense_everything:item_conversion/special/shared/directional
 execute if score #special try_dis_bid matches 102..108 if block ~ ~1 ~ #tryashtar.dispense_everything:all/material/replaceable run function tryashtar.dispense_everything:item_conversion/special/shared/door
 execute if score #special try_dis_bid matches 115..147 run function tryashtar.dispense_everything:item_conversion/special/shared/horizontal
-execute if score #special try_dis_bid matches 205..206 positioned ~ ~-1 ~ run function tryashtar.dispense_everything:block_check/top/rim
+execute if score #special try_dis_bid matches 205..206 positioned ~ ~-1 ~ run function tryashtar.dispense_everything:block_check/up/rim
 execute if entity @s[tag=try_dis_ok] if score #special try_dis_bid matches 205..206 run function tryashtar.dispense_everything:item_conversion/special/shared/horizontal

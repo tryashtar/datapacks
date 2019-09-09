@@ -37,6 +37,6 @@ execute if score #special try_dis_bid matches 115..147 run function tryashtar.di
 execute if score #special try_dis_bid matches 150..151 run function tryashtar.dispense_everything:item_conversion/special/shared/mushroom
 execute if entity @s[tag=!try_dis_wtr] if score #special try_dis_bid matches 152..191 run function tryashtar.dispense_everything:item_conversion/special/shared/only_waterlog/air
 execute if entity @s[tag=try_dis_wtr] if score #special try_dis_bid matches 152..191 run function tryashtar.dispense_everything:item_conversion/special/shared/only_waterlog/water
-execute if score #special try_dis_bid matches 201..204 positioned ~ ~-1 ~ run function tryashtar.dispense_everything:block_check/top/rim
+execute if score #special try_dis_bid matches 201..204 positioned ~ ~-1 ~ run function tryashtar.dispense_everything:block_check/up/rim
 execute if entity @s[tag=try_dis_ok] if score #special try_dis_bid matches 201..204 run function tryashtar.dispense_everything:item_conversion/special/shared/rail
 execute if score #special try_dis_bid matches 207..208 run function tryashtar.dispense_everything:item_conversion/special/shared/torch
