@@ -1,8 +1,7 @@
 execute if block ~ ~ ~ #tryashtar.dispense_everything:groups/fence_pane[east=true,north=false,south=false,west=true] run tag @s add try_dis_ok
 execute if block ~ ~ ~ #tryashtar.dispense_everything:groups/fence_gate[facing=north,open=false] run tag @s add try_dis_ok
 execute if block ~ ~ ~ #tryashtar.dispense_everything:groups/fence_gate[facing=south,open=false] run tag @s add try_dis_ok
-execute if block ~ ~ ~ #minecraft:walls[east=true,north=false,south=false,up=true,west=true] run tag @s add try_dis_ok
-execute if block ~ ~ ~ #minecraft:walls[east=true,north=false,south=false,up=false,west=true] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #minecraft:walls[east=true,north=false,south=false,west=true] run tag @s add try_dis_ok
 execute if block ~ ~ ~ #minecraft:anvil[facing=west] run tag @s add try_dis_ok
 execute if block ~ ~ ~ #minecraft:anvil[facing=east] run tag @s add try_dis_ok
 execute if block ~ ~ ~ chorus_plant[down=true,east=true,north=false,south=false,up=true,west=true] run tag @s add try_dis_ok

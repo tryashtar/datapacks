@@ -1,0 +1,2 @@
+execute if score #special try_dis_bid matches 207 run setblock ~ ~ ~ redstone_wall_torch[facing=north]
+execute if score #special try_dis_bid matches 208 run setblock ~ ~ ~ wall_torch[facing=north]
