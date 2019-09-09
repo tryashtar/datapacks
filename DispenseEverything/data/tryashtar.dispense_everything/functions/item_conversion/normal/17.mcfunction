@@ -1,4 +1,3 @@
-execute if entity @s[nbt={Item:{id:"minecraft:barrier"}}] store success score #success try_dis_bid run setblock ~ ~ ~ barrier
 execute if entity @s[nbt={Item:{id:"minecraft:bedrock"}}] store success score #success try_dis_bid run setblock ~ ~ ~ bedrock
 execute if entity @s[nbt={Item:{id:"minecraft:conduit"}}] run function tryashtar.dispense_everything:item_conversion/special/conduit
 execute if entity @s[nbt={Item:{id:"minecraft:diorite"}}] store success score #success try_dis_bid run setblock ~ ~ ~ diorite
@@ -12,7 +11,6 @@ execute if entity @s[nbt={Item:{id:"minecraft:lectern"}}] run scoreboard players
 execute if entity @s[nbt={Item:{id:"minecraft:oak_log"}}] run scoreboard players set #special try_dis_bid 11
 execute if entity @s[nbt={Item:{id:"minecraft:pumpkin"}}] store success score #success try_dis_bid run setblock ~ ~ ~ pumpkin
 execute if entity @s[nbt={Item:{id:"minecraft:red_bed"}}] run scoreboard players set #special try_dis_bid 64
-execute if entity @s[nbt={Item:{id:"minecraft:spawner"}}] store success score #success try_dis_bid run setblock ~ ~ ~ spawner
 
 execute if score #special try_dis_bid matches 1..28 run function tryashtar.dispense_everything:item_conversion/special/shared/axis
 execute if score #special try_dis_bid matches 51..66 rotated ~ 0 if block ^ ^ ^1 #tryashtar.dispense_everything:all/material/replaceable run function tryashtar.dispense_everything:item_conversion/special/shared/bed
