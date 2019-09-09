@@ -21,7 +21,6 @@ execute if entity @s[nbt={Item:{id:"minecraft:green_wool"}}] store success score
 execute if entity @s[nbt={Item:{id:"minecraft:grindstone"}}] store success score #success try_dis_bid run setblock ~ ~ ~ grindstone
 execute if entity @s[nbt={Item:{id:"minecraft:horn_coral"}}] run scoreboard players set #special try_dis_bid 83
 execute if entity @s[nbt={Item:{id:"minecraft:iron_block"}}] store success score #success try_dis_bid run setblock ~ ~ ~ iron_block
-execute if entity @s[nbt={Item:{id:"minecraft:item_frame"}}] run function tryashtar.dispense_everything:item_conversion/special/item_frame
 execute if entity @s[nbt={Item:{id:"minecraft:jungle_log"}}] run scoreboard players set #special try_dis_bid 9
 execute if entity @s[nbt={Item:{id:"minecraft:large_fern"}}] run scoreboard players set #special try_dis_bid 109
 execute if entity @s[nbt={Item:{id:"minecraft:netherrack"}}] store success score #success try_dis_bid run setblock ~ ~ ~ netherrack

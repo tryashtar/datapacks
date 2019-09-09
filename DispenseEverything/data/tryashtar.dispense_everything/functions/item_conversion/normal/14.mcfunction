@@ -4,7 +4,6 @@ execute if entity @s[nbt={Item:{id:"minecraft:clay"}}] store success score #succ
 execute if entity @s[nbt={Item:{id:"minecraft:dirt"}}] store success score #success try_dis_bid run setblock ~ ~ ~ dirt
 execute unless block ~ ~ ~ fern if block ~ ~-1 ~ #tryashtar.dispense_everything:groups/place_plant if entity @s[nbt={Item:{id:"minecraft:fern"}}] store success score #success try_dis_bid run setblock ~ ~ ~ fern
 execute unless block ~ ~-1 ~ magma_block if entity @s[tag=try_dis_wtrc,nbt={Item:{id:"minecraft:kelp"}}] run function tryashtar.dispense_everything:item_conversion/special/kelp
-execute if entity @s[nbt={Item:{id:"minecraft:lead"}}] run function tryashtar.dispense_everything:item_conversion/special/lead
 execute if entity @s[nbt={Item:{id:"minecraft:loom"}}] run scoreboard players set #special try_dis_bid 136
 execute if entity @s[nbt={Item:{id:"minecraft:rail"}}] run scoreboard players set #special try_dis_bid 204
 execute if entity @s[nbt={Item:{id:"minecraft:sand"}}] store success score #success try_dis_bid run setblock ~ ~ ~ sand
