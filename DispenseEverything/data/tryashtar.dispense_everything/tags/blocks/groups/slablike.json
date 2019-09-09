@@ -1,0 +1,14 @@
+{
+   "values": [
+      "#minecraft:carpets",
+      "repeater",
+      "comparator",
+      "farmland",
+      "grass_path",
+      "enchanting_table",
+      "daylight_detector",
+      "lectern",
+      "stonecutter",
+      "campfire"
+   ]
+}

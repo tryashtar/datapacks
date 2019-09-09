@@ -2,23 +2,11 @@
    "values": [
       "#tryashtar.dispense_everything:groups/head",
       "#minecraft:flower_pots",
-      "#minecraft:carpets",
-      "minecraft:chest",
-      "minecraft:farmland",
       "minecraft:cactus",
-      "minecraft:repeater",
       "minecraft:lily_pad",
-      "minecraft:enchanting_table",
       "minecraft:brewing_stand",
       "minecraft:ender_chest",
-      "minecraft:trapped_chest",
-      "minecraft:comparator",
-      "minecraft:daylight_detector",
-      "minecraft:grass_path",
       "minecraft:turtle_egg",
-      "minecraft:sea_pickle",
-      "minecraft:lectern",
-      "minecraft:stonecutter",
-      "minecraft:campfire"
+      "minecraft:sea_pickle"
    ]
 }
