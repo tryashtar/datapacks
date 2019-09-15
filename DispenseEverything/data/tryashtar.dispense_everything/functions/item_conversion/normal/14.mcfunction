@@ -1,5 +1,5 @@
 execute if entity @s[nbt={Item:{id:"minecraft:bell"}}] run function tryashtar.dispense_everything:item_conversion/special/bell
-execute if block ~ ~-1 ~ #tryashtar.dispense_everything:all/material/solid if entity @s[nbt={Item:{id:"minecraft:cake"}}] store success score #success try_dis_bid run setblock ~ ~ ~ cake
+execute if block ~ ~-1 ~ #tryashtar.dispense_everything:material/merged/solid if entity @s[nbt={Item:{id:"minecraft:cake"}}] store success score #success try_dis_bid run setblock ~ ~ ~ cake
 execute if entity @s[nbt={Item:{id:"minecraft:clay"}}] store success score #success try_dis_bid run setblock ~ ~ ~ clay
 execute if entity @s[nbt={Item:{id:"minecraft:dirt"}}] store success score #success try_dis_bid run setblock ~ ~ ~ dirt
 execute unless block ~ ~ ~ fern if block ~ ~-1 ~ #tryashtar.dispense_everything:groups/place_plant if entity @s[nbt={Item:{id:"minecraft:fern"}}] store success score #success try_dis_bid run setblock ~ ~ ~ fern

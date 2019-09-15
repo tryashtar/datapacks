@@ -2,7 +2,7 @@ execute if entity @s[nbt={Item:{id:"minecraft:acacia_door"}}] run scoreboard pla
 execute if entity @s[nbt={Item:{id:"minecraft:acacia_sign"}}] run scoreboard players set #special try_dis_bid 29
 execute if entity @s[nbt={Item:{id:"minecraft:acacia_slab"}}] store success score #success try_dis_bid run setblock ~ ~ ~ acacia_slab
 execute if entity @s[nbt={Item:{id:"minecraft:acacia_wood"}}] run scoreboard players set #special try_dis_bid 2
-execute if block ~ ~1 ~ #tryashtar.dispense_everything:all/material/replaceable if entity @s[nbt={Item:{id:"minecraft:armor_stand"}}] align xyz unless entity @e[tag=!try_dis_cur,dx=0,dy=1,dz=0] run function tryashtar.dispense_everything:item_conversion/special/armor_stand
+execute if block ~ ~1 ~ #tryashtar.dispense_everything:material/merged/replaceable if entity @s[nbt={Item:{id:"minecraft:armor_stand"}}] align xyz unless entity @e[tag=!try_dis_cur,dx=0,dy=1,dz=0] run function tryashtar.dispense_everything:item_conversion/special/armor_stand
 execute if block ~ ~-1 ~ #tryashtar.dispense_everything:groups/place_plant if entity @s[nbt={Item:{id:"minecraft:azure_bluet"}}] store success score #success try_dis_bid run setblock ~ ~ ~ azure_bluet
 execute if entity @s[nbt={Item:{id:"minecraft:birch_fence"}}] run scoreboard players set #special try_dis_bid 154
 execute if entity @s[nbt={Item:{id:"minecraft:blue_banner"}}] run scoreboard players set #special try_dis_bid 32
@@ -55,9 +55,9 @@ execute if entity @s[nbt={Item:{id:"minecraft:yellow_wool"}}] store success scor
 
 execute if score #special try_dis_bid matches 1..28 run function tryashtar.dispense_everything:item_conversion/special/shared/axis
 execute if score #special try_dis_bid matches 29..50 run function tryashtar.dispense_everything:item_conversion/special/shared/banner_sign
-execute if score #special try_dis_bid matches 51..66 rotated ~ 0 if block ^ ^ ^1 #tryashtar.dispense_everything:all/material/replaceable run function tryashtar.dispense_everything:item_conversion/special/shared/bed
+execute if score #special try_dis_bid matches 51..66 rotated ~ 0 if block ^ ^ ^1 #tryashtar.dispense_everything:material/merged/replaceable run function tryashtar.dispense_everything:item_conversion/special/shared/bed
 execute if score #special try_dis_bid matches 75..84 run function tryashtar.dispense_everything:item_conversion/special/shared/coral
-execute if score #special try_dis_bid matches 102..108 if block ~ ~1 ~ #tryashtar.dispense_everything:all/material/replaceable run function tryashtar.dispense_everything:item_conversion/special/shared/door
+execute if score #special try_dis_bid matches 102..108 if block ~ ~1 ~ #tryashtar.dispense_everything:material/merged/replaceable run function tryashtar.dispense_everything:item_conversion/special/shared/door
 execute if score #special try_dis_bid matches 115..147 run function tryashtar.dispense_everything:item_conversion/special/shared/horizontal
 execute if entity @s[tag=!try_dis_wtr] if score #special try_dis_bid matches 152..191 run function tryashtar.dispense_everything:item_conversion/special/shared/only_waterlog/air
 execute if entity @s[tag=try_dis_wtr] if score #special try_dis_bid matches 152..191 run function tryashtar.dispense_everything:item_conversion/special/shared/only_waterlog/water

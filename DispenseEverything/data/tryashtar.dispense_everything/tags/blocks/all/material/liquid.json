@@ -1,7 +1,0 @@
-{
-   "values": [
-      "#tryashtar.dispense_everything:exclusive/material/water",
-      "#tryashtar.dispense_everything:exclusive/material/bubble_column",
-      "#tryashtar.dispense_everything:exclusive/material/lava"
-   ]
-}

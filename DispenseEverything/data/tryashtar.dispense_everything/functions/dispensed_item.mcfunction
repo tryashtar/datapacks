@@ -18,7 +18,7 @@ execute if block ~ ~ ~ vine if entity @s[nbt={Item:{id:"minecraft:vine"}}] run f
 execute if entity @s[nbt={Item:{id:"minecraft:ender_pearl"}}] run function tryashtar.dispense_everything:item_conversion/special/ender_pearl
 execute if entity @s[nbt={Item:{id:"minecraft:trident"}},nbt=!{Item:{tag:{Enchantments:[{id:"minecraft:riptide"}]}}}] run function tryashtar.dispense_everything:item_conversion/special/trident
 
-execute if block ~ ~ ~ #tryashtar.dispense_everything:all/material/replaceable if score #finished try_dis_bid matches 0 run function tryashtar.dispense_everything:place_item
+execute if block ~ ~ ~ #tryashtar.dispense_everything:material/merged/replaceable if score #finished try_dis_bid matches 0 run function tryashtar.dispense_everything:place_item
 execute if score #success try_dis_bid matches 0 run function tryashtar.dispense_everything:failure/align
 tag @s remove try_dis_cur
 execute if score #success try_dis_bid matches 1 run kill @s

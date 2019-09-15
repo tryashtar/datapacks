@@ -1,0 +1,13 @@
+{
+   "values": [
+      "#tryashtar.dispense_everything:material/air",
+      "#tryashtar.dispense_everything:material/structural_air",
+      "#tryashtar.dispense_everything:material/replaceable_plant",
+      "#tryashtar.dispense_everything:material/replaceable_water_plant",
+      "#tryashtar.dispense_everything:material/water",
+      "#tryashtar.dispense_everything:material/bubble_column",
+      "#tryashtar.dispense_everything:material/lava",
+      "#tryashtar.dispense_everything:material/top_snow",
+      "#tryashtar.dispense_everything:material/fire"
+   ]
+}
