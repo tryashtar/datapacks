@@ -1,10 +1,22 @@
-execute if block ~ ~ ~ #minecraft:stairs[half=top,shape=straight] run tag @s add try_dis_ok
-execute if block ~ ~ ~ piston_head[facing=up] run tag @s add try_dis_ok
-execute if block ~ ~ ~ #tryashtar.dispense_everything:groups/transparent_cube run tag @s add try_dis_ok
-execute if entity @s[tag=!try_dis_ok] run function tryashtar.dispense_everything:block_properties/tftffttttftttftt
-execute if entity @s[tag=!try_dis_ok] run function tryashtar.dispense_everything:block_properties/tftffttttftttttf
-execute if entity @s[tag=!try_dis_ok] run function tryashtar.dispense_everything:block_properties/tftffttttttftftt
-execute if entity @s[tag=!try_dis_ok] run function tryashtar.dispense_everything:block_properties/tftffttttttftttf
-execute if entity @s[tag=!try_dis_ok] run function tryashtar.dispense_everything:block_properties/tffffttttftftftf
-execute if entity @s[tag=!try_dis_ok] run function tryashtar.dispense_everything:block_properties/tttttttttttttttt
-execute if entity @s[tag=!try_dis_ok] run function tryashtar.dispense_everything:block_properties/tftffttttftftftf
+execute if block ~ ~ ~ end_portal_frame[eye=true] run tag @s add try_dis_ok
+execute if block ~ ~ ~ grindstone[face=floor] run tag @s add try_dis_ok
+execute if block ~ ~ ~ bell[attachment=floor] run tag @s add try_dis_ok
+execute if block ~ ~ ~ bell[attachment=ceiling] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #tryashtar.dispense_everything:groups/piston[extended=false] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #tryashtar.dispense_everything:groups/piston[facing=north] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #tryashtar.dispense_everything:groups/piston[facing=east] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #tryashtar.dispense_everything:groups/piston[facing=south] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #tryashtar.dispense_everything:groups/piston[facing=west] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #tryashtar.dispense_everything:support/up_full_3[facing=up] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #tryashtar.dispense_everything:support/up_full_2[facing=down] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #tryashtar.dispense_everything:groups/fence_gate[open=false] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #minecraft:trapdoors[half=top,open=false] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #minecraft:walls[east=true] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #minecraft:walls[north=true] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #minecraft:walls[south=true] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #minecraft:walls[west=true] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #tryashtar.dispense_everything:support/up_full_4[up=true] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #minecraft:stairs[half=top] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #minecraft:slabs[type=top] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #minecraft:slabs[type=double] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #tryashtar.dispense_everything:support/up_full_1 run tag @s add try_dis_ok

@@ -1,11 +1,14 @@
 execute if block ~ ~ ~ piston_head[facing=east] run tag @s add try_dis_ok
-execute if block ~ ~ ~ #tryashtar.dispense_everything:groups/piston[extended=true,facing=west] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #tryashtar.dispense_everything:groups/piston[extended=false] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #tryashtar.dispense_everything:support/east_full_2[facing=west] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #minecraft:doors[facing=west,open=false] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #minecraft:doors[facing=north,hinge=right,open=true] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #minecraft:doors[facing=south,hinge=left,open=true] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #minecraft:trapdoors[facing=west,open=true] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #minecraft:stairs[facing=north,shape=inner_right] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #minecraft:stairs[facing=south,shape=inner_left] run tag @s add try_dis_ok
 execute if block ~ ~ ~ #minecraft:stairs[facing=east,shape=straight] run tag @s add try_dis_ok
-execute if block ~ ~ ~ composter run tag @s add try_dis_ok
-execute if block ~ ~ ~ #tryashtar.dispense_everything:groups/transparent_cube run tag @s add try_dis_ok
-execute if entity @s[tag=!try_dis_ok] run function tryashtar.dispense_everything:block_properties/ffttttfftftttftt
-execute if entity @s[tag=!try_dis_ok] run function tryashtar.dispense_everything:block_properties/ffttttfftttftftt
-execute if entity @s[tag=!try_dis_ok] run function tryashtar.dispense_everything:block_properties/tftffttttftttftt
-execute if entity @s[tag=!try_dis_ok] run function tryashtar.dispense_everything:block_properties/tftffttttttftftt
-execute if entity @s[tag=!try_dis_ok] run function tryashtar.dispense_everything:block_properties/fftfftfftftffftt
-execute if entity @s[tag=!try_dis_ok] run function tryashtar.dispense_everything:block_properties/tttttttttttttttt
+execute if block ~ ~ ~ #minecraft:stairs[facing=east,shape=inner_left] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #minecraft:stairs[facing=east,shape=inner_right] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #minecraft:slabs[type=double] run tag @s add try_dis_ok
+execute if block ~ ~ ~ #tryashtar.dispense_everything:support/east_full_1 run tag @s add try_dis_ok

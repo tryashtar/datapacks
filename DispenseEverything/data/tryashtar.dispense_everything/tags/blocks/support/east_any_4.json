@@ -1,0 +1,31 @@
+{
+  "values": [
+    "sticky_piston",
+    "piston",
+    "oak_door",
+    "ladder",
+    "iron_door",
+    "oak_trapdoor",
+    "spruce_trapdoor",
+    "birch_trapdoor",
+    "jungle_trapdoor",
+    "acacia_trapdoor",
+    "dark_oak_trapdoor",
+    "skeleton_wall_skull",
+    "wither_skeleton_wall_skull",
+    "zombie_wall_head",
+    "player_wall_head",
+    "creeper_wall_head",
+    "dragon_wall_head",
+    "anvil",
+    "chipped_anvil",
+    "damaged_anvil",
+    "iron_trapdoor",
+    "spruce_door",
+    "birch_door",
+    "jungle_door",
+    "acacia_door",
+    "dark_oak_door",
+    "end_rod"
+  ]
+}

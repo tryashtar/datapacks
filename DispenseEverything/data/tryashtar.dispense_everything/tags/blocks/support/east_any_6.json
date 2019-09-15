@@ -1,0 +1,17 @@
+{
+  "values": [
+    "oak_door",
+    "iron_door",
+    "oak_fence_gate",
+    "spruce_fence_gate",
+    "birch_fence_gate",
+    "jungle_fence_gate",
+    "acacia_fence_gate",
+    "dark_oak_fence_gate",
+    "spruce_door",
+    "birch_door",
+    "jungle_door",
+    "acacia_door",
+    "dark_oak_door"
+  ]
+}
