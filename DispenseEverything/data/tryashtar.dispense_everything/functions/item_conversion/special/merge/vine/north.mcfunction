@@ -1,0 +1,20 @@
+execute if block ~ ~ ~-1 #minecraft:leaves run tag @s add try_dis_ok
+execute if entity @s[tag=!try_dis_ok] positioned ~ ~ ~-1 run function tryashtar.dispense_everything:block_check/south/full
+
+execute if block ~ ~ ~ vine[east=false,west=false,south=false,up=false] if entity @s[tag=try_dis_ok] run setblock ~ ~ ~ vine[east=false,west=false,south=false,up=false,north=true]
+execute if block ~ ~ ~ vine[east=false,west=false,south=false,up=true] if entity @s[tag=try_dis_ok] run setblock ~ ~ ~ vine[east=false,west=false,south=false,up=true,north=true]
+execute if block ~ ~ ~ vine[east=false,west=false,south=true,up=false] if entity @s[tag=try_dis_ok] run setblock ~ ~ ~ vine[east=false,west=false,south=true,up=false,north=true]
+execute if block ~ ~ ~ vine[east=false,west=false,south=true,up=true] if entity @s[tag=try_dis_ok] run setblock ~ ~ ~ vine[east=false,west=false,south=true,up=true,north=true]
+execute if block ~ ~ ~ vine[east=false,west=true,south=false,up=false] if entity @s[tag=try_dis_ok] run setblock ~ ~ ~ vine[east=false,west=true,south=false,up=false,north=true]
+execute if block ~ ~ ~ vine[east=false,west=true,south=false,up=true] if entity @s[tag=try_dis_ok] run setblock ~ ~ ~ vine[east=false,west=true,south=false,up=true,north=true]
+execute if block ~ ~ ~ vine[east=false,west=true,south=true,up=false] if entity @s[tag=try_dis_ok] run setblock ~ ~ ~ vine[east=false,west=true,south=true,up=false,north=true]
+execute if block ~ ~ ~ vine[east=false,west=true,south=true,up=true] if entity @s[tag=try_dis_ok] run setblock ~ ~ ~ vine[east=false,west=true,south=true,up=true,north=true]
+execute if block ~ ~ ~ vine[east=true,west=false,south=false,up=false] if entity @s[tag=try_dis_ok] run setblock ~ ~ ~ vine[east=true,west=false,south=false,up=false,north=true]
+execute if block ~ ~ ~ vine[east=true,west=false,south=false,up=true] if entity @s[tag=try_dis_ok] run setblock ~ ~ ~ vine[east=true,west=false,south=false,up=true,north=true]
+execute if block ~ ~ ~ vine[east=true,west=false,south=true,up=false] if entity @s[tag=try_dis_ok] run setblock ~ ~ ~ vine[east=true,west=false,south=true,up=false,north=true]
+execute if block ~ ~ ~ vine[east=true,west=false,south=true,up=true] if entity @s[tag=try_dis_ok] run setblock ~ ~ ~ vine[east=true,west=false,south=true,up=true,north=true]
+execute if block ~ ~ ~ vine[east=true,west=true,south=false,up=false] if entity @s[tag=try_dis_ok] run setblock ~ ~ ~ vine[east=true,west=true,south=false,up=false,north=true]
+execute if block ~ ~ ~ vine[east=true,west=true,south=false,up=true] if entity @s[tag=try_dis_ok] run setblock ~ ~ ~ vine[east=true,west=true,south=false,up=true,north=true]
+execute if block ~ ~ ~ vine[east=true,west=true,south=true,up=false] if entity @s[tag=try_dis_ok] run setblock ~ ~ ~ vine[east=true,west=true,south=true,up=false,north=true]
+execute if block ~ ~ ~ vine[east=true,west=true,south=true,up=true] if entity @s[tag=try_dis_ok] run setblock ~ ~ ~ vine[east=true,west=true,south=true,up=true,north=true]
+execute unless block ~ ~ ~ vine if entity @s[tag=try_dis_ok] run setblock ~ ~ ~ vine[north=true]

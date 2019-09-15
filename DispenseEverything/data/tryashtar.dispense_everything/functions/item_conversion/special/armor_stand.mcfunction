@@ -2,13 +2,9 @@ scoreboard players set #success try_dis_bid 1
 playsound entity.armor_stand.place block @a ~0.5 ~ ~0.5 0.75 0.8
 
 # remove block, keep fluid
-execute if block ~ ~ ~ seagrass run setblock ~ ~ ~ water
-execute if block ~ ~ ~ tall_seagrass run setblock ~ ~ ~ water
-execute if block ~ ~ ~ bubble_column run setblock ~ ~ ~ water
+execute if block ~ ~ ~ #tryashtar.dispense_everything:groups/replaceable_water run setblock ~ ~ ~ water
 execute unless block ~ ~ ~ water unless block ~ ~ ~ lava run setblock ~ ~ ~ air
-execute if block ~ ~1 ~ seagrass run setblock ~ ~1 ~ water
-execute if block ~ ~1 ~ tall_seagrass run setblock ~ ~1 ~ water
-execute if block ~ ~1 ~ bubble_column run setblock ~ ~1 ~ water
+execute if block ~ ~1 ~ #tryashtar.dispense_everything:groups/replaceable_water run setblock ~ ~1 ~ water
 execute unless block ~ ~1 ~ water unless block ~ ~1 ~ lava run setblock ~ ~1 ~ air
 
 execute if score #dir try_dis_bid matches 1 run summon armor_stand ~0.5 ~ ~0.5 {Rotation:[90f,0f],Tags:["try_dis_nas"]}

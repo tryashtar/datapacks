@@ -1,3 +1,4 @@
+scoreboard players set #success try_dis_bid 1
 execute if score #special try_dis_bid matches 29 run setblock ~ ~ ~ acacia_wall_sign[facing=east]
 execute if score #special try_dis_bid matches 30 run setblock ~ ~ ~ birch_wall_sign[facing=east]
 execute if score #special try_dis_bid matches 31 run setblock ~ ~ ~ black_wall_banner[facing=east]
