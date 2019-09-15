@@ -1,10 +1,4 @@
-execute if block ~ ~ ~ snow[layers=2] run tag @s add try_dis_ok
-execute if block ~ ~ ~ snow[layers=3] run tag @s add try_dis_ok
-execute if block ~ ~ ~ snow[layers=4] run tag @s add try_dis_ok
-execute if block ~ ~ ~ snow[layers=5] run tag @s add try_dis_ok
-execute if block ~ ~ ~ snow[layers=6] run tag @s add try_dis_ok
-execute if block ~ ~ ~ snow[layers=7] run tag @s add try_dis_ok
-execute if block ~ ~ ~ snow[layers=8] run tag @s add try_dis_ok
+execute if block ~ ~ ~ snow unless block ~ ~ ~ snow[layers=1] run tag @s add try_dis_ok
 execute if block ~ ~ ~ grindstone[face=wall,facing=west] run tag @s add try_dis_ok
 execute if block ~ ~ ~ grindstone[face=wall,facing=east] run tag @s add try_dis_ok
 execute if block ~ ~ ~ bell[attachment=floor,facing=north] run tag @s add try_dis_ok
