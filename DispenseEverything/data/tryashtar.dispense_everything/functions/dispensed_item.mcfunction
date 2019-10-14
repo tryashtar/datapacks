@@ -22,5 +22,5 @@ execute if data storage tryashtar:dispense_everything item{id:"minecraft:trident
 
 execute if block ~ ~ ~ #tryashtar.dispense_everything:material/merged/replaceable if score #finished try_dis_bid matches 0 run function tryashtar.dispense_everything:place_item
 execute if score #success try_dis_bid matches 0 run function tryashtar.dispense_everything:failure/align
-tag @s remove try_dis_cur
 execute if score #success try_dis_bid matches 1 run kill @s
+tag @s remove try_dis_cur

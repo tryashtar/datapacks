@@ -1,0 +1,24 @@
+{
+   "condition": "alternative",
+   "terms": [
+      {
+         "condition": "location_check",
+         "predicate": {
+            "fluid": {
+               "fluid": "water"
+            }
+         }
+      },
+      {
+         "condition": "location_check",
+         "predicate": {
+            "fluid": {
+               "fluid": "flowing_water",
+               "state": {
+                  "level": 8
+               }
+            }
+         }
+      }
+   ]
+}

@@ -24,7 +24,7 @@ execute if data storage tryashtar:dispense_everything item{id:"minecraft:red_san
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:red_wool"} store success score #success try_dis_bid run setblock ~ ~ ~ red_wool
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:redstone"} run function tryashtar.dispense_everything:item_conversion/special/redstone
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:repeater"} run scoreboard players set #special try_dis_bid 206
-execute unless block ~ ~ ~ seagrass unless block ~ ~-1 ~ magma_block if entity @s[tag=try_dis_wtrc] if data storage tryashtar:dispense_everything item{id:"minecraft:seagrass"} run function tryashtar.dispense_everything:item_conversion/special/seagrass
+execute unless block ~ ~ ~ seagrass unless block ~ ~-1 ~ magma_block if predicate tryashtar.dispense_everything:generous_waterlog if data storage tryashtar:dispense_everything item{id:"minecraft:seagrass"} run function tryashtar.dispense_everything:item_conversion/special/seagrass
 
 execute if score #special try_dis_bid matches 1..28 run function tryashtar.dispense_everything:item_conversion/special/shared/axis
 execute if score #special try_dis_bid matches 29..50 run function tryashtar.dispense_everything:item_conversion/special/shared/banner_sign

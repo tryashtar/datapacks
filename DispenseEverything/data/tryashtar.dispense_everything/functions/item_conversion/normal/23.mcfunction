@@ -21,7 +21,7 @@ execute if data storage tryashtar:dispense_everything item{id:"minecraft:detecto
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:diamond_block"} store success score #success try_dis_bid run setblock ~ ~ ~ diamond_block
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:emerald_block"} store success score #success try_dis_bid run setblock ~ ~ ~ emerald_block
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:gray_concrete"} store success score #success try_dis_bid run setblock ~ ~ ~ gray_concrete
-execute if data storage tryashtar:dispense_everything item{id:"minecraft:iron_trapdoor"} store success score #success try_dis_bid run setblock ~ ~ ~ iron_trapdoor
+execute if data storage tryashtar:dispense_everything item{id:"minecraft:iron_trapdoor"} run scoreboard players set #special try_dis_bid 212
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:jungle_button"} run scoreboard players set #special try_dis_bid 70
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:jungle_leaves"} store success score #success try_dis_bid run setblock ~ ~ ~ jungle_leaves[persistent=true]
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:jungle_planks"} store success score #success try_dis_bid run setblock ~ ~ ~ jungle_planks
@@ -61,7 +61,8 @@ execute if block ~ ~1 ~ #tryashtar.dispense_everything:material/merged/replaceab
 execute if entity @s[tag=try_dis_ok] if score #special try_dis_bid matches 102..108 run function tryashtar.dispense_everything:item_conversion/special/shared/door
 execute if score #special try_dis_bid matches 115..147 run function tryashtar.dispense_everything:item_conversion/special/shared/horizontal
 execute if score #special try_dis_bid matches 148..149 run function tryashtar.dispense_everything:item_conversion/special/shared/ladder_hook
-execute if entity @s[tag=!try_dis_wtr] if score #special try_dis_bid matches 152..191 run function tryashtar.dispense_everything:item_conversion/special/shared/only_waterlog/air
-execute if entity @s[tag=try_dis_wtr] if score #special try_dis_bid matches 152..191 run function tryashtar.dispense_everything:item_conversion/special/shared/only_waterlog/water
+execute unless predicate tryashtar.dispense_everything:waterlog if score #special try_dis_bid matches 152..191 run function tryashtar.dispense_everything:item_conversion/special/shared/only_waterlog/air
+execute if predicate tryashtar.dispense_everything:waterlog if score #special try_dis_bid matches 152..191 run function tryashtar.dispense_everything:item_conversion/special/shared/only_waterlog/water
 execute if score #special try_dis_bid matches 201..204 positioned ~ ~-1 ~ run function tryashtar.dispense_everything:block_check/up/rim
 execute if entity @s[tag=try_dis_ok] if score #special try_dis_bid matches 201..204 run function tryashtar.dispense_everything:item_conversion/special/shared/rail
+execute if score #special try_dis_bid matches 209..215 run function tryashtar.dispense_everything:item_conversion/special/shared/trapdoor

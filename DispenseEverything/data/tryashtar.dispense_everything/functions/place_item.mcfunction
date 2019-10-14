@@ -1,7 +1,3 @@
-execute if block ~ ~ ~ water[level=0] run tag @s add try_dis_wtr
-execute if block ~ ~ ~ water[level=8] run tag @s add try_dis_wtrc
-execute if block ~ ~ ~ #tryashtar.dispense_everything:groups/replaceable_water run tag @s add try_dis_wtr
-tag @s[tag=try_dis_wtr] add try_dis_wtrc
 scoreboard players set #special try_dis_bid 0
 execute store result score #length try_dis_bid run data get storage tryashtar:dispense_everything item.id
 
