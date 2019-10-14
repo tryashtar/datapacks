@@ -13,4 +13,4 @@ execute if score #dir try_dis_bid matches 3..4 run summon armor_stand ~0.5 ~ ~0.
 execute if score #dir try_dis_bid matches 5 run summon armor_stand ~0.5 ~ ~0.5 {Rotation:[180f,0f],Tags:["try_dis_nas"]}
 execute if score #dir try_dis_bid matches 6 run summon armor_stand ~0.5 ~ ~0.5 {Rotation:[0f,0f],Tags:["try_dis_nas"]}
 
-data modify entity @e[type=armor_stand,tag=try_dis_nas,distance=..0.71,limit=1] {} merge from entity @s Item.tag.EntityTag
+data modify entity @e[type=armor_stand,tag=try_dis_nas,distance=..0.71,limit=1] {} merge from storage tryashtar:dispense_everything item.tag.EntityTag

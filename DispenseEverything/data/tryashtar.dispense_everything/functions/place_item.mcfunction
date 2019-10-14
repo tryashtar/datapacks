@@ -3,7 +3,7 @@ execute if block ~ ~ ~ water[level=8] run tag @s add try_dis_wtrc
 execute if block ~ ~ ~ #tryashtar.dispense_everything:groups/replaceable_water run tag @s add try_dis_wtr
 tag @s[tag=try_dis_wtr] add try_dis_wtrc
 scoreboard players set #special try_dis_bid 0
-execute store result score #length try_dis_bid run data get entity @s Item.id
+execute store result score #length try_dis_bid run data get storage tryashtar:dispense_everything item.id
 
 execute if score #length try_dis_bid matches 13 run function tryashtar.dispense_everything:item_conversion/normal/13
 execute if score #length try_dis_bid matches 14 run function tryashtar.dispense_everything:item_conversion/normal/14
@@ -34,5 +34,5 @@ execute if score #length try_dis_bid matches 38 run function tryashtar.dispense_
 execute if score #length try_dis_bid matches 39 run function tryashtar.dispense_everything:item_conversion/normal/39
 execute if score #length try_dis_bid matches 40 run function tryashtar.dispense_everything:item_conversion/normal/40
 
-data modify block ~ ~ ~ {} merge from entity @s Item.tag.BlockEntityTag
-data modify block ~ ~ ~ CustomName set from entity @s Item.tag.display.Name
+data modify block ~ ~ ~ {} merge from storage tryashtar:dispense_everything item.tag.BlockEntityTag
+data modify block ~ ~ ~ CustomName set from storage tryashtar:dispense_everything item.tag.display.Name

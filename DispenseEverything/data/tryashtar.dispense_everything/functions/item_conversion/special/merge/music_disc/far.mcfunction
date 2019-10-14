@@ -1,6 +1,6 @@
 scoreboard players set #success try_dis_bid 1
 setblock ~ ~ ~ jukebox[has_record=true]
-data modify block ~ ~ ~ RecordItem set from entity @s Item
+data modify block ~ ~ ~ RecordItem set from storage tryashtar:dispense_everything item
 stopsound @a record music_disc.far
 playsound music_disc.far record @a
 title @a actionbar {"translate":"record.nowPlaying","with":[{"translate":"item.minecraft.music_disc_far.desc"}],"color":"green"}
