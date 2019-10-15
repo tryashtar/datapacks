@@ -31,7 +31,7 @@ execute if data storage tryashtar:dispense_everything item{id:"minecraft:tube_co
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:white_concrete"} store success score #success try_dis_bid run setblock ~ ~ ~ white_concrete
 
 execute if score #special try_dis_bid matches 29..50 run function tryashtar.dispense_everything:item_conversion/special/shared/banner_sign
-execute if score #special try_dis_bid matches 51..66 rotated ~ 0 if block ^ ^ ^1 #tryashtar.dispense_everything:material/merged/replaceable run function tryashtar.dispense_everything:item_conversion/special/shared/bed
+execute if score #special try_dis_bid matches 51..66 run function tryashtar.dispense_everything:item_conversion/special/shared/bed
 execute if score #special try_dis_bid matches 87..96 run function tryashtar.dispense_everything:item_conversion/special/shared/coral_fan
 execute if score #special try_dis_bid matches 117..149 run function tryashtar.dispense_everything:item_conversion/special/shared/horizontal
 execute if score #special try_dis_bid matches 152..153 run function tryashtar.dispense_everything:item_conversion/special/shared/mushroom
