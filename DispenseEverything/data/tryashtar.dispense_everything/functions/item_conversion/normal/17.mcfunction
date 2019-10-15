@@ -1,6 +1,6 @@
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:bedrock"} store success score #success try_dis_bid run setblock ~ ~ ~ bedrock
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:beehive"} run scoreboard players set #special try_dis_bid 126
-execute if data storage tryashtar:dispense_everything item{id:"minecraft:conduit"} run scoreboard players set #special try_dis_bid 164
+execute if data storage tryashtar:dispense_everything item{id:"minecraft:conduit"} run scoreboard players set #special try_dis_bid 162
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:diorite"} store success score #success try_dis_bid run setblock ~ ~ ~ diorite
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:dropper"} run scoreboard players set #special try_dis_bid 105
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:end_rod"} run scoreboard players set #special try_dis_bid 106
@@ -17,5 +17,5 @@ execute if score #special try_dis_bid matches 1..28 run function tryashtar.dispe
 execute if score #special try_dis_bid matches 51..66 run function tryashtar.dispense_everything:item_conversion/special/shared/bed
 execute if score #special try_dis_bid matches 103..109 run function tryashtar.dispense_everything:item_conversion/special/shared/directional
 execute if score #special try_dis_bid matches 123..157 run function tryashtar.dispense_everything:item_conversion/special/shared/horizontal
-execute unless predicate tryashtar.dispense_everything:generous_waterlog if score #special try_dis_bid matches 162..173 run function tryashtar.dispense_everything:item_conversion/special/shared/only_generous_waterlog/air
-execute if predicate tryashtar.dispense_everything:generous_waterlog if score #special try_dis_bid matches 162..173 run function tryashtar.dispense_everything:item_conversion/special/shared/only_generous_waterlog/water
+execute unless predicate tryashtar.dispense_everything:generous_waterlog if score #special try_dis_bid matches 160..171 run function tryashtar.dispense_everything:item_conversion/special/shared/only_generous_waterlog/air
+execute if predicate tryashtar.dispense_everything:generous_waterlog if score #special try_dis_bid matches 160..171 run function tryashtar.dispense_everything:item_conversion/special/shared/only_generous_waterlog/water

@@ -15,7 +15,7 @@ execute if data storage tryashtar:dispense_everything item{id:"minecraft:lime_be
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:mycelium"} store success score #success try_dis_bid run setblock ~ ~ ~ mycelium
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:oak_door"} run scoreboard players set #special try_dis_bid 115
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:oak_sign"} run scoreboard players set #special try_dis_bid 43
-execute if data storage tryashtar:dispense_everything item{id:"minecraft:oak_slab"} run scoreboard players set #special try_dis_bid 236
+execute if data storage tryashtar:dispense_everything item{id:"minecraft:oak_slab"} run scoreboard players set #special try_dis_bid 234
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:oak_wood"} run scoreboard players set #special try_dis_bid 12
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:observer"} run scoreboard players set #special try_dis_bid 107
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:obsidian"} store success score #success try_dis_bid run setblock ~ ~ ~ obsidian
@@ -23,7 +23,7 @@ execute if data storage tryashtar:dispense_everything item{id:"minecraft:pink_be
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:red_sand"} store success score #success try_dis_bid run setblock ~ ~ ~ red_sand
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:red_wool"} store success score #success try_dis_bid run setblock ~ ~ ~ red_wool
 execute positioned ~ ~-1 ~ if predicate tryashtar.dispense_everything:support/redstone positioned ~ ~1 ~ if data storage tryashtar:dispense_everything item{id:"minecraft:redstone"} store success score #success try_dis_bid run setblock ~ ~ ~ redstone_wire
-execute if data storage tryashtar:dispense_everything item{id:"minecraft:repeater"} run scoreboard players set #special try_dis_bid 219
+execute if data storage tryashtar:dispense_everything item{id:"minecraft:repeater"} run scoreboard players set #special try_dis_bid 217
 execute unless block ~ ~ ~ seagrass unless block ~ ~-1 ~ magma_block if predicate tryashtar.dispense_everything:generous_waterlog positioned ~ ~-1 ~ if predicate tryashtar.dispense_everything:block_check/up/full positioned ~ ~1 ~ if data storage tryashtar:dispense_everything item{id:"minecraft:seagrass"} store success score #success try_dis_bid run setblock ~ ~ ~ seagrass
 
 execute if score #special try_dis_bid matches 1..28 run function tryashtar.dispense_everything:item_conversion/special/shared/axis
@@ -32,5 +32,5 @@ execute if score #special try_dis_bid matches 51..66 run function tryashtar.disp
 execute if score #special try_dis_bid matches 103..109 run function tryashtar.dispense_everything:item_conversion/special/shared/directional
 execute if block ~ ~1 ~ #tryashtar.dispense_everything:material/merged/replaceable positioned ~ ~-1 ~ if predicate tryashtar.dispense_everything:block_check/up/full positioned ~ ~1 ~ if score #special try_dis_bid matches 110..116 run function tryashtar.dispense_everything:item_conversion/special/shared/door
 execute if score #special try_dis_bid matches 123..157 run function tryashtar.dispense_everything:item_conversion/special/shared/horizontal
-execute positioned ~ ~-1 ~ if predicate tryashtar.dispense_everything:block_check/up/rim positioned ~ ~1 ~ if score #special try_dis_bid matches 218..219 run function tryashtar.dispense_everything:item_conversion/special/shared/horizontal
-execute if score #special try_dis_bid matches 220..254 run function tryashtar.dispense_everything:item_conversion/special/shared/slab
+execute positioned ~ ~-1 ~ if predicate tryashtar.dispense_everything:block_check/up/rim positioned ~ ~1 ~ if score #special try_dis_bid matches 216..217 run function tryashtar.dispense_everything:item_conversion/special/shared/horizontal
+execute if score #special try_dis_bid matches 218..252 run function tryashtar.dispense_everything:item_conversion/special/shared/slab

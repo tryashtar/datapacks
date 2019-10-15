@@ -1,0 +1,50 @@
+{
+   "condition": "alternative",
+   "terms": [
+      {
+         "condition": "location_check",
+         "predicate": {
+            "block": {
+               "block": "mycelium"
+            }
+         }
+      },
+      {
+         "condition": "location_check",
+         "predicate": {
+            "block": {
+               "block": "podzol"
+            }
+         }
+      },
+      {
+         "condition": "inverted",
+         "term": {
+            "condition": "alternative",
+            "terms": [
+               {
+                  "condition": "inverted",
+                  "term": {
+                     "condition": "location_check",
+                     "offsetY": 1,
+                     "predicate": {
+                        "light": {
+                           "light": {
+                              "max": 12
+                           }
+                        }
+                     }
+                  }
+               },
+               {
+                  "condition": "inverted",
+                  "term": {
+                     "condition": "reference",
+                     "name": "tryashtar.dispense_everything:block_check/full_opaque"
+                  }
+               }
+            ]
+         }
+      }
+   ]
+}

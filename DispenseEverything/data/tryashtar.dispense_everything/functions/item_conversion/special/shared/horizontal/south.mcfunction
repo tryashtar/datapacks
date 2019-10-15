@@ -45,5 +45,5 @@ execute if score #special try_dis_bid matches 154 run setblock ~ ~ ~ spruce_fenc
 execute if score #special try_dis_bid matches 155 run setblock ~ ~ ~ stonecutter[facing=south]
 execute if score #special try_dis_bid matches 156 run setblock ~ ~ ~ white_glazed_terracotta[facing=south]
 execute if score #special try_dis_bid matches 157 run setblock ~ ~ ~ yellow_glazed_terracotta[facing=south]
-execute if score #special try_dis_bid matches 218 run setblock ~ ~ ~ comparator[facing=north]
-execute if score #special try_dis_bid matches 219 run setblock ~ ~ ~ repeater[facing=north]
+execute if score #special try_dis_bid matches 216 run setblock ~ ~ ~ comparator[facing=north]
+execute if score #special try_dis_bid matches 217 run setblock ~ ~ ~ repeater[facing=north]
