@@ -303,6 +303,7 @@
     "structure_block",
     "jigsaw",
     "bee_nest",
-    "beehive"
+    "beehive",
+    "honeycomb_block"
   ]
 }

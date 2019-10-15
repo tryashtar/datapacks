@@ -7,6 +7,8 @@
       "infested_mossy_stone_bricks",
       "infested_stone",
       "infested_stone_bricks",
-      "slime_block"
+      "slime_block",
+      "honey_block",
+      "honeycomb_block"
    ]
 }
