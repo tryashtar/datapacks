@@ -1,0 +1,67 @@
+{
+   "condition": "alternative",
+   "terms": [
+      {
+         "condition": "location_check",
+         "predicate": {
+            "block": {
+               "block": "cobweb"
+            }
+         }
+      },
+      {
+         "condition": "location_check",
+         "predicate": {
+            "block": {
+               "block": "soul_sand"
+            }
+         }
+      },
+      {
+         "condition": "location_check",
+         "predicate": {
+            "block": {
+               "block": "honey_block"
+            }
+         }
+      },
+      {
+         "condition": "location_check",
+         "predicate": {
+            "block": {
+               "block": "sweet_berry_bush",
+               "state": {
+                  "age": 3
+               }
+            }
+         }
+      },
+      {
+         "condition": "location_check",
+         "predicate": {
+            "block": {
+               "block": "vine",
+               "state": {
+                  "north": true,
+                  "south": true,
+                  "east": true,
+                  "west": true,
+                  "up": true
+               }
+            }
+         }
+      },
+      {
+         "condition": "location_check",
+         "predicate": {
+            "block": {
+               "tag": "tryashtar.dispense_everything:groups/double_plant"
+            }
+         }
+      },
+      {
+         "condition": "reference",
+         "name": "tryashtar.dispense_everything:block_check/up/full"
+      }
+   ]
+}
