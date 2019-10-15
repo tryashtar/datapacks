@@ -8,14 +8,14 @@ execute if block ~ ~-1 ~ farmland if data storage tryashtar:dispense_everything 
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:cobweb"} store success score #success try_dis_bid run setblock ~ ~ ~ cobweb
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:gravel"} store success score #success try_dis_bid run setblock ~ ~ ~ gravel
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:hopper"} store success score #success try_dis_bid run setblock ~ ~ ~ hopper
-execute if data storage tryashtar:dispense_everything item{id:"minecraft:ladder"} run scoreboard players set #special try_dis_bid 158
+execute if data storage tryashtar:dispense_everything item{id:"minecraft:ladder"} run scoreboard players set #special try_dis_bid 160
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:piston"} run scoreboard players set #special try_dis_bid 108
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:podzol"} store success score #success try_dis_bid run setblock ~ ~ ~ podzol
 execute if block ~ ~-1 ~ farmland if data storage tryashtar:dispense_everything item{id:"minecraft:potato"} store success score #success try_dis_bid run setblock ~ ~ ~ potatoes
-execute if data storage tryashtar:dispense_everything item{id:"minecraft:smoker"} run scoreboard players set #special try_dis_bid 153
+execute if data storage tryashtar:dispense_everything item{id:"minecraft:smoker"} run scoreboard players set #special try_dis_bid 155
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:sponge"} store success score #success try_dis_bid run setblock ~ ~ ~ sponge
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:string"} store success score #success try_dis_bid run setblock ~ ~ ~ tripwire
 
 execute if score #special try_dis_bid matches 103..109 run function tryashtar.dispense_everything:item_conversion/special/shared/directional
-execute if score #special try_dis_bid matches 123..157 run function tryashtar.dispense_everything:item_conversion/special/shared/horizontal
-execute if score #special try_dis_bid matches 158..159 run function tryashtar.dispense_everything:item_conversion/special/shared/ladder_hook
+execute if score #special try_dis_bid matches 125..159 run function tryashtar.dispense_everything:item_conversion/special/shared/horizontal
+execute if score #special try_dis_bid matches 160..161 run function tryashtar.dispense_everything:item_conversion/special/shared/ladder_hook
