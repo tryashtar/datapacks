@@ -1,0 +1,294 @@
+{
+  "condition": "alternative",
+  "terms": [
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "block": "snow",
+          "state": {
+            "layers": {
+              "min": 2,
+              "max": 8
+            }
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "block": "grindstone",
+          "state": {
+            "face": "wall",
+            "facing": "north"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "block": "grindstone",
+          "state": {
+            "face": "wall",
+            "facing": "south"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "block": "bell",
+          "state": {
+            "attachment": "floor",
+            "facing": "west"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "block": "bell",
+          "state": {
+            "attachment": "floor",
+            "facing": "east"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "block": "bell",
+          "state": {
+            "attachment": "single_wall",
+            "facing": "north"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "block": "bell",
+          "state": {
+            "attachment": "double_wall",
+            "facing": "north"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "block": "bell",
+          "state": {
+            "attachment": "double_wall",
+            "facing": "south"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "tryashtar.dispense_everything:groups/piston",
+          "state": {
+            "extended": false
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "tryashtar.dispense_everything:groups/piston",
+          "state": {
+            "facing": "up"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "tryashtar.dispense_everything:groups/piston",
+          "state": {
+            "facing": "down"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "tryashtar.dispense_everything:groups/chest",
+          "state": {
+            "facing": "west",
+            "type": "left"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "tryashtar.dispense_everything:groups/chest",
+          "state": {
+            "facing": "east",
+            "type": "right"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "tryashtar.dispense_everything:support/east_any_8",
+          "state": {
+            "facing": "north"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "minecraft:doors",
+          "state": {
+            "facing": "west",
+            "hinge": "right"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "minecraft:doors",
+          "state": {
+            "facing": "east",
+            "hinge": "left"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "minecraft:doors",
+          "state": {
+            "facing": "north",
+            "open": true
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "minecraft:trapdoors",
+          "state": {
+            "open": false
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "tryashtar.dispense_everything:support/east_any_3",
+          "state": {
+            "facing": "east"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "tryashtar.dispense_everything:support/east_any_3",
+          "state": {
+            "facing": "west"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "tryashtar.dispense_everything:support/east_any_6",
+          "state": {
+            "facing": "west",
+            "open": false
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "tryashtar.dispense_everything:support/east_any_6",
+          "state": {
+            "facing": "east",
+            "open": false
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "tryashtar.dispense_everything:support/east_any_4",
+          "state": {
+            "facing": "south"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "tryashtar.dispense_everything:support/east_any_7",
+          "state": {
+            "north": true
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "tryashtar.dispense_everything:support/east_any_1"
+        }
+      }
+    }
+  ]
+}

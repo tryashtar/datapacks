@@ -1,0 +1,167 @@
+{
+  "condition": "alternative",
+  "terms": [
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "block": "piston_head",
+          "state": {
+            "facing": "west"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "tryashtar.dispense_everything:groups/piston",
+          "state": {
+            "extended": false
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "tryashtar.dispense_everything:support/east_full_2",
+          "state": {
+            "facing": "east"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "minecraft:doors",
+          "state": {
+            "facing": "east",
+            "open": false
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "minecraft:doors",
+          "state": {
+            "facing": "north",
+            "hinge": "left",
+            "open": true
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "minecraft:doors",
+          "state": {
+            "facing": "south",
+            "hinge": "right",
+            "open": true
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "minecraft:trapdoors",
+          "state": {
+            "facing": "east",
+            "open": true
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "minecraft:stairs",
+          "state": {
+            "facing": "north",
+            "shape": "inner_left"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "minecraft:stairs",
+          "state": {
+            "facing": "south",
+            "shape": "inner_right"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "minecraft:stairs",
+          "state": {
+            "facing": "west",
+            "shape": "straight"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "minecraft:stairs",
+          "state": {
+            "facing": "west",
+            "shape": "inner_left"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "minecraft:stairs",
+          "state": {
+            "facing": "west",
+            "shape": "inner_right"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "minecraft:slabs",
+          "state": {
+            "type": "double"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "tryashtar.dispense_everything:support/east_full_1"
+        }
+      }
+    }
+  ]
+}
