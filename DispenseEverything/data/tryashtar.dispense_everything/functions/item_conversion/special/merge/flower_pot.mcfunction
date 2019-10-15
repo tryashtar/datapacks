@@ -24,3 +24,4 @@ execute if data storage tryashtar:dispense_everything item{id:"minecraft:red_tul
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:spruce_sapling"} store success score #success try_dis_bid run setblock ~ ~ ~ potted_spruce_sapling
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:white_tulip"} store success score #success try_dis_bid run setblock ~ ~ ~ potted_white_tulip
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:wither_rose"} store success score #success try_dis_bid run setblock ~ ~ ~ potted_wither_rose
+execute if score #success try_dis_bid matches 1 run scoreboard players set #success try_dis_bid 2

@@ -1,5 +1,5 @@
 scoreboard players set #finished try_dis_bid 1
-scoreboard players set #success try_dis_bid 1
+scoreboard players set #success try_dis_bid 2
 
 playsound block.end_portal_frame.fill block @a
 execute align xyz run particle smoke ~0.5 ~0.8125 ~0.5 0.1 0 0.1 0 16

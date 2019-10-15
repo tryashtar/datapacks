@@ -1,5 +1,5 @@
 scoreboard players set #finished try_dis_bid 1
-scoreboard players set #success try_dis_bid 1
+scoreboard players set #success try_dis_bid 2
 
 scoreboard players add #pearl_id try_dis_bid 1
 playsound entity.ender_pearl.throw block @a

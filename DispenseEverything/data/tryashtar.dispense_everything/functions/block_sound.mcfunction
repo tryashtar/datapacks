@@ -20,4 +20,3 @@ execute if block ~ ~ ~ #tryashtar.dispense_everything:sound/sweet_berry_bush run
 execute if block ~ ~ ~ #tryashtar.dispense_everything:sound/wet_grass run playsound block.wet_grass.place block @a ~ ~ ~ 1 0.8
 execute if block ~ ~ ~ #tryashtar.dispense_everything:sound/wood run playsound block.wood.place block @a ~ ~ ~ 1 0.8
 execute if block ~ ~ ~ #tryashtar.dispense_everything:sound/wool run playsound block.wool.place block @a ~ ~ ~ 1 0.8
-kill @s

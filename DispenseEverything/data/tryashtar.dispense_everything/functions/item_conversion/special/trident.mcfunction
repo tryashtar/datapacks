@@ -1,5 +1,5 @@
 scoreboard players set #finished try_dis_bid 1
-scoreboard players set #success try_dis_bid 1
+scoreboard players set #success try_dis_bid 2
 
 playsound item.trident.throw block @a
 
