@@ -10,6 +10,14 @@ execute if block ~ ~-0.076 ~ dispenser[facing=up] align xyz positioned ~0.5 ~0.0
 execute if block ~ ~ ~0.201 dispenser[facing=north] align xyz positioned ~0.5 ~0.34375 ~0.8 if entity @s[distance=..0.001] run function tryashtar.dispense_everything:orient/north
 execute if block ~ ~ ~-0.201 dispenser[facing=south] align xyz positioned ~0.5 ~0.34375 ~0.2 if entity @s[distance=..0.001] run function tryashtar.dispense_everything:orient/south
 
+scoreboard players operation #horizdir try_dis_bid = #dir try_dis_bid
+execute if score #dir try_dis_bid matches 3..4 run scoreboard players operation #horizdir try_dis_bid = #firstdir try_dis_bid
+execute if score #horizdir try_dis_bid matches 3..4 run scoreboard players set #horizdir try_dis_bid 5
+
+scoreboard players operation #vertdir try_dis_bid = #dir try_dis_bid
+execute unless score #dir try_dis_bid matches 3..4 run scoreboard players operation #vertdir try_dis_bid = #firstdir try_dis_bid
+execute unless score #vertdir try_dis_bid matches 3..4 run scoreboard players set #vertdir try_dis_bid 4
+
 execute if score #dir try_dis_bid matches 1 rotated 90 0 run function tryashtar.dispense_everything:dispensed_item
 execute if score #dir try_dis_bid matches 2 rotated -90 0 run function tryashtar.dispense_everything:dispensed_item
 execute if score #dir try_dis_bid matches 3 rotated 0 90 run function tryashtar.dispense_everything:dispensed_item
