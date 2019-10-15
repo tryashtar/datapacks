@@ -1,0 +1,17 @@
+{
+   "condition": "alternative",
+   "terms": [
+      {
+         "condition": "location_check",
+         "predicate": {
+            "block": {
+               "block": "hopper"
+            }
+         }
+      },
+      {
+         "condition": "reference",
+         "name": "tryashtar.dispense_everything:block_check/up/full"
+      }
+   ]
+}

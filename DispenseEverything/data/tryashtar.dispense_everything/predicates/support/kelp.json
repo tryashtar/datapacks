@@ -1,0 +1,25 @@
+{
+   "condition": "alternative",
+   "terms": [
+      {
+         "condition": "location_check",
+         "predicate": {
+            "block": {
+               "block": "kelp"
+            }
+         }
+      },
+      {
+         "condition": "location_check",
+         "predicate": {
+            "block": {
+               "block": "kelp_plant"
+            }
+         }
+      },
+      {
+         "condition": "reference",
+         "name": "tryashtar.dispense_everything:block_check/up/full"
+      }
+   ]
+}

@@ -1,0 +1,13 @@
+{
+   "condition": "alternative",
+   "terms": [
+      {
+         "condition": "reference",
+         "name": "tryashtar.dispense_everything:block_check/up/rim"
+      },
+      {
+         "condition": "reference",
+         "name": "tryashtar.dispense_everything:block_check/up/center"
+      }
+   ]
+}

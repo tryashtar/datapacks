@@ -1,0 +1,21 @@
+{
+   "condition": "alternative",
+   "terms": [
+      {
+         "condition": "location_check",
+         "predicate": {
+            "block": {
+               "tag": "#tryashtar.dispense_everything:material/ice"
+            }
+         }
+      },
+      {
+         "condition": "location_check",
+         "predicate": {
+            "fluid": {
+               "fluid": "water"
+            }
+         }
+      }
+   ]
+}

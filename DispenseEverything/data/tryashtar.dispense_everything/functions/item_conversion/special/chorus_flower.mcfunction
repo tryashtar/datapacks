@@ -1,5 +1,3 @@
-# these conditions will always fail unless the dispenser is facing down
-
 execute if block ~ ~-1 ~ #tryashtar.dispense_everything:groups/place_chorus store success score #success try_dis_bid run setblock ~ ~ ~ chorus_flower
 
 execute if block ~1 ~ ~ chorus_plant run tag @s add try_dis_one

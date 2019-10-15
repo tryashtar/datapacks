@@ -8,10 +8,10 @@ execute if data storage tryashtar:dispense_everything item{id:"minecraft:melon"}
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:peony"} run scoreboard players set #special try_dis_bid 113
 execute if block ~ ~-1 ~ #tryashtar.dispense_everything:groups/place_plant if data storage tryashtar:dispense_everything item{id:"minecraft:poppy"} store success score #success try_dis_bid run setblock ~ ~ ~ poppy
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:stone"} store success score #success try_dis_bid run setblock ~ ~ ~ stone
-execute if data storage tryashtar:dispense_everything item{id:"minecraft:torch"} run scoreboard players set #special try_dis_bid 245
+execute if data storage tryashtar:dispense_everything item{id:"minecraft:torch"} run scoreboard players set #special try_dis_bid 238
 
 execute if score #special try_dis_bid matches 67..74 run function tryashtar.dispense_everything:item_conversion/special/shared/button
 execute if score #special try_dis_bid matches 75..76 run function tryashtar.dispense_everything:item_conversion/special/shared/chest
 execute if score #special try_dis_bid matches 111..116 if block ~ ~-1 ~ #tryashtar.dispense_everything:groups/place_plant if block ~ ~1 ~ #tryashtar.dispense_everything:material/merged/replaceable run function tryashtar.dispense_everything:item_conversion/special/shared/double_plant
 execute if score #special try_dis_bid matches 117..149 run function tryashtar.dispense_everything:item_conversion/special/shared/horizontal
-execute if score #special try_dis_bid matches 244..245 run function tryashtar.dispense_everything:item_conversion/special/shared/torch
+execute if score #special try_dis_bid matches 237..238 run function tryashtar.dispense_everything:item_conversion/special/shared/torch
