@@ -1,0 +1,23 @@
+execute if block ~ ~ ~ #tryashtar.dispense_everything:sound/anvil run playsound block.anvil.place block @a ~ ~ ~ 0.65 0.8
+execute if block ~ ~ ~ #tryashtar.dispense_everything:sound/bamboo run playsound block.bamboo.place block @a ~ ~ ~ 1 0.8
+execute if block ~ ~ ~ #tryashtar.dispense_everything:sound/bamboo_sapling run playsound block.bamboo_sapling.place block @a ~ ~ ~ 1 0.8
+execute if block ~ ~ ~ #tryashtar.dispense_everything:sound/coral_block run playsound block.coral_block.place block @a ~ ~ ~ 1 0.8
+execute if block ~ ~ ~ #tryashtar.dispense_everything:sound/crop run playsound item.crop.plant block @a ~ ~ ~ 1 0.8
+execute if block ~ ~ ~ #tryashtar.dispense_everything:sound/glass run playsound block.glass.place block @a ~ ~ ~ 1 0.8
+execute if block ~ ~ ~ #tryashtar.dispense_everything:sound/grass run playsound block.grass.place block @a ~ ~ ~ 1 0.8
+execute if block ~ ~ ~ #tryashtar.dispense_everything:sound/gravel run playsound block.gravel.place block @a ~ ~ ~ 1 0.8
+execute if block ~ ~ ~ #tryashtar.dispense_everything:sound/honey_block run playsound block.honey_block.place block @a ~ ~ ~ 1 0.8
+execute if block ~ ~ ~ #tryashtar.dispense_everything:sound/ladder run playsound block.ladder.place block @a ~ ~ ~ 1 0.8
+execute if block ~ ~ ~ #tryashtar.dispense_everything:sound/lantern run playsound block.lantern.place block @a ~ ~ ~ 1 0.8
+execute if block ~ ~ ~ #tryashtar.dispense_everything:sound/metal run playsound block.metal.place block @a ~ ~ ~ 1 0.8
+execute if block ~ ~ ~ #tryashtar.dispense_everything:sound/nether_wart run playsound item.nether_wart.plant block @a ~ ~ ~ 1 0.8
+execute if block ~ ~ ~ #tryashtar.dispense_everything:sound/sand run playsound block.sand.place block @a ~ ~ ~ 1 0.8
+execute if block ~ ~ ~ #tryashtar.dispense_everything:sound/scaffolding run playsound block.scaffolding.place block @a ~ ~ ~ 1 0.8
+execute if block ~ ~ ~ #tryashtar.dispense_everything:sound/slime_block run playsound block.slime_block.place block @a ~ ~ ~ 1 0.8
+execute if block ~ ~ ~ #tryashtar.dispense_everything:sound/snow run playsound block.snow.place block @a ~ ~ ~ 1 0.8
+execute if block ~ ~ ~ #tryashtar.dispense_everything:sound/stone run playsound block.stone.place block @a ~ ~ ~ 1 0.8
+execute if block ~ ~ ~ #tryashtar.dispense_everything:sound/sweet_berry_bush run playsound block.sweet_berry_bush.place block @a ~ ~ ~ 1 0.8
+execute if block ~ ~ ~ #tryashtar.dispense_everything:sound/wet_grass run playsound block.wet_grass.place block @a ~ ~ ~ 1 0.8
+execute if block ~ ~ ~ #tryashtar.dispense_everything:sound/wood run playsound block.wood.place block @a ~ ~ ~ 1 0.8
+execute if block ~ ~ ~ #tryashtar.dispense_everything:sound/wool run playsound block.wool.place block @a ~ ~ ~ 1 0.8
+kill @s

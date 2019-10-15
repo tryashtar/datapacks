@@ -1,0 +1,16 @@
+{
+   "values": [
+      "#minecraft:rails",
+      "gold_block",
+      "iron_block",
+      "spawner",
+      "diamond_block",
+      "iron_door",
+      "iron_bars",
+      "emerald_block",
+      "redstone_block",
+      "hopper",
+      "iron_trapdoor",
+      "turtle_egg"
+   ]
+}

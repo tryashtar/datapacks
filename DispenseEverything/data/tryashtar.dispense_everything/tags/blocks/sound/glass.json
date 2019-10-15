@@ -1,0 +1,12 @@
+{
+   "values": [
+      "#tryashtar.dispense_everything:groups/glass",
+      "#tryashtar.dispense_everything:groups/glass_pane",
+      "#minecraft:ice",
+      "glowstone",
+      "nether_portal",
+      "end_portal_frame",
+      "redstone_lamp",
+      "sea_lantern"
+   ]
+}

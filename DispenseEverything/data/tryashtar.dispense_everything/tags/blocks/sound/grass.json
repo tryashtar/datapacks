@@ -1,0 +1,25 @@
+{
+   "values": [
+      "#minecraft:saplings",
+      "#minecraft:leaves",
+      "#minecraft:flowers",
+      "grass_block",
+      "sponge",
+      "wet_sponge",
+      "grass",
+      "fern",
+      "dead_bush",
+      "brown_mushroom",
+      "red_mushroom",
+      "tnt",
+      "sugar_cane",
+      "vine",
+      "mycelium",
+      "lily_pad",
+      "hay_block",
+      "tall_grass",
+      "large_fern",
+      "grass_path",
+      "dried_kelp_block"
+   ]
+}
