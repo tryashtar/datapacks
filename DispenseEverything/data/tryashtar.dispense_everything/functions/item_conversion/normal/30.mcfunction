@@ -4,7 +4,7 @@ execute if data storage tryashtar:dispense_everything item{id:"minecraft:brown_m
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:cracked_stone_bricks"} store success score #success try_dis_bid run setblock ~ ~ ~ cracked_stone_bricks
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:cyan_concrete_powder"} store success score #success try_dis_bid run setblock ~ ~ ~ cyan_concrete_powder
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:dark_prismarine_slab"} run scoreboard players set #special try_dis_bid 210
-execute if data storage tryashtar:dispense_everything item{id:"minecraft:dead_brain_coral_fan"} run scoreboard players set #special try_dis_bid 89
+execute if data storage tryashtar:dispense_everything item{id:"minecraft:dead_brain_coral_fan"} run scoreboard players set #special try_dis_bid 79
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:end_stone_brick_slab"} run scoreboard players set #special try_dis_bid 212
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:end_stone_brick_wall"} run scoreboard players set #special try_dis_bid 167
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:gray_concrete_powder"} store success score #success try_dis_bid run setblock ~ ~ ~ gray_concrete_powder
@@ -23,7 +23,7 @@ execute if data storage tryashtar:dispense_everything item{id:"minecraft:strippe
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:yellow_stained_glass"} store success score #success try_dis_bid run setblock ~ ~ ~ yellow_stained_glass
 
 execute if score #special try_dis_bid matches 1..28 run function tryashtar.dispense_everything:item_conversion/special/shared/axis
-execute if score #special try_dis_bid matches 87..96 run function tryashtar.dispense_everything:item_conversion/special/shared/coral_fan
+execute if score #special try_dis_bid matches 77..86 run function tryashtar.dispense_everything:item_conversion/special/shared/coral_fan
 execute unless predicate tryashtar.dispense_everything:waterlog if score #special try_dis_bid matches 156..195 run function tryashtar.dispense_everything:item_conversion/special/shared/only_waterlog/air
 execute if predicate tryashtar.dispense_everything:waterlog if score #special try_dis_bid matches 156..195 run function tryashtar.dispense_everything:item_conversion/special/shared/only_waterlog/water
 execute if score #special try_dis_bid matches 202..236 run function tryashtar.dispense_everything:item_conversion/special/shared/slab

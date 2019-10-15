@@ -8,7 +8,7 @@ execute unless block ~ ~-1 ~ #tryashtar.dispense_everything:groups/air if data s
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:brick_stairs"} run scoreboard players set #special try_dis_bid 244
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:brown_banner"} run scoreboard players set #special try_dis_bid 33
 execute unless block ~ ~-1 ~ #tryashtar.dispense_everything:groups/air if data storage tryashtar:dispense_everything item{id:"minecraft:brown_carpet"} store success score #success try_dis_bid run setblock ~ ~ ~ brown_carpet
-execute if data storage tryashtar:dispense_everything item{id:"minecraft:bubble_coral"} run scoreboard players set #special try_dis_bid 78
+execute if data storage tryashtar:dispense_everything item{id:"minecraft:bubble_coral"} run scoreboard players set #special try_dis_bid 145
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:chorus_plant"} run function tryashtar.dispense_everything:item_conversion/special/chorus_plant
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:dark_oak_log"} run scoreboard players set #special try_dis_bid 6
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:diorite_slab"} run scoreboard players set #special try_dis_bid 211
@@ -25,7 +25,7 @@ execute if data storage tryashtar:dispense_everything item{id:"minecraft:powered
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:purpur_block"} store success score #success try_dis_bid run setblock ~ ~ ~ purpur_block
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:quartz_block"} store success score #success try_dis_bid run setblock ~ ~ ~ quartz_block
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:red_concrete"} store success score #success try_dis_bid run setblock ~ ~ ~ red_concrete
-execute if data storage tryashtar:dispense_everything item{id:"minecraft:red_mushroom"} run scoreboard players set #special try_dis_bid 153
+execute if data storage tryashtar:dispense_everything item{id:"minecraft:red_mushroom"} run scoreboard players set #special try_dis_bid 143
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:redstone_ore"} store success score #success try_dis_bid run setblock ~ ~ ~ redstone_ore
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:smooth_stone"} store success score #success try_dis_bid run setblock ~ ~ ~ smooth_stone
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:spruce_fence"} run scoreboard players set #special try_dis_bid 192
@@ -38,8 +38,9 @@ execute unless block ~ ~-1 ~ #tryashtar.dispense_everything:groups/air if data s
 execute if score #special try_dis_bid matches 1..28 run function tryashtar.dispense_everything:item_conversion/special/shared/axis
 execute if score #special try_dis_bid matches 29..50 run function tryashtar.dispense_everything:item_conversion/special/shared/banner_sign
 execute if score #special try_dis_bid matches 67..74 run function tryashtar.dispense_everything:item_conversion/special/shared/button
-execute if score #special try_dis_bid matches 77..86 run function tryashtar.dispense_everything:item_conversion/special/shared/coral
-execute if score #special try_dis_bid matches 152..153 run function tryashtar.dispense_everything:item_conversion/special/shared/mushroom
+execute if score #special try_dis_bid matches 142..143 run function tryashtar.dispense_everything:item_conversion/special/shared/mushroom
+execute unless predicate tryashtar.dispense_everything:generous_waterlog if score #special try_dis_bid matches 144..155 run function tryashtar.dispense_everything:item_conversion/special/shared/only_generous_waterlog/air
+execute if predicate tryashtar.dispense_everything:generous_waterlog if score #special try_dis_bid matches 144..155 run function tryashtar.dispense_everything:item_conversion/special/shared/only_generous_waterlog/water
 execute unless predicate tryashtar.dispense_everything:waterlog if score #special try_dis_bid matches 156..195 run function tryashtar.dispense_everything:item_conversion/special/shared/only_waterlog/air
 execute if predicate tryashtar.dispense_everything:waterlog if score #special try_dis_bid matches 156..195 run function tryashtar.dispense_everything:item_conversion/special/shared/only_waterlog/water
 execute positioned ~ ~-1 ~ if predicate tryashtar.dispense_everything:block_check/up/rim positioned ~ ~1 ~ if score #special try_dis_bid matches 196..199 run function tryashtar.dispense_everything:item_conversion/special/shared/rail

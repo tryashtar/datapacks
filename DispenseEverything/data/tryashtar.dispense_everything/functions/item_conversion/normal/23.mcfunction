@@ -5,15 +5,15 @@ execute if data storage tryashtar:dispense_everything item{id:"minecraft:acacia_
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:andesite_slab"} run scoreboard players set #special try_dis_bid 203
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:andesite_wall"} run scoreboard players set #special try_dis_bid 157
 execute if block ~ ~-1 ~ #tryashtar.dispense_everything:groups/place_plant if data storage tryashtar:dispense_everything item{id:"minecraft:birch_sapling"} store success score #success try_dis_bid run setblock ~ ~ ~ birch_sapling
-execute if data storage tryashtar:dispense_everything item{id:"minecraft:blast_furnace"} run scoreboard players set #special try_dis_bid 121
+execute if data storage tryashtar:dispense_everything item{id:"minecraft:blast_furnace"} run scoreboard players set #special try_dis_bid 111
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:blue_concrete"} store success score #success try_dis_bid run setblock ~ ~ ~ blue_concrete
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:brewing_stand"} store success score #success try_dis_bid run setblock ~ ~ ~ brewing_stand
-execute if data storage tryashtar:dispense_everything item{id:"minecraft:chipped_anvil"} run scoreboard players set #special try_dis_bid 125
+execute if data storage tryashtar:dispense_everything item{id:"minecraft:chipped_anvil"} run scoreboard players set #special try_dis_bid 115
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:chorus_flower"} run function tryashtar.dispense_everything:item_conversion/special/chorus_flower
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:cut_sandstone"} store success score #success try_dis_bid run setblock ~ ~ ~ cut_sandstone
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:cyan_concrete"} store success score #success try_dis_bid run setblock ~ ~ ~ cyan_concrete
-execute if data storage tryashtar:dispense_everything item{id:"minecraft:damaged_anvil"} run scoreboard players set #special try_dis_bid 127
-execute if data storage tryashtar:dispense_everything item{id:"minecraft:dark_oak_door"} run scoreboard players set #special try_dis_bid 106
+execute if data storage tryashtar:dispense_everything item{id:"minecraft:damaged_anvil"} run scoreboard players set #special try_dis_bid 117
+execute if data storage tryashtar:dispense_everything item{id:"minecraft:dark_oak_door"} run scoreboard players set #special try_dis_bid 96
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:dark_oak_sign"} run scoreboard players set #special try_dis_bid 35
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:dark_oak_slab"} run scoreboard players set #special try_dis_bid 209
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:dark_oak_wood"} run scoreboard players set #special try_dis_bid 7
@@ -46,10 +46,10 @@ execute if data storage tryashtar:dispense_everything item{id:"minecraft:spruce_
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:spruce_leaves"} store success score #success try_dis_bid run setblock ~ ~ ~ spruce_leaves[persistent=true]
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:spruce_planks"} store success score #success try_dis_bid run setblock ~ ~ ~ spruce_planks
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:spruce_stairs"} run scoreboard players set #special try_dis_bid 273
-execute if data storage tryashtar:dispense_everything item{id:"minecraft:sticky_piston"} run scoreboard players set #special try_dis_bid 103
+execute if data storage tryashtar:dispense_everything item{id:"minecraft:sticky_piston"} run scoreboard players set #special try_dis_bid 93
 execute if block ~ ~-1 ~ #tryashtar.dispense_everything:groups/place_plant if data storage tryashtar:dispense_everything item{id:"minecraft:sweet_berries"} store success score #success try_dis_bid run setblock ~ ~ ~ sweet_berry_bush
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:trapped_chest"} run scoreboard players set #special try_dis_bid 76
-execute if data storage tryashtar:dispense_everything item{id:"minecraft:tripwire_hook"} run scoreboard players set #special try_dis_bid 151
+execute if data storage tryashtar:dispense_everything item{id:"minecraft:tripwire_hook"} run scoreboard players set #special try_dis_bid 141
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:yellow_banner"} run scoreboard players set #special try_dis_bid 50
 execute unless block ~ ~-1 ~ #tryashtar.dispense_everything:groups/air if data storage tryashtar:dispense_everything item{id:"minecraft:yellow_carpet"} store success score #success try_dis_bid run setblock ~ ~ ~ yellow_carpet
 
@@ -57,10 +57,10 @@ execute if score #special try_dis_bid matches 1..28 run function tryashtar.dispe
 execute if score #special try_dis_bid matches 29..50 run function tryashtar.dispense_everything:item_conversion/special/shared/banner_sign
 execute if score #special try_dis_bid matches 67..74 run function tryashtar.dispense_everything:item_conversion/special/shared/button
 execute if score #special try_dis_bid matches 75..76 run function tryashtar.dispense_everything:item_conversion/special/shared/chest
-execute if score #special try_dis_bid matches 97..103 run function tryashtar.dispense_everything:item_conversion/special/shared/directional
-execute if block ~ ~1 ~ #tryashtar.dispense_everything:material/merged/replaceable positioned ~ ~-1 ~ if predicate tryashtar.dispense_everything:block_check/up/full positioned ~ ~1 ~ if score #special try_dis_bid matches 104..110 run function tryashtar.dispense_everything:item_conversion/special/shared/door
-execute if score #special try_dis_bid matches 117..149 run function tryashtar.dispense_everything:item_conversion/special/shared/horizontal
-execute if score #special try_dis_bid matches 150..151 run function tryashtar.dispense_everything:item_conversion/special/shared/ladder_hook
+execute if score #special try_dis_bid matches 87..93 run function tryashtar.dispense_everything:item_conversion/special/shared/directional
+execute if block ~ ~1 ~ #tryashtar.dispense_everything:material/merged/replaceable positioned ~ ~-1 ~ if predicate tryashtar.dispense_everything:block_check/up/full positioned ~ ~1 ~ if score #special try_dis_bid matches 94..100 run function tryashtar.dispense_everything:item_conversion/special/shared/door
+execute if score #special try_dis_bid matches 107..139 run function tryashtar.dispense_everything:item_conversion/special/shared/horizontal
+execute if score #special try_dis_bid matches 140..141 run function tryashtar.dispense_everything:item_conversion/special/shared/ladder_hook
 execute unless predicate tryashtar.dispense_everything:waterlog if score #special try_dis_bid matches 156..195 run function tryashtar.dispense_everything:item_conversion/special/shared/only_waterlog/air
 execute if predicate tryashtar.dispense_everything:waterlog if score #special try_dis_bid matches 156..195 run function tryashtar.dispense_everything:item_conversion/special/shared/only_waterlog/water
 execute positioned ~ ~-1 ~ if predicate tryashtar.dispense_everything:block_check/up/rim positioned ~ ~1 ~ if score #special try_dis_bid matches 196..199 run function tryashtar.dispense_everything:item_conversion/special/shared/rail
