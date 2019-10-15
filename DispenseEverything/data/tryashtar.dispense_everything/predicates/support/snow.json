@@ -16,6 +16,17 @@
          "condition": "location_check",
          "predicate": {
             "block": {
+               "block": "snow",
+               "state": {
+                  "layers": 8
+               }
+            }
+         }
+      },
+      {
+         "condition": "location_check",
+         "predicate": {
+            "block": {
                "block": "vine",
                "state": {
                   "north": true,

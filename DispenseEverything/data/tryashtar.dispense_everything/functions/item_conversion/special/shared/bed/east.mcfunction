@@ -1,3 +1,4 @@
+scoreboard players set #success try_dis_bid 1
 execute if score #special try_dis_bid matches 51 run setblock ~ ~ ~ black_bed[facing=east,part=foot]
 execute if score #special try_dis_bid matches 51 run setblock ~1 ~ ~ black_bed[facing=east,part=head]
 execute if score #special try_dis_bid matches 52 run setblock ~ ~ ~ blue_bed[facing=east,part=foot]

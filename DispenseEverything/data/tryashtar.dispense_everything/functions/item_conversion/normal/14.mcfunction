@@ -7,7 +7,7 @@ execute unless block ~ ~-1 ~ magma_block if predicate tryashtar.dispense_everyth
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:loom"} run scoreboard players set #special try_dis_bid 146
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:rail"} run scoreboard players set #special try_dis_bid 215
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:sand"} store success score #success try_dis_bid run setblock ~ ~ ~ sand
-execute if data storage tryashtar:dispense_everything item{id:"minecraft:snow"} run function tryashtar.dispense_everything:item_conversion/special/snow
+execute unless block ~ ~ ~ snow unless block ~ ~-1 ~ ice unless block ~ ~-1 ~ packed_ice unless block ~ ~-1 ~ barrier positioned ~ ~-1 ~ if predicate tryashtar.dispense_everything:support/snow positioned ~ ~1 ~ if data storage tryashtar:dispense_everything item{id:"minecraft:snow"} store success score #success try_dis_bid run setblock ~ ~ ~ snow
 execute unless block ~ ~ ~ vine if data storage tryashtar:dispense_everything item{id:"minecraft:vine"} run function tryashtar.dispense_everything:item_conversion/special/merge/vine
 
 execute if score #special try_dis_bid matches 123..157 run function tryashtar.dispense_everything:item_conversion/special/shared/horizontal
