@@ -10,6 +10,7 @@ execute if block ~ ~ ~ #minecraft:slabs run function tryashtar.dispense_everythi
 execute if block ~ ~ ~ flower_pot run function tryashtar.dispense_everything:item_conversion/special/merge/flower_pot
 execute if block ~ ~ ~ jukebox[has_record=false] run function tryashtar.dispense_everything:item_conversion/special/merge/music_disc
 execute if block ~ ~ ~ cauldron run function tryashtar.dispense_everything:item_conversion/special/merge/cauldron
+execute if block ~ ~ ~ composter unless block ~ ~ ~ composter[level=7] unless block ~ ~ ~ composter[level=8] run function tryashtar.dispense_everything:item_conversion/special/merge/composter
 
 execute if block ~ ~ ~ end_portal_frame[eye=false] if data storage tryashtar:dispense_everything item{id:"minecraft:ender_eye"} run function tryashtar.dispense_everything:item_conversion/special/merge/end_portal
 execute if block ~ ~ ~ lectern[has_book=false] if data storage tryashtar:dispense_everything item.tag.pages run function tryashtar.dispense_everything:item_conversion/special/merge/lectern

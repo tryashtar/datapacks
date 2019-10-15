@@ -1,6 +1,6 @@
 scoreboard players set #finished try_dis_bid 1
 
-# regular glass bottles and shulker boxescan't be dispensed
+# regular glass bottles and shulker boxes can't be dispensed
 
 execute unless block ~ ~ ~ cauldron[level=3] if data storage tryashtar:dispense_everything item{id:"minecraft:potion",tag:{Potion:"minecraft:water"}} run function tryashtar.dispense_everything:item_conversion/special/merge/cauldron/water_bottle
 execute if block ~ ~ ~ cauldron[level=3] if data storage tryashtar:dispense_everything item{id:"minecraft:bucket"} run function tryashtar.dispense_everything:item_conversion/special/merge/cauldron/bucket
