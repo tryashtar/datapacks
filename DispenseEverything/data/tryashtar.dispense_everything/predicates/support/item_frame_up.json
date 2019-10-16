@@ -1,0 +1,31 @@
+{
+   "condition": "alternative",
+   "terms": [
+      {
+         "condition": "location_check",
+         "predicate": {
+            "block": {
+               "block": "cauldron"
+            }
+         }
+      },
+      {
+         "condition": "location_check",
+         "predicate": {
+            "block": {
+               "block": "scaffolding",
+               "state": {
+                  "bottom": false
+               }
+            }
+         }
+      },
+      {
+         "condition": "inverted",
+         "term": {
+            "condition": "reference",
+            "name": "tryashtar.dispense_everything:block_check/down/any"
+         }
+      }
+   ]
+}

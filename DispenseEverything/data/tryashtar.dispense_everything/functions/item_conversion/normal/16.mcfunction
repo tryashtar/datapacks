@@ -7,7 +7,7 @@ execute if block ~ ~-1 ~ #tryashtar.dispense_everything:groups/place_cactus unle
 execute if block ~ ~-1 ~ farmland if data storage tryashtar:dispense_everything item{id:"minecraft:carrot"} store success score #success try_dis_bid run setblock ~ ~ ~ carrots
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:cobweb"} store success score #success try_dis_bid run setblock ~ ~ ~ cobweb
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:gravel"} store success score #success try_dis_bid run setblock ~ ~ ~ gravel
-execute if data storage tryashtar:dispense_everything item{id:"minecraft:hopper"} store success score #success try_dis_bid run setblock ~ ~ ~ hopper
+execute if data storage tryashtar:dispense_everything item{id:"minecraft:hopper"} run function tryashtar.dispense_everything:item_conversion/special/hopper
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:ladder"} run scoreboard players set #special try_dis_bid 160
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:piston"} run scoreboard players set #special try_dis_bid 108
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:podzol"} store success score #success try_dis_bid run setblock ~ ~ ~ podzol
