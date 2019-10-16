@@ -2,7 +2,6 @@ execute if data storage tryashtar:dispense_everything item{id:"minecraft:acacia_
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:acacia_sign"} run scoreboard players set #special try_dis_bid 29
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:acacia_slab"} run scoreboard players set #special try_dis_bid 220
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:acacia_wood"} run scoreboard players set #special try_dis_bid 2
-execute if block ~ ~1 ~ #tryashtar.dispense_everything:material/merged/replaceable if data storage tryashtar:dispense_everything item{id:"minecraft:armor_stand"} align xyz unless entity @e[tag=!try_dis_cur,dx=0,dy=1,dz=0] run function tryashtar.dispense_everything:item_conversion/special/armor_stand
 execute if block ~ ~-1 ~ #tryashtar.dispense_everything:groups/place_plant if data storage tryashtar:dispense_everything item{id:"minecraft:azure_bluet"} store success score #success try_dis_bid run setblock ~ ~ ~ azure_bluet
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:birch_fence"} run scoreboard players set #special try_dis_bid 176
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:blue_banner"} run scoreboard players set #special try_dis_bid 32

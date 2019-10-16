@@ -1,0 +1,22 @@
+{
+   "type": "crafting_shaped",
+   "pattern": [
+    " /S",
+    "/XS",
+    " /S"
+  ],
+   "key": {
+      "/": {
+         "item": "stick"
+      },
+      "S": {
+         "item": "string"
+      },
+      "X": {
+         "item": "dropper"
+      }
+   },
+   "result": {
+      "item": "dispenser"
+   }
+}

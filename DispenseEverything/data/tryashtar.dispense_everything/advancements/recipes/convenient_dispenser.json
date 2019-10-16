@@ -1,0 +1,32 @@
+{
+   "parent": "minecraft:recipes/root",
+   "rewards": {
+      "recipes": [
+         "tryashtar.dispense_everything:convenient_dispenser"
+      ]
+   },
+   "criteria": {
+      "has_dropper": {
+         "trigger": "inventory_changed",
+         "conditions": {
+            "items": [
+               {
+                  "item": "dropper"
+               }
+            ]
+         }
+      },
+      "has_the_recipe": {
+         "trigger": "recipe_unlocked",
+         "conditions": {
+            "recipe": "tryashtar.dispense_everything:convenient_dispenser"
+         }
+      }
+   },
+   "requirements": [
+      [
+         "has_dropper",
+         "has_the_recipe"
+      ]
+   ]
+}
