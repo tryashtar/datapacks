@@ -1,0 +1,65 @@
+{
+   "condition": "alternative",
+   "terms": [
+      {
+         "condition": "location_check",
+         "predicate": {
+            "block": {
+               "block": "repeater"
+            }
+         }
+      },
+      {
+         "condition": "location_check",
+         "predicate": {
+            "block": {
+               "block": "comparator"
+            }
+         }
+      },
+      {
+         "condition": "location_check",
+         "predicate": {
+            "block": {
+               "block": "scaffolding"
+            }
+         }
+      },
+      {
+         "condition": "location_check",
+         "predicate": {
+            "block": {
+               "block": "lectern"
+            }
+         }
+      },
+      {
+         "condition": "location_check",
+         "predicate": {
+            "block": {
+               "block": "snow",
+               "state": {
+                  "layers": {
+                     "max": 2
+                  }
+               }
+            }
+         }
+      },
+      {
+         "condition": "location_check",
+         "predicate": {
+            "block": {
+               "tag": "minecraft:carpets"
+            }
+         }
+      },
+      {
+         "condition": "inverted",
+         "term": {
+            "condition": "reference",
+            "name": "tryashtar.dispense_everything:block_check/north/any"
+         }
+      }
+   ]
+}
