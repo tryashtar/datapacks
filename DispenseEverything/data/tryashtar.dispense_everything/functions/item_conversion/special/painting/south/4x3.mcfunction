@@ -1,4 +1,4 @@
-scoreboard players set #success try_dis_bid 1
+scoreboard players set #success try_dis_bid 2
 playsound entity.painting.place block @a
 
 execute if entity @s[y_rotation=0..180] run summon painting ~ ~ ~ {Facing:0b,Motive:"skeleton"}

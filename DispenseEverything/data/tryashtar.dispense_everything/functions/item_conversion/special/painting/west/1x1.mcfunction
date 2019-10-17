@@ -1,10 +1,10 @@
-scoreboard players set #success try_dis_bid 1
+scoreboard players set #success try_dis_bid 2
 playsound entity.painting.place block @a
 
 execute if entity @s[y_rotation=0..51] run summon painting ~ ~ ~ {Facing:3b,Motive:"kebab"}
 execute if entity @s[y_rotation=51..102] run summon painting ~ ~ ~ {Facing:3b,Motive:"aztec"}
-execute if entity @s[y_rotation=102..153] run summon painting ~ ~ ~ {Facing:3b,Motive:"alban"}
-execute if entity @s[y_rotation=153..204] run summon painting ~ ~ ~ {Facing:3b,Motive:"aztec2"}
-execute if entity @s[y_rotation=204..255] run summon painting ~ ~ ~ {Facing:3b,Motive:"bomb"}
-execute if entity @s[y_rotation=255..306] run summon painting ~ ~ ~ {Facing:3b,Motive:"plant"}
-execute if entity @s[y_rotation=306..357] run summon painting ~ ~ ~ {Facing:3b,Motive:"wasteland"}
+execute if entity @s[y_rotation=102..154] run summon painting ~ ~ ~ {Facing:3b,Motive:"alban"}
+execute if entity @s[y_rotation=154..205] run summon painting ~ ~ ~ {Facing:3b,Motive:"aztec2"}
+execute if entity @s[y_rotation=205..257] run summon painting ~ ~ ~ {Facing:3b,Motive:"bomb"}
+execute if entity @s[y_rotation=257..308] run summon painting ~ ~ ~ {Facing:3b,Motive:"plant"}
+execute if entity @s[y_rotation=308..360] run summon painting ~ ~ ~ {Facing:3b,Motive:"wasteland"}
