@@ -1,0 +1,12 @@
+{
+   "values": [
+      "#tryashtar.dispense_everything:tool/diamond_pickaxe",
+      "diamond_block",
+      "diamond_ore",
+      "emerald_block",
+      "emerald_ore",
+      "gold_block",
+      "gold_ore",
+      "redstone_ore"
+   ]
+}

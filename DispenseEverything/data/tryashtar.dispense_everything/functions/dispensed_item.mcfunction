@@ -12,7 +12,7 @@ execute if block ~ ~ ~ jukebox[has_record=false] run function tryashtar.dispense
 execute if block ~ ~ ~ cauldron run function tryashtar.dispense_everything:item_conversion/special/merge/cauldron
 execute if block ~ ~ ~ composter unless block ~ ~ ~ composter[level=7] unless block ~ ~ ~ composter[level=8] run function tryashtar.dispense_everything:item_conversion/special/merge/composter
 
-# block merging (specific)
+# block interactions (specific)
 execute if block ~ ~ ~ end_portal_frame[eye=false] if data storage tryashtar:dispense_everything item{id:"minecraft:ender_eye"} run function tryashtar.dispense_everything:item_conversion/special/merge/end_portal
 execute if block ~ ~ ~ lectern[has_book=false] if data storage tryashtar:dispense_everything item.tag.pages run function tryashtar.dispense_everything:item_conversion/special/merge/lectern
 execute if block ~ ~ ~ scaffolding if data storage tryashtar:dispense_everything item{id:"minecraft:scaffolding"} positioned ~ ~1 ~ run function tryashtar.dispense_everything:item_conversion/special/merge/scaffolding
@@ -20,12 +20,34 @@ execute if block ~ ~ ~ sea_pickle if data storage tryashtar:dispense_everything 
 execute if block ~ ~ ~ snow if data storage tryashtar:dispense_everything item{id:"minecraft:snow"} run function tryashtar.dispense_everything:item_conversion/special/merge/snow
 execute if block ~ ~ ~ turtle_egg if data storage tryashtar:dispense_everything item{id:"minecraft:turtle_egg"} run function tryashtar.dispense_everything:item_conversion/special/merge/turtle_egg
 execute if block ~ ~ ~ vine if data storage tryashtar:dispense_everything item{id:"minecraft:vine"} run function tryashtar.dispense_everything:item_conversion/special/merge/vine
+execute if block ~ ~ ~ #tryashtar.dispense_everything:groups/tillable if data storage tryashtar:dispense_everything item{id:"minecraft:wooden_hoe"} run function tryashtar.dispense_everything:item_conversion/special/extra/hoe
+execute if block ~ ~ ~ #tryashtar.dispense_everything:groups/tillable if data storage tryashtar:dispense_everything item{id:"minecraft:golden_hoe"} run function tryashtar.dispense_everything:item_conversion/special/extra/hoe
+execute if block ~ ~ ~ #tryashtar.dispense_everything:groups/tillable if data storage tryashtar:dispense_everything item{id:"minecraft:stone_hoe"} run function tryashtar.dispense_everything:item_conversion/special/extra/hoe
+execute if block ~ ~ ~ #tryashtar.dispense_everything:groups/tillable if data storage tryashtar:dispense_everything item{id:"minecraft:iron_hoe"} run function tryashtar.dispense_everything:item_conversion/special/extra/hoe
+execute if block ~ ~ ~ #tryashtar.dispense_everything:groups/tillable if data storage tryashtar:dispense_everything item{id:"minecraft:diamond_hoe"} run function tryashtar.dispense_everything:item_conversion/special/extra/hoe
+execute if block ~ ~ ~ #tryashtar.dispense_everything:tool/pickaxe unless block ~ ~ ~ #tryashtar.dispense_everything:tool/stone_pickaxe if data storage tryashtar:dispense_everything item{id:"minecraft:wooden_pickaxe"} run function tryashtar.dispense_everything:item_conversion/special/extra/mine
+execute if block ~ ~ ~ #tryashtar.dispense_everything:tool/pickaxe unless block ~ ~ ~ #tryashtar.dispense_everything:tool/stone_pickaxe if data storage tryashtar:dispense_everything item{id:"minecraft:golden_pickaxe"} run function tryashtar.dispense_everything:item_conversion/special/extra/mine
+execute if block ~ ~ ~ #tryashtar.dispense_everything:tool/pickaxe unless block ~ ~ ~ #tryashtar.dispense_everything:tool/iron_pickaxe if data storage tryashtar:dispense_everything item{id:"minecraft:stone_pickaxe"} run function tryashtar.dispense_everything:item_conversion/special/extra/mine
+execute if block ~ ~ ~ #tryashtar.dispense_everything:tool/pickaxe unless block ~ ~ ~ #tryashtar.dispense_everything:tool/diamond_pickaxe if data storage tryashtar:dispense_everything item{id:"minecraft:iron_pickaxe"} run function tryashtar.dispense_everything:item_conversion/special/extra/mine
+execute if block ~ ~ ~ #tryashtar.dispense_everything:tool/pickaxe if data storage tryashtar:dispense_everything item{id:"minecraft:diamond_pickaxe"} run function tryashtar.dispense_everything:item_conversion/special/extra/mine
+execute if block ~ ~ ~ #tryashtar.dispense_everything:tool/shovel if data storage tryashtar:dispense_everything item{id:"minecraft:wooden_shovel"} run function tryashtar.dispense_everything:item_conversion/special/extra/mine
+execute if block ~ ~ ~ #tryashtar.dispense_everything:tool/shovel if data storage tryashtar:dispense_everything item{id:"minecraft:golden_shovel"} run function tryashtar.dispense_everything:item_conversion/special/extra/mine
+execute if block ~ ~ ~ #tryashtar.dispense_everything:tool/shovel if data storage tryashtar:dispense_everything item{id:"minecraft:stone_shovel"} run function tryashtar.dispense_everything:item_conversion/special/extra/mine
+execute if block ~ ~ ~ #tryashtar.dispense_everything:tool/shovel if data storage tryashtar:dispense_everything item{id:"minecraft:iron_shovel"} run function tryashtar.dispense_everything:item_conversion/special/extra/mine
+execute if block ~ ~ ~ #tryashtar.dispense_everything:tool/shovel if data storage tryashtar:dispense_everything item{id:"minecraft:diamond_shovel"} run function tryashtar.dispense_everything:item_conversion/special/extra/mine
+execute if block ~ ~ ~ #tryashtar.dispense_everything:tool/axe if data storage tryashtar:dispense_everything item{id:"minecraft:wooden_axe"} run function tryashtar.dispense_everything:item_conversion/special/extra/mine
+execute if block ~ ~ ~ #tryashtar.dispense_everything:tool/axe if data storage tryashtar:dispense_everything item{id:"minecraft:golden_axe"} run function tryashtar.dispense_everything:item_conversion/special/extra/mine
+execute if block ~ ~ ~ #tryashtar.dispense_everything:tool/axe if data storage tryashtar:dispense_everything item{id:"minecraft:stone_axe"} run function tryashtar.dispense_everything:item_conversion/special/extra/mine
+execute if block ~ ~ ~ #tryashtar.dispense_everything:tool/axe if data storage tryashtar:dispense_everything item{id:"minecraft:iron_axe"} run function tryashtar.dispense_everything:item_conversion/special/extra/mine
+execute if block ~ ~ ~ #tryashtar.dispense_everything:tool/axe if data storage tryashtar:dispense_everything item{id:"minecraft:diamond_axe"} run function tryashtar.dispense_everything:item_conversion/special/extra/mine
 
 # extra items that don't care whether the block is replaceable
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:ender_pearl"} run function tryashtar.dispense_everything:item_conversion/special/extra/ender_pearl
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:trident"} unless data storage tryashtar:dispense_everything item.tag{Damage:249} unless data storage tryashtar:dispense_everything item.tag.Enchantments[{id:"minecraft:riptide"}] run function tryashtar.dispense_everything:item_conversion/special/extra/trident
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:item_frame"} run function tryashtar.dispense_everything:item_conversion/special/extra/item_frame
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:painting"} run function tryashtar.dispense_everything:item_conversion/special/extra/painting
+
+# entity interactions
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:bucket"} align xyz if entity @e[type=#tryashtar.dispense_everything:milkable,predicate=!tryashtar.dispense_everything:baby,dy=0,limit=1] run function tryashtar.dispense_everything:item_conversion/special/extra/bucket
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:bowl"} run function tryashtar.dispense_everything:item_conversion/special/extra/bowl
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:saddle"} run function tryashtar.dispense_everything:item_conversion/special/extra/saddle

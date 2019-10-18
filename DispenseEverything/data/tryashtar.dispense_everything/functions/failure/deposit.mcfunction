@@ -1,6 +1,3 @@
-stopsound @a[distance=..16] block block.dispenser.dispense
-playsound block.dispenser.fail block @a ~ ~ ~ 1 1.2
-
 execute unless data block ~ ~ ~ Items[{Slot:0b}] run function tryashtar.dispense_everything:failure/create/0
 execute if score #success try_dis_bid matches 0 if score #stack_1 try_dis_bid matches 0 run function tryashtar.dispense_everything:failure/merge/0
 execute if score #success try_dis_bid matches 0 unless data block ~ ~ ~ Items[{Slot:1b}] run function tryashtar.dispense_everything:failure/create/1

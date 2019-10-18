@@ -1,0 +1,31 @@
+{
+   "values": [
+      "#tryashtar.dispense_everything:material/wood",
+      "#tryashtar.dispense_everything:material/plant",
+      "#tryashtar.dispense_everything:material/water_plant",
+      "#tryashtar.dispense_everything:material/replaceable_plant",
+      "#tryashtar.dispense_everything:material/replaceable_water_plant",
+      "#tryashtar.dispense_everything:material/irreplaceable_plant",
+      "#tryashtar.dispense_everything:material/bamboo",
+      "#tryashtar.dispense_everything:material/bamboo_sapling",
+      "#tryashtar.dispense_everything:material/vegetable",
+      "#tryashtar.dispense_everything:material/cactus",
+      "#tryashtar.dispense_everything:material/leaves",
+      "#tryashtar.dispense_everything:material/sponge",
+      "#tryashtar.dispense_everything:material/web",
+      "#tryashtar.dispense_everything:material/wool",
+      "#tryashtar.dispense_everything:material/cloth_decoration",
+      "#tryashtar.dispense_everything:material/explosive",
+      "#minecraft:wooden_buttons",
+      "ladder",
+      "scaffolding",
+      "torch",
+      "wall_torch",
+      "redstone_torch",
+      "redstone_wall_torch",
+      "dried_kelp_block",
+      "hay_block",
+      "nether_wart_block",
+      "piston_head"
+   ]
+}

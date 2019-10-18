@@ -1,0 +1,15 @@
+{
+   "values": [
+      "#tryashtar.dispense_everything:material/sand",
+      "#tryashtar.dispense_everything:material/snow",
+      "#tryashtar.dispense_everything:material/top_snow",
+      "#tryashtar.dispense_everything:material/dirt",
+      "clay",
+      "grass_block",
+      "mycelium",
+      "slime_block",
+      "honey_block",
+      "honeycomb_block",
+      "cake"
+   ]
+}

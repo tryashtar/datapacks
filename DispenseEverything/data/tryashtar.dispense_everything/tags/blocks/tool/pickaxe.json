@@ -1,0 +1,27 @@
+{
+   "values": [
+      "#tryashtar.dispense_everything:material/stone",
+      "#tryashtar.dispense_everything:material/metal",
+      "#tryashtar.dispense_everything:material/heavy_metal",
+      "#tryashtar.dispense_everything:material/ice",
+      "#tryashtar.dispense_everything:material/ice_solid",
+      "#tryashtar.dispense_everything:material/shulker_shell",
+      "#tryashtar.dispense_everything:material/egg",
+      "#tryashtar.dispense_everything:material/buildable_glass",
+      "#tryashtar.dispense_everything:material/glass",
+      "#tryashtar.dispense_everything:groups/infested",
+      "#tryashtar.dispense_everything:groups/piston",
+      "#tryashtar.dispense_everything:groups/head",
+      "#tryashtar.dispense_everything:groups/wall_head",
+      "#minecraft:flower_pots",
+      "#minecraft:rails",
+      "stone_button",
+      "redstone_wire",
+      "comparator",
+      "repeater",
+      "end_rod",
+      "lever",
+      "tripwire",
+      "tripwire_hook"
+   ]
+}

@@ -1,0 +1,29 @@
+{
+   "values": [
+      "#tryashtar.dispense_everything:material/buildable_glass",
+      "#tryashtar.dispense_everything:material/clay",
+      "#tryashtar.dispense_everything:material/dirt",
+      "#tryashtar.dispense_everything:material/grass",
+      "#tryashtar.dispense_everything:material/ice_solid",
+      "#tryashtar.dispense_everything:material/sand",
+      "#tryashtar.dispense_everything:material/sponge",
+      "#tryashtar.dispense_everything:material/shulker_shell",
+      "#tryashtar.dispense_everything:material/wood",
+      "#tryashtar.dispense_everything:material/bamboo",
+      "#tryashtar.dispense_everything:material/wool",
+      "#tryashtar.dispense_everything:material/explosive",
+      "#tryashtar.dispense_everything:material/leaves",
+      "#tryashtar.dispense_everything:material/glass",
+      "#tryashtar.dispense_everything:material/ice",
+      "#tryashtar.dispense_everything:material/cactus",
+      "#tryashtar.dispense_everything:material/stone",
+      "#tryashtar.dispense_everything:material/metal",
+      "#tryashtar.dispense_everything:material/snow",
+      "#tryashtar.dispense_everything:material/heavy_metal",
+      "#tryashtar.dispense_everything:material/barrier",
+      "#tryashtar.dispense_everything:material/piston",
+      "#tryashtar.dispense_everything:material/vegetable",
+      "#tryashtar.dispense_everything:material/egg",
+      "#tryashtar.dispense_everything:material/cake"
+   ]
+}
