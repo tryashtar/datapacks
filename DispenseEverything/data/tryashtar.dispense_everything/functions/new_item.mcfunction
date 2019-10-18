@@ -18,9 +18,4 @@ scoreboard players operation #vertdir try_dis_bid = #dir try_dis_bid
 execute unless score #dir try_dis_bid matches 3..4 run scoreboard players operation #vertdir try_dis_bid = #firstdir try_dis_bid
 execute unless score #vertdir try_dis_bid matches 3..4 run scoreboard players set #vertdir try_dis_bid 4
 
-execute if score #dir try_dis_bid matches 1 run function tryashtar.dispense_everything:dispensed_item
-execute if score #dir try_dis_bid matches 2 run function tryashtar.dispense_everything:dispensed_item
-execute if score #dir try_dis_bid matches 3 run function tryashtar.dispense_everything:dispensed_item
-execute if score #dir try_dis_bid matches 4 run function tryashtar.dispense_everything:dispensed_item
-execute if score #dir try_dis_bid matches 5 run function tryashtar.dispense_everything:dispensed_item
-execute if score #dir try_dis_bid matches 6 run function tryashtar.dispense_everything:dispensed_item
+execute if score #dir try_dis_bid matches 1.. run function tryashtar.dispense_everything:dispensed_item
