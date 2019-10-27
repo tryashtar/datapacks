@@ -371,6 +371,7 @@
     "composter",
     "bee_nest",
     "beehive",
-    "honeycomb_block"
+    "honeycomb_block",
+    "honey_block"
   ]
 }

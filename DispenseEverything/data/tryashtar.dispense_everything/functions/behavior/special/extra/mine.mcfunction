@@ -1,7 +1,5 @@
 scoreboard players set #finished try_dis_bid 1
 
-summon armor_stand 29999977 1 9848 {CustomName:'"Dispense Everything Remote Block Miner"',UUIDMost:29999977,UUIDLeast:9848,Marker:1b,NoGravity:1b}
-data modify entity 0-1c9-c369-0-2678 HandItems[0] set from storage tryashtar:dispense_everything item
 execute as 0-1c9-c369-0-2678 align xyz run loot spawn ~0.5 ~0.5 ~0.5 mine ~ ~ ~ mainhand
 execute align xyz run tag @e[type=item,dy=0,nbt={PickupDelay:10s,Age:0s}] add try_dis_drop
 
@@ -24,6 +22,7 @@ execute if block ~ ~ ~ turtle_egg[eggs=4,hatch=0] run setblock ~ ~ ~ turtle_egg[
 execute if block ~ ~ ~ turtle_egg[eggs=4,hatch=1] run setblock ~ ~ ~ turtle_egg[eggs=3,hatch=1] destroy
 execute if block ~ ~ ~ turtle_egg[eggs=4,hatch=2] run setblock ~ ~ ~ turtle_egg[eggs=3,hatch=2] destroy
 
+# this is better than temporarily disabling doTileDrops, because I don't want to manually recreate XP drops and silverfish spawns
 execute align xyz run kill @e[type=item,dy=0,tag=!try_dis_drop,nbt={PickupDelay:10s,Age:0s}]
 execute align xyz run tag @e[type=item,dy=0,tag=try_dis_drop] remove try_dis_drop
 

@@ -4,7 +4,7 @@
    "predicate": {
       "equipment": {
          "mainhand": {
-            "tag": "minecraft:slabs"
+            "tag": "tryashtar.dispense_everything:hoe"
          }
       }
    }

@@ -1,4 +1,5 @@
 scoreboard players set #finished try_dis_bid 1
+
 execute if block ~ ~ ~ acacia_slab unless block ~ ~ ~ acacia_slab[type=double] if data storage tryashtar:dispense_everything item{id:"minecraft:acacia_slab"} store success score #success try_dis_bid run setblock ~ ~ ~ acacia_slab[type=double]
 execute if block ~ ~ ~ andesite_slab unless block ~ ~ ~ andesite_slab[type=double] if data storage tryashtar:dispense_everything item{id:"minecraft:andesite_slab"} store success score #success try_dis_bid run setblock ~ ~ ~ andesite_slab[type=double]
 execute if block ~ ~ ~ birch_slab unless block ~ ~ ~ birch_slab[type=double] if data storage tryashtar:dispense_everything item{id:"minecraft:birch_slab"} store success score #success try_dis_bid run setblock ~ ~ ~ birch_slab[type=double]
