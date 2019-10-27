@@ -1,0 +1,15 @@
+{
+   "values": [
+      "#tryashtar.dispense_everything:groups/glass_pane",
+      "#minecraft:walls",
+      "#minecraft:fences",
+      "#minecraft:stairs",
+      "#minecraft:trapdoors",
+      "#minecraft:coral_blocks",
+      "iron_bars",
+      "repeater",
+      "comparator",
+      "redstone_lamp",
+      "redstone_wire"
+   ]
+}

@@ -4,7 +4,7 @@ scoreboard players set #finished try_dis_bid 0
 scoreboard players set #success try_dis_bid 0
 
 data modify storage tryashtar:dispense_everything item set from entity @s Item
-summon armor_stand 29999977 1 9848 {CustomName:'"Dispense Everything Remote Item Checker"',UUIDMost:29999977,UUIDLeast:9848,Marker:1b,NoGravity:1b}
+execute unless entity 0-1c9-c369-0-2678 run summon armor_stand 29999977 1 9848 {CustomName:'"Dispense Everything Remote Item Checker"',UUIDMost:29999977,UUIDLeast:9848,Marker:1b,NoGravity:1b}
 data modify entity 0-1c9-c369-0-2678 HandItems[0] set from storage tryashtar:dispense_everything item
 
 # block merging (generic)
@@ -52,5 +52,6 @@ execute as 0-1c9-c369-0-2678 if predicate tryashtar.dispense_everything:item/dye
 execute if block ~ ~ ~ #tryashtar.dispense_everything:material/merged/replaceable if score #finished try_dis_bid matches 0 run function tryashtar.dispense_everything:place_item
 execute if score #success try_dis_bid matches 0 run function tryashtar.dispense_everything:failure/align
 execute if score #success try_dis_bid matches 1 run function tryashtar.dispense_everything:block_sound
+execute if score #success try_dis_bid matches 1.. if block ~ ~ ~ #tryashtar.dispense_everything:groups/needs_cloning run function tryashtar.dispense_everything:clone_update
 execute if score #success try_dis_bid matches 1.. run kill @s
 tag @s remove try_dis_cur
