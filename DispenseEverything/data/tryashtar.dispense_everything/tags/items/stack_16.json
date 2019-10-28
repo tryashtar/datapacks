@@ -1,0 +1,12 @@
+{
+   "values": [
+      "#minecraft:banners",
+      "#minecraft:signs",
+      "armor_stand",
+      "bucket",
+      "egg",
+      "ender_pearl",
+      "snowball",
+      "written_book"
+   ]
+}
