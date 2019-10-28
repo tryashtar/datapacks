@@ -51,6 +51,7 @@ execute as 0-1c9-c369-0-2678 if predicate tryashtar.dispense_everything:item/dye
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:golden_apple"} align xyz as @e[type=zombie_villager,dy=0,nbt={ActiveEffects:[{Id:18b}]},sort=nearest,limit=1] run function tryashtar.dispense_everything:behavior/special/extra/cure_zombie
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:iron_ingot"} align xyz as @e[type=iron_golem,dy=0,sort=nearest,limit=1] at @s run function tryashtar.dispense_everything:behavior/special/extra/repair_golem
 
+execute if score #finished try_dis_bid matches 0 align xyz as @e[type=item_frame,nbt=!{Item:{}},dy=0,sort=nearest,limit=1] run function tryashtar.dispense_everything:behavior/special/merge/item_frame
 execute if block ~ ~ ~ #tryashtar.dispense_everything:material/merged/replaceable if score #finished try_dis_bid matches 0 run function tryashtar.dispense_everything:place_item
 execute if score #success try_dis_bid matches 0 run function tryashtar.dispense_everything:failure/align
 execute if score #success try_dis_bid matches 1 run function tryashtar.dispense_everything:block_sound
