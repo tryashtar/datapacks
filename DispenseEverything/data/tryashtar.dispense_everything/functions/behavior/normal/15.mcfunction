@@ -12,6 +12,7 @@ execute if data storage tryashtar:dispense_everything item{id:"minecraft:torch"}
 
 execute if score #special try_dis_bid matches 67..74 run function tryashtar.dispense_everything:behavior/special/shared/button
 execute if score #special try_dis_bid matches 75..76 run function tryashtar.dispense_everything:behavior/special/shared/chest
-execute if score #special try_dis_bid matches 119..124 if block ~ ~-1 ~ #tryashtar.dispense_everything:groups/place_plant if block ~ ~1 ~ #tryashtar.dispense_everything:material/merged/replaceable run function tryashtar.dispense_everything:behavior/special/shared/double_plant
+execute if block ~ ~-1 ~ #tryashtar.dispense_everything:groups/place_plant if block ~ ~1 ~ #tryashtar.dispense_everything:material/merged/replaceable unless score #dir try_dis_bid matches 3 if score #special try_dis_bid matches 119..124 run function tryashtar.dispense_everything:behavior/special/shared/double_plant
+execute if block ~ ~-2 ~ #tryashtar.dispense_everything:groups/place_plant if block ~ ~-1 ~ #tryashtar.dispense_everything:material/merged/replaceable if score #dir try_dis_bid matches 3 if score #special try_dis_bid matches 119..124 positioned ~ ~-1 ~ run function tryashtar.dispense_everything:behavior/special/shared/double_plant
 execute if score #special try_dis_bid matches 125..159 run function tryashtar.dispense_everything:behavior/special/shared/horizontal
 execute if score #special try_dis_bid matches 255..256 run function tryashtar.dispense_everything:behavior/special/shared/torch

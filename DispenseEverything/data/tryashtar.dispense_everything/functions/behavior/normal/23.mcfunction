@@ -58,7 +58,8 @@ execute if score #special try_dis_bid matches 29..50 run function tryashtar.disp
 execute if score #special try_dis_bid matches 67..74 run function tryashtar.dispense_everything:behavior/special/shared/button
 execute if score #special try_dis_bid matches 75..76 run function tryashtar.dispense_everything:behavior/special/shared/chest
 execute if score #special try_dis_bid matches 103..109 run function tryashtar.dispense_everything:behavior/special/shared/directional
-execute if block ~ ~1 ~ #tryashtar.dispense_everything:material/merged/replaceable positioned ~ ~-1 ~ if predicate tryashtar.dispense_everything:block_check/up/full positioned ~ ~1 ~ if score #special try_dis_bid matches 112..118 run function tryashtar.dispense_everything:behavior/special/shared/door
+execute if block ~ ~1 ~ #tryashtar.dispense_everything:material/merged/replaceable positioned ~ ~-1 ~ if predicate tryashtar.dispense_everything:block_check/up/full unless score #dir try_dis_bid matches 3 positioned ~ ~1 ~ if score #special try_dis_bid matches 112..118 run function tryashtar.dispense_everything:behavior/special/shared/door
+execute if block ~ ~-1 ~ #tryashtar.dispense_everything:material/merged/replaceable positioned ~ ~-2 ~ if predicate tryashtar.dispense_everything:block_check/up/full positioned ~ ~1 ~ if score #dir try_dis_bid matches 3 if score #special try_dis_bid matches 112..118 run function tryashtar.dispense_everything:behavior/special/shared/door
 execute if score #special try_dis_bid matches 125..159 run function tryashtar.dispense_everything:behavior/special/shared/horizontal
 execute if score #special try_dis_bid matches 160..161 run function tryashtar.dispense_everything:behavior/special/shared/ladder_hook
 execute unless predicate tryashtar.dispense_everything:waterlog if score #special try_dis_bid matches 174..213 run function tryashtar.dispense_everything:behavior/special/shared/only_waterlog/air

@@ -31,7 +31,8 @@ execute if score #special try_dis_bid matches 29..50 run function tryashtar.disp
 execute if score #special try_dis_bid matches 51..66 run function tryashtar.dispense_everything:behavior/special/shared/bed
 execute if score #special try_dis_bid matches 103..109 run function tryashtar.dispense_everything:behavior/special/shared/directional
 execute if score #special try_dis_bid matches 110..111 run function tryashtar.dispense_everything:behavior/special/shared/dirtlike
-execute if block ~ ~1 ~ #tryashtar.dispense_everything:material/merged/replaceable positioned ~ ~-1 ~ if predicate tryashtar.dispense_everything:block_check/up/full positioned ~ ~1 ~ if score #special try_dis_bid matches 112..118 run function tryashtar.dispense_everything:behavior/special/shared/door
+execute if block ~ ~1 ~ #tryashtar.dispense_everything:material/merged/replaceable positioned ~ ~-1 ~ if predicate tryashtar.dispense_everything:block_check/up/full unless score #dir try_dis_bid matches 3 positioned ~ ~1 ~ if score #special try_dis_bid matches 112..118 run function tryashtar.dispense_everything:behavior/special/shared/door
+execute if block ~ ~-1 ~ #tryashtar.dispense_everything:material/merged/replaceable positioned ~ ~-2 ~ if predicate tryashtar.dispense_everything:block_check/up/full positioned ~ ~1 ~ if score #dir try_dis_bid matches 3 if score #special try_dis_bid matches 112..118 run function tryashtar.dispense_everything:behavior/special/shared/door
 execute if score #special try_dis_bid matches 125..159 run function tryashtar.dispense_everything:behavior/special/shared/horizontal
 execute positioned ~ ~-1 ~ if predicate tryashtar.dispense_everything:block_check/up/rim positioned ~ ~1 ~ if score #special try_dis_bid matches 218..219 run function tryashtar.dispense_everything:behavior/special/shared/horizontal
 execute if score #special try_dis_bid matches 220..254 run function tryashtar.dispense_everything:behavior/special/shared/slab
