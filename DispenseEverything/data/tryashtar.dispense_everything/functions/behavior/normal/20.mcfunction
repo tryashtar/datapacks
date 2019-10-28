@@ -44,7 +44,7 @@ execute if data storage tryashtar:dispense_everything item{id:"minecraft:sugar_c
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:tall_grass"} run scoreboard players set #special try_dis_bid 124
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:terracotta"} store success score #success try_dis_bid run setblock ~ ~ ~ terracotta
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:tube_coral"} run scoreboard players set #special try_dis_bid 173
-execute if data storage tryashtar:dispense_everything item{id:"minecraft:turtle_egg"} store success score #success try_dis_bid run setblock ~ ~ ~ turtle_egg
+execute if data storage tryashtar:dispense_everything item{id:"minecraft:turtle_egg"} run function tryashtar.dispense_everything:behavior/special/turtle_egg
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:wet_sponge"} store success score #success try_dis_bid run setblock ~ ~ ~ wet_sponge
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:white_wool"} store success score #success try_dis_bid run setblock ~ ~ ~ white_wool
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:yellow_bed"} run scoreboard players set #special try_dis_bid 66
