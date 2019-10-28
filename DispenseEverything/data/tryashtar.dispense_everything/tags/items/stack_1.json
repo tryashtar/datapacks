@@ -43,8 +43,6 @@
       "bow",
       "crossbow",
       "trident",
-      "shears",
-      "flint_and_steel",
       "carrot_on_a_stick",
       "shield",
       "minecart",
@@ -74,8 +72,6 @@
       "knowledge_book",
       "writable_book",
       "potion",
-      "splash_potion",
-      "lingering_potion",
       "debug_stick",
       "saddle",
       "totem_of_undying"
