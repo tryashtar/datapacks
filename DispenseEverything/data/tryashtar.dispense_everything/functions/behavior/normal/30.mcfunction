@@ -13,8 +13,8 @@ execute if data storage tryashtar:dispense_everything item{id:"minecraft:lime_co
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:orange_stained_glass"} store success score #success try_dis_bid run setblock ~ ~ ~ orange_stained_glass
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:pink_concrete_powder"} run scoreboard players set #special try_dis_bid 88
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:purple_stained_glass"} store success score #success try_dis_bid run setblock ~ ~ ~ purple_stained_glass
-execute if data storage tryashtar:dispense_everything item{id:"minecraft:red_sandstone_stairs"} run scoreboard players set #special try_dis_bid 286
-execute if data storage tryashtar:dispense_everything item{id:"minecraft:smooth_quartz_stairs"} run scoreboard players set #special try_dis_bid 288
+execute if data storage tryashtar:dispense_everything item{id:"minecraft:red_sandstone_stairs"} run scoreboard players set #special try_dis_bid 278
+execute if data storage tryashtar:dispense_everything item{id:"minecraft:smooth_quartz_stairs"} run scoreboard players set #special try_dis_bid 280
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:smooth_red_sandstone"} store success score #success try_dis_bid run setblock ~ ~ ~ smooth_red_sandstone
 execute positioned ~ ~-1 ~ if predicate tryashtar.dispense_everything:support/pressure_plate positioned ~ ~1 ~ if data storage tryashtar:dispense_everything item{id:"minecraft:stone_pressure_plate"} store success score #success try_dis_bid run setblock ~ ~ ~ stone_pressure_plate
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:stripped_acacia_wood"} run scoreboard players set #special try_dis_bid 18
@@ -28,4 +28,4 @@ execute if score #special try_dis_bid matches 93..102 run function tryashtar.dis
 execute unless predicate tryashtar.dispense_everything:waterlog if score #special try_dis_bid matches 174..213 run function tryashtar.dispense_everything:behavior/special/shared/only_waterlog/air
 execute if predicate tryashtar.dispense_everything:waterlog if score #special try_dis_bid matches 174..213 run function tryashtar.dispense_everything:behavior/special/shared/only_waterlog/water
 execute if score #special try_dis_bid matches 220..254 run function tryashtar.dispense_everything:behavior/special/shared/slab
-execute if score #special try_dis_bid matches 257..294 run function tryashtar.dispense_everything:behavior/special/shared/trapdoor_stairs
+execute if score #special try_dis_bid matches 255..285 run function tryashtar.dispense_everything:behavior/special/shared/stairs

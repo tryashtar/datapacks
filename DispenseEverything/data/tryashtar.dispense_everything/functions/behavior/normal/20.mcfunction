@@ -28,7 +28,7 @@ execute if data storage tryashtar:dispense_everything item{id:"minecraft:note_bl
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:oak_button"} run scoreboard players set #special try_dis_bid 72
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:oak_leaves"} store success score #success try_dis_bid run setblock ~ ~ ~ oak_leaves[persistent=true]
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:oak_planks"} store success score #success try_dis_bid run setblock ~ ~ ~ oak_planks
-execute if data storage tryashtar:dispense_everything item{id:"minecraft:oak_stairs"} run scoreboard players set #special try_dis_bid 276
+execute if data storage tryashtar:dispense_everything item{id:"minecraft:oak_stairs"} run scoreboard players set #special try_dis_bid 269
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:orange_bed"} run scoreboard players set #special try_dis_bid 61
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:packed_ice"} store success score #success try_dis_bid run setblock ~ ~ ~ packed_ice
 execute if block ~ ~-1 ~ #tryashtar.dispense_everything:groups/place_plant if data storage tryashtar:dispense_everything item{id:"minecraft:pink_tulip"} store success score #success try_dis_bid run setblock ~ ~ ~ pink_tulip
@@ -64,4 +64,4 @@ execute unless predicate tryashtar.dispense_everything:waterlog if score #specia
 execute if predicate tryashtar.dispense_everything:waterlog if score #special try_dis_bid matches 174..213 run function tryashtar.dispense_everything:behavior/special/shared/only_waterlog/water
 execute positioned ~ ~-1 ~ if predicate tryashtar.dispense_everything:block_check/up/rim positioned ~ ~1 ~ if score #special try_dis_bid matches 218..219 run function tryashtar.dispense_everything:behavior/special/shared/horizontal
 execute if score #special try_dis_bid matches 220..254 run function tryashtar.dispense_everything:behavior/special/shared/slab
-execute if score #special try_dis_bid matches 257..294 run function tryashtar.dispense_everything:behavior/special/shared/trapdoor_stairs
+execute if score #special try_dis_bid matches 255..285 run function tryashtar.dispense_everything:behavior/special/shared/stairs

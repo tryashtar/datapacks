@@ -16,7 +16,7 @@ execute if data storage tryashtar:dispense_everything item{id:"minecraft:horn_co
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:magenta_concrete"} store success score #success try_dis_bid run setblock ~ ~ ~ magenta_concrete
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:polished_diorite"} store success score #success try_dis_bid run setblock ~ ~ ~ polished_diorite
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:polished_granite"} store success score #success try_dis_bid run setblock ~ ~ ~ polished_granite
-execute if data storage tryashtar:dispense_everything item{id:"minecraft:sandstone_stairs"} run scoreboard players set #special try_dis_bid 287
+execute if data storage tryashtar:dispense_everything item{id:"minecraft:sandstone_stairs"} run scoreboard players set #special try_dis_bid 279
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:smooth_sandstone"} store success score #success try_dis_bid run setblock ~ ~ ~ smooth_sandstone
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:stone_brick_slab"} run scoreboard players set #special try_dis_bid 253
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:stone_brick_wall"} run scoreboard players set #special try_dis_bid 211
@@ -32,4 +32,4 @@ execute if predicate tryashtar.dispense_everything:generous_waterlog if score #s
 execute unless predicate tryashtar.dispense_everything:waterlog if score #special try_dis_bid matches 174..213 run function tryashtar.dispense_everything:behavior/special/shared/only_waterlog/air
 execute if predicate tryashtar.dispense_everything:waterlog if score #special try_dis_bid matches 174..213 run function tryashtar.dispense_everything:behavior/special/shared/only_waterlog/water
 execute if score #special try_dis_bid matches 220..254 run function tryashtar.dispense_everything:behavior/special/shared/slab
-execute if score #special try_dis_bid matches 257..294 run function tryashtar.dispense_everything:behavior/special/shared/trapdoor_stairs
+execute if score #special try_dis_bid matches 255..285 run function tryashtar.dispense_everything:behavior/special/shared/stairs

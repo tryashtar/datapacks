@@ -1,15 +1,15 @@
 execute if block ~ ~-1 ~ #tryashtar.dispense_everything:groups/place_plant if data storage tryashtar:dispense_everything item{id:"minecraft:acacia_sapling"} store success score #success try_dis_bid run setblock ~ ~ ~ acacia_sapling
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:activator_rail"} run scoreboard players set #special try_dis_bid 214
 execute if block ~ ~-1 ~ farmland if data storage tryashtar:dispense_everything item{id:"minecraft:beetroot_seeds"} store success score #success try_dis_bid run setblock ~ ~ ~ beetroots
-execute if data storage tryashtar:dispense_everything item{id:"minecraft:birch_trapdoor"} run scoreboard players set #special try_dis_bid 261
+execute if data storage tryashtar:dispense_everything item{id:"minecraft:birch_trapdoor"} run scoreboard players set #special try_dis_bid 289
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:black_concrete"} store success score #success try_dis_bid run setblock ~ ~ ~ black_concrete
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:brown_concrete"} store success score #success try_dis_bid run setblock ~ ~ ~ brown_concrete
 execute positioned ~ ~-1 ~ if predicate tryashtar.dispense_everything:support/mushroom positioned ~ ~1 ~ if data storage tryashtar:dispense_everything item{id:"minecraft:brown_mushroom"} store success score #success try_dis_bid run setblock ~ ~ ~ brown_mushroom
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:crafting_table"} store success score #success try_dis_bid run setblock ~ ~ ~ crafting_table
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:dark_oak_fence"} run scoreboard players set #special try_dis_bid 183
-execute if data storage tryashtar:dispense_everything item{id:"minecraft:diorite_stairs"} run scoreboard players set #special try_dis_bid 267
+execute if data storage tryashtar:dispense_everything item{id:"minecraft:diorite_stairs"} run scoreboard players set #special try_dis_bid 262
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:fire_coral_fan"} run scoreboard players set #special try_dis_bid 100
-execute if data storage tryashtar:dispense_everything item{id:"minecraft:granite_stairs"} run scoreboard players set #special try_dis_bid 269
+execute if data storage tryashtar:dispense_everything item{id:"minecraft:granite_stairs"} run scoreboard players set #special try_dis_bid 264
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:green_concrete"} store success score #success try_dis_bid run setblock ~ ~ ~ green_concrete
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:horn_coral_fan"} run scoreboard players set #special try_dis_bid 101
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:infested_stone"} store success score #success try_dis_bid run setblock ~ ~ ~ infested_stone
@@ -22,7 +22,7 @@ execute unless block ~ ~-1 ~ #tryashtar.dispense_everything:groups/air if data s
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:oak_fence_gate"} run scoreboard players set #special try_dis_bid 150
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:red_terracotta"} store success score #success try_dis_bid run setblock ~ ~ ~ red_terracotta
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:redstone_block"} store success score #success try_dis_bid run setblock ~ ~ ~ redstone_block
-execute if data storage tryashtar:dispense_everything item{id:"minecraft:redstone_torch"} run scoreboard players set #special try_dis_bid 255
+execute if data storage tryashtar:dispense_everything item{id:"minecraft:redstone_torch"} run scoreboard players set #special try_dis_bid 286
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:sandstone_slab"} run scoreboard players set #special try_dis_bid 247
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:sandstone_wall"} run scoreboard players set #special try_dis_bid 208
 execute if data storage tryashtar:dispense_everything item{id:"minecraft:smithing_table"} store success score #success try_dis_bid run setblock ~ ~ ~ smithing_table
@@ -38,5 +38,6 @@ execute unless predicate tryashtar.dispense_everything:waterlog if score #specia
 execute if predicate tryashtar.dispense_everything:waterlog if score #special try_dis_bid matches 174..213 run function tryashtar.dispense_everything:behavior/special/shared/only_waterlog/water
 execute positioned ~ ~-1 ~ if predicate tryashtar.dispense_everything:block_check/up/rim positioned ~ ~1 ~ if score #special try_dis_bid matches 214..217 run function tryashtar.dispense_everything:behavior/special/shared/rail
 execute if score #special try_dis_bid matches 220..254 run function tryashtar.dispense_everything:behavior/special/shared/slab
-execute if score #special try_dis_bid matches 255..256 run function tryashtar.dispense_everything:behavior/special/shared/torch
-execute if score #special try_dis_bid matches 257..294 run function tryashtar.dispense_everything:behavior/special/shared/trapdoor_stairs
+execute if score #special try_dis_bid matches 255..285 run function tryashtar.dispense_everything:behavior/special/shared/stairs
+execute if score #special try_dis_bid matches 286..287 run function tryashtar.dispense_everything:behavior/special/shared/torch
+execute if score #special try_dis_bid matches 288..294 run function tryashtar.dispense_everything:behavior/special/shared/trapdoor
